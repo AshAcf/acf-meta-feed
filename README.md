@@ -70,6 +70,16 @@ Windows will run `windows\update-and-publish.ps1` every six hours. The computer 
 
 Logs are written to `logs\feed-updater.log`.
 
+## Failure notifications
+
+GitHub runs **Monitor Meta vehicle feed** every three hours. It fails when:
+
+- The published feed is more than 10 hours old.
+- Fewer than 90% of Autoplay rows have matched website URLs.
+- The feed report is invalid or contains no vehicles.
+
+GitHub can email the account owner when this monitor fails. In GitHub, open **Settings > Notifications > System > Actions** and enable email notifications for failed workflows.
+
 ## Meta setup
 
 In Meta Commerce Manager, replace the Autoplay scheduled feed URL with the GitHub Pages `acf-meta-feed.csv` URL. Do not add tracking parameters to the feed URL.
