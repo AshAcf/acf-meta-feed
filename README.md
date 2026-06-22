@@ -9,7 +9,7 @@ This updater keeps Autoplay as the source of vehicle data but replaces its obsol
 3. Downloads the live Autoplay CSV.
 4. Matches the two sources by year, full title and kilometres.
 5. Writes a corrected CSV into the `public` folder.
-6. Publishes changed files to GitHub every six hours.
+6. Publishes changed files to GitHub at 9:00am, 12:00pm and 4:00pm New Zealand time.
 
 Autoplay remains the source for prices, descriptions, images and stock. Only the obsolete vehicle URL is replaced. No fuzzy title matching is used. If fewer than 40 website cards load or fewer than 90% of Autoplay rows match, the updater preserves the previous good feed.
 
@@ -66,7 +66,7 @@ After the first run succeeds and GitHub Desktop has published the folder:
 1. Right-click `windows\install-scheduled-task.ps1`.
 2. Select **Run with PowerShell**.
 
-Windows will run `windows\update-and-publish.ps1` every six hours. The computer must be switched on and connected to the internet. Chrome may briefly start minimized while the inventory is read.
+Windows will run `windows\update-and-publish.ps1` at 9:00am, 12:00pm and 4:00pm local time. The computer must be switched on and connected to the internet. Chrome may briefly start minimized while the inventory is read.
 
 Logs are written to `logs\feed-updater.log`.
 
@@ -74,7 +74,7 @@ Logs are written to `logs\feed-updater.log`.
 
 GitHub runs **Monitor Meta vehicle feed** every three hours. It fails when:
 
-- The published feed is more than 10 hours old.
+- The published feed is more than 20 hours old, allowing for the normal overnight gap.
 - Fewer than 90% of Autoplay rows have matched website URLs.
 - The feed report is invalid or contains no vehicles.
 

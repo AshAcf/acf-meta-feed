@@ -1,7 +1,7 @@
 import { readFile } from "node:fs/promises";
 
 const REPORT_FILE = process.env.REPORT_FILE || "public/feed-report.json";
-const MAX_AGE_HOURS = Number(process.env.MAX_AGE_HOURS || "10");
+const MAX_AGE_HOURS = Number(process.env.MAX_AGE_HOURS || "20");
 const MIN_MATCH_RATE = Number(process.env.MIN_MATCH_RATE || "0.9");
 
 const report = JSON.parse(await readFile(REPORT_FILE, "utf8"));

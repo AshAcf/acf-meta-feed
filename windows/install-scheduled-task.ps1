@@ -7,14 +7,13 @@ $Arguments = "-NoProfile -ExecutionPolicy Bypass -WindowStyle Hidden -File `"$Ru
 
 $Action = New-ScheduledTaskAction -Execute $PowerShell -Argument $Arguments
 $Triggers = @(
-    New-ScheduledTaskTrigger -Daily -At 12:00am
-    New-ScheduledTaskTrigger -Daily -At 6:00am
+    New-ScheduledTaskTrigger -Daily -At 9:00am
     New-ScheduledTaskTrigger -Daily -At 12:00pm
-    New-ScheduledTaskTrigger -Daily -At 6:00pm
+    New-ScheduledTaskTrigger -Daily -At 4:00pm
 )
 $Settings = New-ScheduledTaskSettingsSet -StartWhenAvailable -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries
 
 Register-ScheduledTask -TaskName $TaskName -Action $Action -Trigger $Triggers -Settings $Settings -Description "Refreshes the ACF website URLs in the Meta vehicle feed and publishes them to GitHub." -Force | Out-Null
 
 Write-Host "Scheduled task installed: $TaskName" -ForegroundColor Green
-Write-Host "It will update and publish the corrected feed every six hours while this computer is available."
+Write-Host "It will update and publish at 9:00am, 12:00pm and 4:00pm local time while this computer is available."
