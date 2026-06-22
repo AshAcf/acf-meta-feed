@@ -1,0 +1,13 @@
+{
+  "name": "acf-autoplay-feed-fixer",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Replaces obsolete Autoplay vehicle links with current Avon City Ford URLs.",
+  "scripts": {
+    "update": "node scripts/update-feed.mjs",
+    "update:browser": "node scripts/run-local.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

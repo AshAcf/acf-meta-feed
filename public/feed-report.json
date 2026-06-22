@@ -1,0 +1,18 @@
+{
+  "generated_at": "2026-06-22T01:26:51.789Z",
+  "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684&type=6",
+  "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
+  "upstream_vehicles": 70,
+  "published_vehicles": 69,
+  "matched_by_title_and_mileage": 69,
+  "unmatched": [
+    {
+      "vehicle_id": "95393",
+      "title": "2019 Ford Ranger PX3 XL 4WD 3.2T.Diesel Flat Deck",
+      "mileage": "80631",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3907035",
+      "candidate_count": 0
+    }
+  ],
+  "inventory_cards_found": 138
+}
