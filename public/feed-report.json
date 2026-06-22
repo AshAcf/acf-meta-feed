@@ -1,33 +1,11 @@
 {
-  "generated_at": "2026-06-22T07:52:50.215Z",
+  "generated_at": "2026-06-22T19:05:36.383Z",
   "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
   "upstream_vehicles": 71,
-  "published_vehicles": 68,
-  "match_rate": 0.9577464788732394,
-  "matched_by_title_and_mileage": 68,
-  "unmatched": [
-    {
-      "vehicle_id": "95393",
-      "title": "2019 Ford Ranger PX3 XL 4WD 3.2T.Diesel Flat Deck",
-      "mileage": "80631",
-      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3907035",
-      "candidate_count": 0
-    },
-    {
-      "vehicle_id": "95451",
-      "title": "2023 Ford Focus ST-Line X 1.0L Hybrid",
-      "mileage": "29670",
-      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3911013",
-      "candidate_count": 0
-    },
-    {
-      "vehicle_id": "95485",
-      "title": "2026 Ford Everest New Gen Sport 4WD 2.0L 7-Seater",
-      "mileage": "14480",
-      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3911085",
-      "candidate_count": 0
-    }
-  ],
-  "inventory_cards_found": 138
+  "published_vehicles": 71,
+  "match_rate": 1,
+  "matched_by_title_and_mileage": 71,
+  "unmatched": [],
+  "inventory_cards_found": 136
 }
