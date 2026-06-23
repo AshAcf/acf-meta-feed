@@ -1,40 +1,26 @@
 {
-  "generated_at": "2026-06-23T04:02:45.315Z",
+  "generated_at": "2026-06-23T21:00:16.440Z",
   "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
   "upstream_vehicles": 70,
-  "published_vehicles": 66,
-  "match_rate": 0.9428571428571428,
-  "matched_by_title_and_mileage": 66,
+  "published_vehicles": 68,
+  "match_rate": 0.9714285714285714,
+  "matched_by_title_and_mileage": 68,
   "unmatched": [
     {
-      "vehicle_id": "95321",
-      "title": "2025 Ford Ranger New Gen Wildtrak 4WD 2.0 Bi Turbo SALE",
-      "mileage": "14789",
-      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3875195",
+      "vehicle_id": "95384",
+      "title": "2025 Ford Everest New Gen Sport 4WD 2.0 Bi Turbo ON SALE",
+      "mileage": "26885",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3646273",
       "candidate_count": 0
     },
     {
-      "vehicle_id": "95380",
-      "title": "2025 Ford Ranger New Gen Wildtrak 4WD 2.0 Bi Turbo SALE",
-      "mileage": "16559",
-      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3898027",
-      "candidate_count": 0
-    },
-    {
-      "vehicle_id": "95296",
-      "title": "2024 Mahindra XUV700 AX7L 2.0 litre 6spd Auto 7 Seater",
-      "mileage": "14880",
-      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3911040",
-      "candidate_count": 0
-    },
-    {
-      "vehicle_id": "95485",
-      "title": "2026 Ford Everest New Gen Sport 4WD 2.0 Bi Turbo 7-Seater",
-      "mileage": "14480",
-      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3911085",
+      "vehicle_id": "696916",
+      "title": "2025 Ford Ranger New Gen XLT 4WD 2.0L Bi-Turbo Diesel DCab",
+      "mileage": "16873",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3861321",
       "candidate_count": 0
     }
   ],
-  "inventory_cards_found": 136
+  "inventory_cards_found": 134
 }
