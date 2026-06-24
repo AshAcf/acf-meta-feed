@@ -1,47 +1,11 @@
 {
-  "generated_at": "2026-06-24T00:00:18.725Z",
+  "generated_at": "2026-06-24T23:30:36.836Z",
   "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
-  "upstream_vehicles": 67,
-  "published_vehicles": 62,
-  "match_rate": 0.9253731343283582,
-  "matched_by_title_and_mileage": 62,
-  "unmatched": [
-    {
-      "vehicle_id": "95384",
-      "title": "2025 Ford Everest New Gen Sport 4WD 2.0 Bi Turbo ON SALE",
-      "mileage": "26885",
-      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3646273",
-      "candidate_count": 0
-    },
-    {
-      "vehicle_id": "95315",
-      "title": "2025 Ford Everest New Gen Wildtrak 4WD 3.0V6 TD ON SALE",
-      "mileage": "12166",
-      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3846583",
-      "candidate_count": 0
-    },
-    {
-      "vehicle_id": "95314",
-      "title": "2025 Ford Everest New Gen Wildtrak 4WD 3.0 V6 TD 10spd SALE",
-      "mileage": "15078",
-      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3848993",
-      "candidate_count": 0
-    },
-    {
-      "vehicle_id": "696916",
-      "title": "2025 Ford Ranger New Gen XLT 4WD 2.0L Bi-Turbo Diesel DCab",
-      "mileage": "16873",
-      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3861321",
-      "candidate_count": 0
-    },
-    {
-      "vehicle_id": "95361",
-      "title": "2025 Ford Everest New Gen Wildtrak 4WD 3.0V6 TD  7-Str SALE",
-      "mileage": "12686",
-      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3904202",
-      "candidate_count": 0
-    }
-  ],
-  "inventory_cards_found": 134
+  "upstream_vehicles": 69,
+  "published_vehicles": 69,
+  "match_rate": 1,
+  "matched_by_title_and_mileage": 69,
+  "unmatched": [],
+  "inventory_cards_found": 133
 }
