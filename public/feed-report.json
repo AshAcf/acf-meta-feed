@@ -1,26 +1,11 @@
 {
-  "generated_at": "2026-06-29T04:00:15.890Z",
+  "generated_at": "2026-06-29T21:00:18.253Z",
   "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
-  "upstream_vehicles": 65,
-  "published_vehicles": 63,
-  "match_rate": 0.9692307692307692,
-  "matched_by_title_and_mileage": 63,
-  "unmatched": [
-    {
-      "vehicle_id": "95035",
-      "title": "2025 Ford Everest New Gen Sport 4WD 2.0 Bi Turbo ON SALE",
-      "mileage": "14000",
-      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3753424",
-      "candidate_count": 0
-    },
-    {
-      "vehicle_id": "95141",
-      "title": "2025 Ford Everest New Gen Sport 4WD 2.0 Bi Turbo 10spd ON SALE",
-      "mileage": "13000",
-      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3780235",
-      "candidate_count": 0
-    }
-  ],
-  "inventory_cards_found": 128
+  "upstream_vehicles": 64,
+  "published_vehicles": 64,
+  "match_rate": 1,
+  "matched_by_title_and_mileage": 64,
+  "unmatched": [],
+  "inventory_cards_found": 126
 }
