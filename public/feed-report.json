@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-30T04:00:15.364Z",
+  "generated_at": "2026-06-30T06:22:04.628Z",
   "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
-  "upstream_vehicles": 62,
+  "upstream_vehicles": 63,
   "published_vehicles": 61,
-  "match_rate": 0.9838709677419355,
+  "match_rate": 0.9682539682539683,
   "matched_by_title_and_mileage": 61,
   "unmatched": [
     {
@@ -12,6 +12,13 @@
       "title": "2018 Ford Fiesta Trend 1.5 litre 6spd Auto",
       "mileage": "38416",
       "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3916739",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "95417",
+      "title": "2025 Ford Ranger New Gen Sport 4WD 2.0 Bi Turbo 10spd",
+      "mileage": "23242",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3917254",
       "candidate_count": 0
     }
   ],

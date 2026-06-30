@@ -13,6 +13,8 @@ This updater keeps Autoplay as the source of vehicle data but replaces its obsol
 
 Autoplay remains the source for prices, descriptions, images and stock. Only the obsolete vehicle URL is replaced. No fuzzy title matching is used. If fewer than 40 website cards load or fewer than 90% of Autoplay rows match, the updater preserves the previous good feed.
 
+Vehicles with a populated sale price below the standard price receive `custom_label_0 = SALE`. Meta vehicle sets should use this label instead of a fixed list of vehicle IDs.
+
 ## Files published to GitHub
 
 - `public/acf-meta-feed.csv`: the corrected feed URL used by Meta.

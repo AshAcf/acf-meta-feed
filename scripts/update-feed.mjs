@@ -124,6 +124,11 @@ function mileageValue(value) {
   return String(value || "").replace(/[^\d]/g, "");
 }
 
+function priceValue(value) {
+  const number = String(value || "").replace(/[^\d.]/g, "");
+  return number ? Number(number) : 0;
+}
+
 function inventoryCards(html) {
   const cards = [];
   const matches = html.matchAll(/<article class=["'][^"']*gw-product-card[^"']*["']>([\s\S]*?)<\/article>/gi);
@@ -164,6 +169,7 @@ async function main() {
   if (!headers.includes("vehicle_id") || !headers.includes("URL")) {
     throw new Error("Feed must contain vehicle_id and URL columns.");
   }
+  if (!headers.includes("custom_label_0")) headers.push("custom_label_0");
 
   const inventory = inventoryCards(searchHtml);
   if (inventory.length < MIN_INVENTORY_CARDS) {
@@ -198,7 +204,10 @@ async function main() {
     }
 
     urlMap[reference] = url;
-    return [{ ...record, URL: url }];
+    const price = priceValue(record.price);
+    const salePrice = priceValue(record.sale_price);
+    const saleLabel = salePrice > 0 && (!price || salePrice < price) ? "SALE" : "";
+    return [{ ...record, URL: url, custom_label_0: saleLabel }];
   });
 
   if (!corrected.length) throw new Error("No Autoplay vehicles matched the live ACF inventory. Last good feed was preserved.");
