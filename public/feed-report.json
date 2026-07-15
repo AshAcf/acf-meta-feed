@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-15T00:30:37.339Z",
+  "generated_at": "2026-07-15T04:00:15.940Z",
   "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
-  "upstream_vehicles": 66,
+  "upstream_vehicles": 68,
   "published_vehicles": 64,
-  "match_rate": 0.9696969696969697,
+  "match_rate": 0.9411764705882353,
   "matched_by_title_and_mileage": 64,
   "unmatched": [
     {
@@ -19,6 +19,20 @@
       "title": "2025 Mahindra XUV3XO AX5L 1.2 litre 6speed Auto",
       "mileage": "9311",
       "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3918395",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "95517",
+      "title": "2024 Ford Puma ST-Line 1.0L Mild Hybrid 7spd Auto",
+      "mileage": "15116",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3932523",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "95481",
+      "title": "2023 Ford Puma ST-Line 1.0L MHEV Mild Hybrid",
+      "mileage": "28306",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3933250",
       "candidate_count": 0
     }
   ],
