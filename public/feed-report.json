@@ -1,19 +1,11 @@
 {
-  "generated_at": "2026-07-17T04:18:04.482Z",
+  "generated_at": "2026-07-19T09:23:35.867Z",
   "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
-  "upstream_vehicles": 67,
-  "published_vehicles": 66,
-  "match_rate": 0.9850746268656716,
-  "matched_by_title_and_mileage": 66,
-  "unmatched": [
-    {
-      "vehicle_id": "95494",
-      "title": "2024 Ford Mustang Mach-E RWD 78kwh Full Electric",
-      "mileage": "18630",
-      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3933449",
-      "candidate_count": 0
-    }
-  ],
-  "inventory_cards_found": 120
+  "upstream_vehicles": 65,
+  "published_vehicles": 65,
+  "match_rate": 1,
+  "matched_by_title_and_mileage": 65,
+  "unmatched": [],
+  "inventory_cards_found": 121
 }
