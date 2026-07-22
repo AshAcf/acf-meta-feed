@@ -1,26 +1,11 @@
 {
-  "generated_at": "2026-07-22T04:00:19.993Z",
+  "generated_at": "2026-07-22T21:00:23.715Z",
   "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
-  "upstream_vehicles": 62,
-  "published_vehicles": 60,
-  "match_rate": 0.967741935483871,
-  "matched_by_title_and_mileage": 60,
-  "unmatched": [
-    {
-      "vehicle_id": "95465",
-      "title": "2023 Ford Everest New Gen Platinum 4WD 3.0V6 TD 7 Seater",
-      "mileage": "88450",
-      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3921338",
-      "candidate_count": 0
-    },
-    {
-      "vehicle_id": "95526",
-      "title": "2024 Ford Ranger New Gen Sport 4WD 2.0 Bi Turbo 10spd",
-      "mileage": "29561",
-      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3937817",
-      "candidate_count": 0
-    }
-  ],
-  "inventory_cards_found": 120
+  "upstream_vehicles": 63,
+  "published_vehicles": 63,
+  "match_rate": 1,
+  "matched_by_title_and_mileage": 63,
+  "unmatched": [],
+  "inventory_cards_found": 119
 }
