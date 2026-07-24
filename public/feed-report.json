@@ -1,11 +1,19 @@
 {
-  "generated_at": "2026-07-23T21:00:16.822Z",
+  "generated_at": "2026-07-24T00:00:16.096Z",
   "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
-  "upstream_vehicles": 59,
+  "upstream_vehicles": 60,
   "published_vehicles": 59,
-  "match_rate": 1,
+  "match_rate": 0.9833333333333333,
   "matched_by_title_and_mileage": 59,
-  "unmatched": [],
+  "unmatched": [
+    {
+      "vehicle_id": "95456",
+      "title": "2025 Ford Ranger New Gen Wildtrak 4WD 3.0TD V6 10spd",
+      "mileage": "28964",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3939458",
+      "candidate_count": 0
+    }
+  ],
   "inventory_cards_found": 114
 }
