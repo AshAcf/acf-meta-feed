@@ -1,17 +1,45 @@
 {
-  "generated_at": "2026-07-24T00:00:16.096Z",
+  "generated_at": "2026-07-24T04:00:17.473Z",
   "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
-  "upstream_vehicles": 60,
-  "published_vehicles": 59,
-  "match_rate": 0.9833333333333333,
-  "matched_by_title_and_mileage": 59,
+  "upstream_vehicles": 63,
+  "published_vehicles": 58,
+  "match_rate": 0.9206349206349206,
+  "matched_by_title_and_mileage": 58,
   "unmatched": [
+    {
+      "vehicle_id": "95512",
+      "title": "2025 Ford Ranger New Gen Wildtrak 4WD 2. Bi Turbo 10spd",
+      "mileage": "26381",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3927897",
+      "candidate_count": 0
+    },
     {
       "vehicle_id": "95456",
       "title": "2025 Ford Ranger New Gen Wildtrak 4WD 3.0TD V6 10spd",
       "mileage": "28964",
       "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3939458",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "95538",
+      "title": "2023 Ford Ranger New Gen Wildtrak 4WD 3.0TD V6",
+      "mileage": "47616",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3940373",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "95528",
+      "title": "2023 Ford Focus Active 1.0L Mild Hybrid Auto",
+      "mileage": "64508",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3940502",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "95519",
+      "title": "2025 Ford Ranger New Gen Wildtrak 4WD 3.0TD V6 10spd",
+      "mileage": "27072",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3941678",
       "candidate_count": 0
     }
   ],
