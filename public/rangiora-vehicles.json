@@ -1,15 +1,15 @@
 {
   "vehicle_ids": [
-    "95141",
-    "95465",
-    "95308",
-    "95370",
-    "95463",
-    "95314",
+    "95448",
+    "95236",
+    "95344",
+    "95445",
+    "95462",
+    "95276",
+    "95291",
     "95417",
-    "95531",
-    "95385",
-    "95427"
+    "95290",
+    "95541"
   ],
   "maximum_cards": 20,
   "note": "Add the 20 Autoplay vehicle_id values for vehicles allocated to Rangiora. Card details are read from acf-meta-feed.csv."
