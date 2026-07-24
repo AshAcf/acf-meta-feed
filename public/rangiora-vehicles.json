@@ -1,0 +1,5 @@
+{
+  "vehicle_ids": [],
+  "maximum_cards": 20,
+  "note": "Add the 20 Autoplay vehicle_id values for vehicles allocated to Rangiora. Card details are read from acf-meta-feed.csv."
+}
