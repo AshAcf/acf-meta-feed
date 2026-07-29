@@ -1,11 +1,19 @@
 {
-  "generated_at": "2026-07-28T21:00:21.207Z",
+  "generated_at": "2026-07-29T00:04:51.337Z",
   "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
-  "upstream_vehicles": 70,
-  "published_vehicles": 70,
-  "match_rate": 1,
-  "matched_by_title_and_mileage": 70,
-  "unmatched": [],
-  "inventory_cards_found": 122
+  "upstream_vehicles": 69,
+  "published_vehicles": 68,
+  "match_rate": 0.9855072463768116,
+  "matched_by_title_and_mileage": 68,
+  "unmatched": [
+    {
+      "vehicle_id": "95497",
+      "title": "2018 Ford Fiesta Trend 1.5 litre 6spd Auto",
+      "mileage": "38416",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3916739",
+      "candidate_count": 0
+    }
+  ],
+  "inventory_cards_found": 121
 }
