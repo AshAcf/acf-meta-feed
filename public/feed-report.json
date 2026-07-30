@@ -1,11 +1,26 @@
 {
-  "generated_at": "2026-07-30T00:00:21.366Z",
+  "generated_at": "2026-07-30T04:00:23.929Z",
   "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
-  "upstream_vehicles": 69,
-  "published_vehicles": 69,
-  "match_rate": 1,
-  "matched_by_title_and_mileage": 69,
-  "unmatched": [],
+  "upstream_vehicles": 70,
+  "published_vehicles": 68,
+  "match_rate": 0.9714285714285714,
+  "matched_by_title_and_mileage": 68,
+  "unmatched": [
+    {
+      "vehicle_id": "95513",
+      "title": "2026 Ford Everest New Gen Sport 4WD 2.0 Bi Turbo 7str",
+      "mileage": "15023",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3927573",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "95539",
+      "title": "2021 Nissan X-Trail ST-L 2.5 litre CVT Auto NZ New",
+      "mileage": "82819",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3946272",
+      "candidate_count": 0
+    }
+  ],
   "inventory_cards_found": 120
 }
