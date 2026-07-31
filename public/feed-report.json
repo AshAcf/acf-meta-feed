@@ -1,19 +1,12 @@
 {
-  "generated_at": "2026-07-31T00:00:23.860Z",
+  "generated_at": "2026-07-31T04:00:18.281Z",
   "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
-  "upstream_vehicles": 70,
-  "published_vehicles": 67,
-  "match_rate": 0.9571428571428572,
-  "matched_by_title_and_mileage": 67,
+  "upstream_vehicles": 72,
+  "published_vehicles": 68,
+  "match_rate": 0.9444444444444444,
+  "matched_by_title_and_mileage": 68,
   "unmatched": [
-    {
-      "vehicle_id": "95016",
-      "title": "2025 Mahindra XUV3XO AX7L 1.2L 6spd ON SALE",
-      "mileage": "13646",
-      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3780203",
-      "candidate_count": 0
-    },
     {
       "vehicle_id": "95308",
       "title": "2025 Ford Everest New Gen Platinum 4WD 3.0 V6 TDiesel 7str ON SALE",
@@ -22,12 +15,26 @@
       "candidate_count": 0
     },
     {
-      "vehicle_id": "95528",
-      "title": "2023 Ford Focus Active 1.0L Mild Hybrid Auto",
-      "mileage": "64508",
-      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3940502",
+      "vehicle_id": "95562",
+      "title": "2023 Ford Focus Active 1.0L Mild Hybrid",
+      "mileage": "75932",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3947179",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "95551",
+      "title": "2024 Ford Everest New Gen Trend 4WD 2.0 Bi Turbo 7 Seater",
+      "mileage": "25663",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3947603",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "95561",
+      "title": "2023 Ford Puma ST-Line 1.0L EcoBoost Mild Hybrid",
+      "mileage": "76768",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3947646",
       "candidate_count": 0
     }
   ],
-  "inventory_cards_found": 118
+  "inventory_cards_found": 120
 }
