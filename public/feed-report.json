@@ -1,40 +1,11 @@
 {
-  "generated_at": "2026-07-31T05:00:07.180Z",
+  "generated_at": "2026-07-31T22:18:26.529Z",
   "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
   "upstream_vehicles": 72,
-  "published_vehicles": 68,
-  "match_rate": 0.9444444444444444,
-  "matched_by_title_and_mileage": 68,
-  "unmatched": [
-    {
-      "vehicle_id": "95308",
-      "title": "2025 Ford Everest New Gen Platinum 4WD 3.0 V6 TDiesel 7str ON SALE",
-      "mileage": "13508",
-      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3863222",
-      "candidate_count": 0
-    },
-    {
-      "vehicle_id": "95562",
-      "title": "2023 Ford Focus Active 1.0L Mild Hybrid",
-      "mileage": "75932",
-      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3947179",
-      "candidate_count": 0
-    },
-    {
-      "vehicle_id": "95551",
-      "title": "2024 Ford Everest New Gen Trend 4WD 2.0 Bi Turbo 7 Seater",
-      "mileage": "25663",
-      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3947603",
-      "candidate_count": 0
-    },
-    {
-      "vehicle_id": "95561",
-      "title": "2023 Ford Puma ST-Line 1.0L EcoBoost Mild Hybrid",
-      "mileage": "76768",
-      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3947646",
-      "candidate_count": 0
-    }
-  ],
-  "inventory_cards_found": 120
+  "published_vehicles": 72,
+  "match_rate": 1,
+  "matched_by_title_and_mileage": 72,
+  "unmatched": [],
+  "inventory_cards_found": 122
 }
