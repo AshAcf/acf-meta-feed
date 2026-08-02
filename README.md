@@ -6,9 +6,9 @@ This updater keeps Autoplay as the source of vehicle data but replaces its obsol
 
 1. Opens the ACF inventory in a normal persistent Google Chrome profile.
 2. Reads the current vehicle titles, kilometres and correct website URLs.
-3. Downloads the live Autoplay CSV.
-4. Matches the two sources by year, full title and kilometres.
-5. Writes a corrected CSV into the `public` folder.
+3. Downloads the live Autoplay CSVs for ACF and Rangiora.
+4. Matches each feed to the website vehicles by year, full title and kilometres.
+5. Writes corrected CSVs into the `public` folder.
 6. Publishes changed files to GitHub at 9:00am, 12:00pm and 4:00pm New Zealand time.
 
 Autoplay remains the source for prices, descriptions, images and stock. Only the obsolete vehicle URL is replaced. No fuzzy title matching is used. If fewer than 40 website cards load or fewer than 90% of Autoplay rows match, the updater preserves the previous good feed.
@@ -17,9 +17,14 @@ Vehicles with a populated sale price below the standard price receive `custom_la
 
 ## Files published to GitHub
 
-- `public/acf-meta-feed.csv`: the corrected feed URL used by Meta.
-- `public/feed-report.json`: update time, counts and unmatched vehicles.
-- `public/url-map.json`: Autoplay vehicle IDs and their matched ACF URLs.
+- `public/acf-meta-feed.csv`: the corrected ACF feed URL used by Meta.
+- `public/feed-report.json`: ACF update time, counts and unmatched vehicles.
+- `public/url-map.json`: ACF Autoplay vehicle IDs and their matched website URLs.
+- `public/rangiora-meta-feed.csv`: the corrected Rangiora feed URL used by Meta.
+- `public/rangiora-feed-report.json`: Rangiora update time, counts and unmatched vehicles.
+- `public/rangiora-url-map.json`: Rangiora Autoplay vehicle IDs and their matched website URLs.
+
+Rangiora stock URLs are published with branch `1077`.
 
 ## One-time GitHub setup
 
@@ -86,6 +91,7 @@ GitHub can email the account owner when this monitor fails. In GitHub, open **Se
 
 In Meta Commerce Manager, replace the Autoplay scheduled feed URL with the GitHub Pages `acf-meta-feed.csv` URL. Do not add tracking parameters to the feed URL.
 
-## Autoplay source
+## Autoplay sources
 
-`http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684&type=6`
+- ACF: `http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684&type=6`
+- Rangiora Used/Demo/New: `http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=13928,13929,13930&type=6`

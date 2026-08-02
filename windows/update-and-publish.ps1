@@ -14,7 +14,7 @@ try {
 
     Set-Location -LiteralPath $ProjectRoot
     Remove-Item Env:ACF_BROWSER_VISIBLE -ErrorAction SilentlyContinue
-    & $Node "scripts\run-local.mjs"
+    & $Node "scripts\run-all-local.mjs"
     if ($LASTEXITCODE -ne 0) { throw "Feed generation failed; nothing was published." }
 
     $Git = Get-ChildItem -Path (Join-Path $env:LOCALAPPDATA "GitHubDesktop") -Filter git.exe -Recurse -ErrorAction SilentlyContinue |
@@ -33,7 +33,7 @@ try {
     $SafePath = $ProjectRoot.Replace("\", "/")
     & $Git config --global --add safe.directory $SafePath
 
-    & $Git add "public/acf-meta-feed.csv" "public/url-map.json" "public/feed-report.json"
+    & $Git add "public/acf-meta-feed.csv" "public/url-map.json" "public/feed-report.json" "public/rangiora-meta-feed.csv" "public/rangiora-url-map.json" "public/rangiora-feed-report.json"
     & $Git diff --cached --quiet
     if ($LASTEXITCODE -eq 0) {
         Write-Host "No feed changes to publish."

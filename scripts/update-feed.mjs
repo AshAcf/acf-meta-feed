@@ -10,6 +10,7 @@ const ACF_SEARCH_FILE = process.env.ACF_SEARCH_FILE || "";
 const OUTPUT_FILE = resolve(process.env.OUTPUT_FILE || "public/acf-meta-feed.csv");
 const MAP_FILE = resolve(process.env.MAP_FILE || "public/url-map.json");
 const REPORT_FILE = resolve(process.env.REPORT_FILE || "public/feed-report.json");
+const URL_BRANCH_ID = process.env.URL_BRANCH_ID || "";
 const MIN_INVENTORY_CARDS = Number(process.env.MIN_INVENTORY_CARDS || "40");
 const MIN_FEED_MATCH_RATE = Number(process.env.MIN_FEED_MATCH_RATE || "0.9");
 const USER_AGENT = "AvonCityFordFeedUpdater/1.0 (+https://www.avoncityford.com)";
@@ -129,6 +130,11 @@ function priceValue(value) {
   return number ? Number(number) : 0;
 }
 
+function withBranchId(url, branchId) {
+  if (!branchId) return url;
+  return String(url).replace(/(\/vehicles\/stock\/\d+\/)\d+(\b|\/)/, `$1${branchId}$2`);
+}
+
 function inventoryCards(html) {
   const cards = [];
   const matches = html.matchAll(/<article class=["'][^"']*gw-product-card[^"']*["']>([\s\S]*?)<\/article>/gi);
@@ -203,11 +209,13 @@ async function main() {
       return [];
     }
 
-    urlMap[reference] = url;
+    const outputUrl = withBranchId(url, URL_BRANCH_ID);
+
+    urlMap[reference] = outputUrl;
     const price = priceValue(record.price);
     const salePrice = priceValue(record.sale_price);
     const saleLabel = salePrice > 0 && (!price || salePrice < price) ? "SALE" : "";
-    return [{ ...record, URL: url, custom_label_0: saleLabel }];
+    return [{ ...record, URL: outputUrl, custom_label_0: saleLabel }];
   });
 
   if (!corrected.length) throw new Error("No Autoplay vehicles matched the live ACF inventory. Last good feed was preserved.");
@@ -221,6 +229,7 @@ async function main() {
     generated_at: generatedAt,
     upstream_feed: AUTOPLAY_FEED_URL,
     acf_inventory_url: ACF_SEARCH_URL,
+    url_branch_id: URL_BRANCH_ID || null,
     upstream_vehicles: records.length,
     published_vehicles: corrected.length,
     match_rate: matchRate,
