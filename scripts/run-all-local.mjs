@@ -4,18 +4,20 @@ import { resolve } from "node:path";
 const feeds = [
   {
     name: "acf",
-    autoplayUrl: "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684&type=6",
+    autoplayUrl: "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684,13928,13929,13930&type=6",
     outputFile: "public/acf-meta-feed.csv",
     mapFile: "public/url-map.json",
-    reportFile: "public/feed-report.json"
+    reportFile: "public/feed-report.json",
+    excludeVehicleIdsFile: "config/rangiora-vehicle-ids.txt"
   },
   {
     name: "rangiora",
-    autoplayUrl: "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=13928,13929,13930&type=6",
+    autoplayUrl: "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684,13928,13929,13930&type=6",
     outputFile: "public/rangiora-meta-feed.csv",
     mapFile: "public/rangiora-url-map.json",
     reportFile: "public/rangiora-feed-report.json",
-    urlBranchId: "1077"
+    urlBranchId: "1077",
+    includeVehicleIdsFile: "config/rangiora-vehicle-ids.txt"
   }
 ];
 
@@ -44,6 +46,8 @@ for (const feed of feeds) {
     OUTPUT_FILE: feed.outputFile,
     MAP_FILE: feed.mapFile,
     REPORT_FILE: feed.reportFile,
-    URL_BRANCH_ID: feed.urlBranchId || ""
+    URL_BRANCH_ID: feed.urlBranchId || "",
+    INCLUDE_VEHICLE_IDS_FILE: feed.includeVehicleIdsFile || "",
+    EXCLUDE_VEHICLE_IDS_FILE: feed.excludeVehicleIdsFile || ""
   });
 }

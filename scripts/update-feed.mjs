@@ -7,6 +7,8 @@ const ACF_SEARCH_URL = process.env.ACF_SEARCH_URL ||
   "https://www.avoncityford.com/vehicles/search";
 const AUTOPLAY_FEED_FILE = process.env.AUTOPLAY_FEED_FILE || "";
 const ACF_SEARCH_FILE = process.env.ACF_SEARCH_FILE || "";
+const INCLUDE_VEHICLE_IDS_FILE = process.env.INCLUDE_VEHICLE_IDS_FILE || "";
+const EXCLUDE_VEHICLE_IDS_FILE = process.env.EXCLUDE_VEHICLE_IDS_FILE || "";
 const OUTPUT_FILE = resolve(process.env.OUTPUT_FILE || "public/acf-meta-feed.csv");
 const MAP_FILE = resolve(process.env.MAP_FILE || "public/url-map.json");
 const REPORT_FILE = resolve(process.env.REPORT_FILE || "public/feed-report.json");
@@ -165,10 +167,23 @@ async function readSource(file, url) {
   return file ? readFile(resolve(file), "utf8") : fetchText(url);
 }
 
+async function readIdSet(file) {
+  if (!file) return new Set();
+  const text = await readFile(resolve(file), "utf8");
+  return new Set(
+    text
+      .split(/\r?\n/)
+      .map((line) => line.replace(/#.*/, "").trim())
+      .filter(Boolean)
+  );
+}
+
 async function main() {
-  const [feedText, searchHtml] = await Promise.all([
+  const [feedText, searchHtml, includeVehicleIds, excludeVehicleIds] = await Promise.all([
     readSource(AUTOPLAY_FEED_FILE, AUTOPLAY_FEED_URL),
-    readSource(ACF_SEARCH_FILE, ACF_SEARCH_URL)
+    readSource(ACF_SEARCH_FILE, ACF_SEARCH_URL),
+    readIdSet(INCLUDE_VEHICLE_IDS_FILE),
+    readIdSet(EXCLUDE_VEHICLE_IDS_FILE)
   ]);
 
   const { headers, records } = parseCsv(feedText);
@@ -191,7 +206,14 @@ async function main() {
   const unmatched = [];
   const urlMap = {};
 
-  const corrected = records.flatMap((record) => {
+  const sourceRecords = records.filter((record) => {
+    const reference = String(record.vehicle_id || "").trim();
+    if (includeVehicleIds.size && !includeVehicleIds.has(reference)) return false;
+    if (excludeVehicleIds.has(reference)) return false;
+    return true;
+  });
+
+  const corrected = sourceRecords.flatMap((record) => {
     const reference = String(record.vehicle_id || "").trim();
     const title = record.title || record.description || "";
     const key = `${normaliseTitle(title)}|${mileageValue(record["mileage.value"])}`;
@@ -219,7 +241,7 @@ async function main() {
   });
 
   if (!corrected.length) throw new Error("No Autoplay vehicles matched the live ACF inventory. Last good feed was preserved.");
-  const matchRate = records.length ? corrected.length / records.length : 0;
+  const matchRate = sourceRecords.length ? corrected.length / sourceRecords.length : 0;
   if (matchRate < MIN_FEED_MATCH_RATE) {
     throw new Error(`Matched ${(matchRate * 100).toFixed(1)}% of the Autoplay feed; minimum is ${(MIN_FEED_MATCH_RATE * 100).toFixed(1)}%. Last good feed was preserved.`);
   }
@@ -230,7 +252,10 @@ async function main() {
     upstream_feed: AUTOPLAY_FEED_URL,
     acf_inventory_url: ACF_SEARCH_URL,
     url_branch_id: URL_BRANCH_ID || null,
-    upstream_vehicles: records.length,
+    upstream_vehicles: sourceRecords.length,
+    source_vehicles_before_filter: records.length,
+    include_vehicle_ids_file: INCLUDE_VEHICLE_IDS_FILE || null,
+    exclude_vehicle_ids_file: EXCLUDE_VEHICLE_IDS_FILE || null,
     published_vehicles: corrected.length,
     match_rate: matchRate,
     matched_by_title_and_mileage: corrected.length,

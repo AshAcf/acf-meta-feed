@@ -1,0 +1,12 @@
+# Rangiora stock temporarily identified from the yard stock list.
+# Remove IDs here once Autoplay reliably assigns them to yardList 13928/13929/13930.
+95448
+95236
+95344
+95497
+95445
+95462
+95276
+95291
+95417
+95290
