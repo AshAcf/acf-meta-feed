@@ -9,7 +9,14 @@ Start-Transcript -Path $LogFile -Append | Out-Null
 
 try {
     if (-not (Test-Path -LiteralPath $Node)) {
-        throw "The Codex Node runtime was not found at $Node"
+        $Node = Get-ChildItem -Path (Join-Path $env:USERPROFILE ".cache\codex-runtimes") -Filter node.exe -Recurse -ErrorAction SilentlyContinue |
+            Where-Object { $_.FullName -match "dependencies\\node\\bin\\node.exe$" } |
+            Sort-Object LastWriteTime -Descending |
+            Select-Object -First 1 -ExpandProperty FullName
+    }
+
+    if (-not $Node -or -not (Test-Path -LiteralPath $Node)) {
+        throw "The Codex Node runtime was not found."
     }
 
     Set-Location -LiteralPath $ProjectRoot
