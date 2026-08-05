@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T21:00:25.177Z",
+  "generated_at": "2026-08-05T00:00:37.807Z",
   "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684,13928,13929,13930&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
   "url_branch_id": "1077",
@@ -13,7 +13,7 @@
   "unmatched": [
     {
       "vehicle_id": "95276",
-      "title": "2025 Mahindra XUV700 AX7L 2.0 litre 6 spd Auto",
+      "title": "2025 Mahindra XUV700 AX7L 2.0 litre 6 spd Auto ON SALE",
       "mileage": "12202",
       "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3927554",
       "candidate_count": 2
