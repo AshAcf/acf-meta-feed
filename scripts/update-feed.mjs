@@ -13,6 +13,7 @@ const OUTPUT_FILE = resolve(process.env.OUTPUT_FILE || "public/acf-meta-feed.csv
 const MAP_FILE = resolve(process.env.MAP_FILE || "public/url-map.json");
 const REPORT_FILE = resolve(process.env.REPORT_FILE || "public/feed-report.json");
 const URL_BRANCH_ID = process.env.URL_BRANCH_ID || "";
+const CUSTOM_LABEL_1 = process.env.CUSTOM_LABEL_1 || "";
 const MIN_INVENTORY_CARDS = Number(process.env.MIN_INVENTORY_CARDS || "40");
 const MIN_FEED_MATCH_RATE = Number(process.env.MIN_FEED_MATCH_RATE || "0.9");
 const USER_AGENT = "AvonCityFordFeedUpdater/1.0 (+https://www.avoncityford.com)";
@@ -191,6 +192,7 @@ async function main() {
     throw new Error("Feed must contain vehicle_id and URL columns.");
   }
   if (!headers.includes("custom_label_0")) headers.push("custom_label_0");
+  if (!headers.includes("custom_label_1")) headers.push("custom_label_1");
 
   const inventory = inventoryCards(searchHtml);
   if (inventory.length < MIN_INVENTORY_CARDS) {
@@ -237,7 +239,7 @@ async function main() {
     const price = priceValue(record.price);
     const salePrice = priceValue(record.sale_price);
     const saleLabel = salePrice > 0 && (!price || salePrice < price) ? "SALE" : "";
-    return [{ ...record, URL: outputUrl, custom_label_0: saleLabel }];
+    return [{ ...record, URL: outputUrl, custom_label_0: saleLabel, custom_label_1: CUSTOM_LABEL_1 }];
   });
 
   if (!corrected.length) throw new Error("No Autoplay vehicles matched the live ACF inventory. Last good feed was preserved.");
@@ -252,6 +254,7 @@ async function main() {
     upstream_feed: AUTOPLAY_FEED_URL,
     acf_inventory_url: ACF_SEARCH_URL,
     url_branch_id: URL_BRANCH_ID || null,
+    custom_label_1: CUSTOM_LABEL_1 || null,
     upstream_vehicles: sourceRecords.length,
     source_vehicles_before_filter: records.length,
     include_vehicle_ids_file: INCLUDE_VEHICLE_IDS_FILE || null,

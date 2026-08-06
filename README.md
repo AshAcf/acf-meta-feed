@@ -27,6 +27,7 @@ Vehicles with a populated sale price below the standard price receive `custom_la
 Rangiora stock URLs are published with branch `1077`.
 
 Until Autoplay's new Rangiora yard assignment is fully populated, `config/rangiora-vehicle-ids.txt` controls which vehicle IDs are treated as Rangiora stock. Those IDs are excluded from the ACF feed and included in the Rangiora feed.
+Rangiora vehicles also receive `custom_label_1 = RANGIORA` so Meta product sets can filter Rangiora automatically without a manual Vehicle ID list.
 
 ## One-time GitHub setup
 

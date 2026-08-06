@@ -17,6 +17,7 @@ const feeds = [
     mapFile: "public/rangiora-url-map.json",
     reportFile: "public/rangiora-feed-report.json",
     urlBranchId: "1077",
+    customLabel1: "RANGIORA",
     includeVehicleIdsFile: "config/rangiora-vehicle-ids.txt"
   }
 ];
@@ -47,6 +48,7 @@ for (const feed of feeds) {
     MAP_FILE: feed.mapFile,
     REPORT_FILE: feed.reportFile,
     URL_BRANCH_ID: feed.urlBranchId || "",
+    CUSTOM_LABEL_1: feed.customLabel1 || "",
     INCLUDE_VEHICLE_IDS_FILE: feed.includeVehicleIdsFile || "",
     EXCLUDE_VEHICLE_IDS_FILE: feed.excludeVehicleIdsFile || ""
   });
