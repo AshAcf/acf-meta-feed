@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-08-12T00:01:27.220Z",
+  "generated_at": "2026-08-12T20:38:13.389Z",
   "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684,13928,13929,13930&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
   "url_branch_id": "1077",
   "custom_label_1": "RANGIORA",
-  "upstream_vehicles": 14,
-  "source_vehicles_before_filter": 63,
+  "upstream_vehicles": 13,
+  "source_vehicles_before_filter": 58,
   "include_vehicle_ids_file": "config/rangiora-vehicle-ids.txt",
   "exclude_vehicle_ids_file": null,
-  "published_vehicles": 14,
+  "published_vehicles": 13,
   "match_rate": 1,
-  "matched_by_title_and_mileage": 14,
+  "matched_by_title_and_mileage": 13,
   "unmatched": [],
   "inventory_cards_found": 111
 }
