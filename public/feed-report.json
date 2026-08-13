@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-08-12T21:00:21.414Z",
+  "generated_at": "2026-08-13T01:14:53.503Z",
   "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684,13928,13929,13930&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
   "url_branch_id": null,
   "custom_label_1": null,
-  "upstream_vehicles": 45,
-  "source_vehicles_before_filter": 58,
+  "upstream_vehicles": 47,
+  "source_vehicles_before_filter": 60,
   "include_vehicle_ids_file": null,
   "exclude_vehicle_ids_file": "config/rangiora-vehicle-ids.txt",
   "published_vehicles": 44,
-  "match_rate": 0.9777777777777777,
+  "match_rate": 0.9361702127659575,
   "matched_by_title_and_mileage": 44,
   "unmatched": [
     {
@@ -17,6 +17,20 @@
       "title": "2019 Hyundai iMax 2.5 Crdi Auto 8 Seater",
       "mileage": "95919",
       "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3950294",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "95556",
+      "title": "2024 Ford Ranger New Gen Sport 4WD 2.0 Bi Turbo 10spd",
+      "mileage": "52544",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3956152",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "95560",
+      "title": "2019 Kia Sorento Premium 4WD 2.2TD 7 Seater NZ New",
+      "mileage": "122080",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3961950",
       "candidate_count": 0
     }
   ],
