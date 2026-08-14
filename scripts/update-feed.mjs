@@ -15,6 +15,8 @@ const REPORT_FILE = resolve(process.env.REPORT_FILE || "public/feed-report.json"
 const URL_BRANCH_ID = process.env.URL_BRANCH_ID || "";
 const CUSTOM_LABEL_1 = process.env.CUSTOM_LABEL_1 || "";
 const INCLUDE_TITLE_PATTERN = process.env.INCLUDE_TITLE_PATTERN || "";
+const MATCH_TITLE_ONLY = process.env.MATCH_TITLE_ONLY === "1";
+const REQUIRE_SALE_PRICE = process.env.REQUIRE_SALE_PRICE === "1";
 const MIN_INVENTORY_CARDS = Number(process.env.MIN_INVENTORY_CARDS || "40");
 const MIN_FEED_MATCH_RATE = Number(process.env.MIN_FEED_MATCH_RATE || "0.9");
 const USER_AGENT = "AvonCityFordFeedUpdater/1.0 (+https://www.avoncityford.com)";
@@ -201,9 +203,13 @@ async function main() {
   }
 
   const byKey = new Map();
+  const byTitle = new Map();
   for (const vehicle of inventory) {
     if (!byKey.has(vehicle.key)) byKey.set(vehicle.key, []);
     byKey.get(vehicle.key).push(vehicle);
+    const titleKey = normaliseTitle(vehicle.title);
+    if (!byTitle.has(titleKey)) byTitle.set(titleKey, []);
+    byTitle.get(titleKey).push(vehicle);
   }
 
   const unmatched = [];
@@ -215,6 +221,7 @@ async function main() {
     if (includeVehicleIds.size && !includeVehicleIds.has(reference)) return false;
     if (excludeVehicleIds.has(reference)) return false;
     if (includeTitleRegex && !includeTitleRegex.test(record.title || record.description || "")) return false;
+    if (REQUIRE_SALE_PRICE && !priceValue(record.sale_price)) return false;
     return true;
   });
 
@@ -222,8 +229,10 @@ async function main() {
     const reference = String(record.vehicle_id || "").trim();
     const title = record.title || record.description || "";
     const key = `${normaliseTitle(title)}|${mileageValue(record["mileage.value"])}`;
-    const candidates = byKey.get(key) || [];
-    const url = candidates.length === 1 ? candidates[0].url : "";
+    const titleKey = normaliseTitle(title);
+    const candidates = MATCH_TITLE_ONLY ? (byTitle.get(titleKey) || []) : (byKey.get(key) || []);
+    const matchedVehicle = MATCH_TITLE_ONLY ? candidates.shift() : (candidates.length === 1 ? candidates[0] : null);
+    const url = matchedVehicle?.url || "";
 
     if (!url) {
       unmatched.push({
@@ -259,13 +268,16 @@ async function main() {
     url_branch_id: URL_BRANCH_ID || null,
     custom_label_1: CUSTOM_LABEL_1 || null,
     include_title_pattern: INCLUDE_TITLE_PATTERN || null,
+    match_title_only: MATCH_TITLE_ONLY,
+    require_sale_price: REQUIRE_SALE_PRICE,
     upstream_vehicles: sourceRecords.length,
     source_vehicles_before_filter: records.length,
     include_vehicle_ids_file: INCLUDE_VEHICLE_IDS_FILE || null,
     exclude_vehicle_ids_file: EXCLUDE_VEHICLE_IDS_FILE || null,
     published_vehicles: corrected.length,
     match_rate: matchRate,
-    matched_by_title_and_mileage: corrected.length,
+    matched_by_title_and_mileage: MATCH_TITLE_ONLY ? null : corrected.length,
+    matched_by_title_only: MATCH_TITLE_ONLY ? corrected.length : null,
     unmatched,
     inventory_cards_found: inventory.length
   };

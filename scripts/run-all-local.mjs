@@ -22,10 +22,14 @@ const feeds = [
   },
   {
     name: "best-ever-runout",
-    autoplayUrl: "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684,13928,13929,13930&type=6",
+    autoplayUrl: "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1685,1686&type=6",
     outputFile: "public/best-ever-runout-meta-feed.csv",
     mapFile: "public/best-ever-runout-url-map.json",
     reportFile: "public/best-ever-runout-feed-report.json",
+    searchFile: "cache/acf-new-demo-current.html",
+    searchUrl: "https://www.avoncityford.com/vehicles/search?Condition=1&Condition=2",
+    matchTitleOnly: true,
+    requireSalePrice: true,
     includeTitlePattern: "^(?:2025|2026) Ford (?:Everest\\b|Ranger .*\\b(?:Wildtrak|Platinum)\\b)"
   }
 ];
@@ -46,18 +50,26 @@ function run(script, env = {}) {
 }
 
 await run("scripts/capture-inventory.mjs");
+await run("scripts/capture-inventory.mjs", {
+  ACF_SEARCH_URL: "https://www.avoncityford.com/vehicles/search?Condition=1&Condition=2",
+  ACF_BROWSER_OUTPUT: "cache/acf-new-demo-current.html",
+  MIN_INVENTORY_CARDS: "20"
+});
 
 for (const feed of feeds) {
   console.log(`Generating ${feed.name} feed...`);
   await run("scripts/update-feed.mjs", {
     AUTOPLAY_FEED_URL: feed.autoplayUrl,
-    ACF_SEARCH_FILE: "cache/acf-current.html",
+    ACF_SEARCH_URL: feed.searchUrl || "https://www.avoncityford.com/vehicles/search",
+    ACF_SEARCH_FILE: feed.searchFile || "cache/acf-current.html",
     OUTPUT_FILE: feed.outputFile,
     MAP_FILE: feed.mapFile,
     REPORT_FILE: feed.reportFile,
     URL_BRANCH_ID: feed.urlBranchId || "",
     CUSTOM_LABEL_1: feed.customLabel1 || "",
     INCLUDE_TITLE_PATTERN: feed.includeTitlePattern || "",
+    MATCH_TITLE_ONLY: feed.matchTitleOnly ? "1" : "",
+    REQUIRE_SALE_PRICE: feed.requireSalePrice ? "1" : "",
     INCLUDE_VEHICLE_IDS_FILE: feed.includeVehicleIdsFile || "",
     EXCLUDE_VEHICLE_IDS_FILE: feed.excludeVehicleIdsFile || ""
   });
