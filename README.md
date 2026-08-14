@@ -26,6 +26,10 @@ Vehicles with a populated sale price below the standard price receive `custom_la
 - `public/best-ever-runout-meta-feed.csv`: live inventory for the Best Ever Runout landing page.
 - `public/best-ever-runout-feed-report.json`: runout page update time, counts and unmatched vehicles.
 - `public/best-ever-runout-url-map.json`: runout vehicle IDs and their matched website URLs.
+- `public/yard-1684-used.csv`, `yard-1685-new.csv`, `yard-1686-demo.csv`: Christchurch feeds by yard.
+- `public/yard-13928-used.csv`, `yard-13929-demo.csv`, `yard-13930-new.csv`: Rangiora feeds by yard.
+- `public/all-yards-meta-feed.csv`: deduplicated combined inventory used by pages that need all six yards.
+- `public/all-yards-feed-report.json`: combined feed generation time and published vehicle count.
 
 Rangiora stock URLs are published with branch `1077`.
 

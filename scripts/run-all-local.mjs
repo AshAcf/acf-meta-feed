@@ -21,6 +21,60 @@ const feeds = [
     includeVehicleIdsFile: "config/rangiora-vehicle-ids.txt"
   },
   {
+    name: "yard-1684-used",
+    autoplayUrl: "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684&type=6",
+    outputFile: "public/yard-1684-used.csv",
+    mapFile: "public/yard-1684-url-map.json",
+    reportFile: "public/yard-1684-report.json"
+  },
+  {
+    name: "yard-1685-new",
+    autoplayUrl: "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1685&type=6",
+    outputFile: "public/yard-1685-new.csv",
+    mapFile: "public/yard-1685-url-map.json",
+    reportFile: "public/yard-1685-report.json",
+    searchFile: "cache/acf-new-demo-current.html",
+    matchTitleOnly: true
+  },
+  {
+    name: "yard-1686-demo",
+    autoplayUrl: "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1686&type=6",
+    outputFile: "public/yard-1686-demo.csv",
+    mapFile: "public/yard-1686-url-map.json",
+    reportFile: "public/yard-1686-report.json",
+    searchFile: "cache/acf-new-demo-current.html",
+    matchTitleOnly: true
+  },
+  {
+    name: "yard-13928-used",
+    autoplayUrl: "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=13928&type=6",
+    outputFile: "public/yard-13928-used.csv",
+    mapFile: "public/yard-13928-url-map.json",
+    reportFile: "public/yard-13928-report.json",
+    urlBranchId: "1077"
+  },
+  {
+    name: "yard-13929-demo",
+    autoplayUrl: "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=13929&type=6",
+    outputFile: "public/yard-13929-demo.csv",
+    mapFile: "public/yard-13929-url-map.json",
+    reportFile: "public/yard-13929-report.json",
+    searchFile: "cache/acf-new-demo-current.html",
+    matchTitleOnly: true,
+    urlBranchId: "1077"
+  },
+  {
+    name: "yard-13930-new",
+    autoplayUrl: "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=13930&type=6",
+    outputFile: "public/yard-13930-new.csv",
+    mapFile: "public/yard-13930-url-map.json",
+    reportFile: "public/yard-13930-report.json",
+    searchFile: "cache/acf-new-demo-current.html",
+    matchTitleOnly: true,
+    urlBranchId: "1077",
+    allowEmptySource: true
+  },
+  {
     name: "best-ever-runout",
     autoplayUrl: "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1685,1686&type=6",
     outputFile: "public/best-ever-runout-meta-feed.csv",
@@ -72,7 +126,10 @@ for (const feed of feeds) {
     MATCH_TITLE_ONLY: feed.matchTitleOnly ? "1" : "",
     REQUIRE_SALE_PRICE: feed.requireSalePrice ? "1" : "",
     INCLUDE_YARD_PATTERN: feed.includeYardPattern || "",
+    ALLOW_EMPTY_SOURCE: feed.allowEmptySource ? "1" : "",
     INCLUDE_VEHICLE_IDS_FILE: feed.includeVehicleIdsFile || "",
     EXCLUDE_VEHICLE_IDS_FILE: feed.excludeVehicleIdsFile || ""
   });
 }
+
+await run("scripts/combine-yard-feeds.mjs");

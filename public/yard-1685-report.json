@@ -1,0 +1,37 @@
+{
+  "generated_at": "2026-08-14T04:20:52.802Z",
+  "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1685&type=6",
+  "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
+  "url_branch_id": null,
+  "custom_label_1": null,
+  "include_title_pattern": null,
+  "include_yard_pattern": null,
+  "match_title_only": true,
+  "require_sale_price": false,
+  "allow_empty_source": false,
+  "upstream_vehicles": 43,
+  "source_vehicles_before_filter": 43,
+  "include_vehicle_ids_file": null,
+  "exclude_vehicle_ids_file": null,
+  "published_vehicles": 41,
+  "match_rate": 0.9534883720930233,
+  "matched_by_title_and_mileage": null,
+  "matched_by_title_only": 41,
+  "unmatched": [
+    {
+      "vehicle_id": "165685",
+      "title": "2026 Ford Everest Tremor  3.0 V6 Turbo Diesel 7 Seater SUV",
+      "mileage": "100",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3962939",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "165683",
+      "title": "2026 Ford Everest Tremor  3.0 V6 Turbo Diesel 7 Seater SUV",
+      "mileage": "100",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3962957",
+      "candidate_count": 0
+    }
+  ],
+  "inventory_cards_found": 115
+}
