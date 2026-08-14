@@ -23,11 +23,16 @@ Vehicles with a populated sale price below the standard price receive `custom_la
 - `public/rangiora-meta-feed.csv`: the corrected Rangiora feed URL used by Meta.
 - `public/rangiora-feed-report.json`: Rangiora update time, counts and unmatched vehicles.
 - `public/rangiora-url-map.json`: Rangiora Autoplay vehicle IDs and their matched website URLs.
+- `public/best-ever-runout-meta-feed.csv`: live inventory for the Best Ever Runout landing page.
+- `public/best-ever-runout-feed-report.json`: runout page update time, counts and unmatched vehicles.
+- `public/best-ever-runout-url-map.json`: runout vehicle IDs and their matched website URLs.
 
 Rangiora stock URLs are published with branch `1077`.
 
 Until Autoplay's new Rangiora yard assignment is fully populated, `config/rangiora-vehicle-ids.txt` controls which vehicle IDs are treated as Rangiora stock. Those IDs are excluded from the ACF feed and included in the Rangiora feed.
 Rangiora vehicles also receive `custom_label_1 = RANGIORA` so Meta product sets can filter Rangiora automatically without a manual Vehicle ID list.
+
+The Best Ever Runout feed automatically selects live 2025/2026 Ford Everest stock and 2025/2026 Ranger Wildtrak or Platinum stock. Vehicles no longer present in the live inventory are omitted automatically.
 
 ## One-time GitHub setup
 

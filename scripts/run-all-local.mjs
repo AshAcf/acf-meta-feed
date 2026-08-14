@@ -19,6 +19,14 @@ const feeds = [
     urlBranchId: "1077",
     customLabel1: "RANGIORA",
     includeVehicleIdsFile: "config/rangiora-vehicle-ids.txt"
+  },
+  {
+    name: "best-ever-runout",
+    autoplayUrl: "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684,13928,13929,13930&type=6",
+    outputFile: "public/best-ever-runout-meta-feed.csv",
+    mapFile: "public/best-ever-runout-url-map.json",
+    reportFile: "public/best-ever-runout-feed-report.json",
+    includeTitlePattern: "^(?:2025|2026) Ford (?:Everest\\b|Ranger .*\\b(?:Wildtrak|Platinum)\\b)"
   }
 ];
 
@@ -49,6 +57,7 @@ for (const feed of feeds) {
     REPORT_FILE: feed.reportFile,
     URL_BRANCH_ID: feed.urlBranchId || "",
     CUSTOM_LABEL_1: feed.customLabel1 || "",
+    INCLUDE_TITLE_PATTERN: feed.includeTitlePattern || "",
     INCLUDE_VEHICLE_IDS_FILE: feed.includeVehicleIdsFile || "",
     EXCLUDE_VEHICLE_IDS_FILE: feed.excludeVehicleIdsFile || ""
   });

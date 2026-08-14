@@ -14,6 +14,7 @@ const MAP_FILE = resolve(process.env.MAP_FILE || "public/url-map.json");
 const REPORT_FILE = resolve(process.env.REPORT_FILE || "public/feed-report.json");
 const URL_BRANCH_ID = process.env.URL_BRANCH_ID || "";
 const CUSTOM_LABEL_1 = process.env.CUSTOM_LABEL_1 || "";
+const INCLUDE_TITLE_PATTERN = process.env.INCLUDE_TITLE_PATTERN || "";
 const MIN_INVENTORY_CARDS = Number(process.env.MIN_INVENTORY_CARDS || "40");
 const MIN_FEED_MATCH_RATE = Number(process.env.MIN_FEED_MATCH_RATE || "0.9");
 const USER_AGENT = "AvonCityFordFeedUpdater/1.0 (+https://www.avoncityford.com)";
@@ -208,10 +209,12 @@ async function main() {
   const unmatched = [];
   const urlMap = {};
 
+  const includeTitleRegex = INCLUDE_TITLE_PATTERN ? new RegExp(INCLUDE_TITLE_PATTERN, "i") : null;
   const sourceRecords = records.filter((record) => {
     const reference = String(record.vehicle_id || "").trim();
     if (includeVehicleIds.size && !includeVehicleIds.has(reference)) return false;
     if (excludeVehicleIds.has(reference)) return false;
+    if (includeTitleRegex && !includeTitleRegex.test(record.title || record.description || "")) return false;
     return true;
   });
 
@@ -255,6 +258,7 @@ async function main() {
     acf_inventory_url: ACF_SEARCH_URL,
     url_branch_id: URL_BRANCH_ID || null,
     custom_label_1: CUSTOM_LABEL_1 || null,
+    include_title_pattern: INCLUDE_TITLE_PATTERN || null,
     upstream_vehicles: sourceRecords.length,
     source_vehicles_before_filter: records.length,
     include_vehicle_ids_file: INCLUDE_VEHICLE_IDS_FILE || null,
