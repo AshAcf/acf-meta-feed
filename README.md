@@ -32,7 +32,7 @@ Rangiora stock URLs are published with branch `1077`.
 Until Autoplay's new Rangiora yard assignment is fully populated, `config/rangiora-vehicle-ids.txt` controls which vehicle IDs are treated as Rangiora stock. Those IDs are excluded from the ACF feed and included in the Rangiora feed.
 Rangiora vehicles also receive `custom_label_1 = RANGIORA` so Meta product sets can filter Rangiora automatically without a manual Vehicle ID list.
 
-The Best Ever Runout feed automatically selects discounted live 2025/2026 Ford Everest stock and discounted 2025/2026 Ranger Wildtrak or Platinum stock from the new/demo feed. Vehicles no longer present in the live inventory are omitted automatically.
+The Best Ever Runout feed automatically selects discounted new Ford Ranger Wildtrak Bi-Turbo and Ford Everest Sport Bi-Turbo stock. Vehicles no longer present in the live inventory are omitted automatically.
 
 ## One-time GitHub setup
 

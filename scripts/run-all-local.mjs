@@ -27,10 +27,11 @@ const feeds = [
     mapFile: "public/best-ever-runout-url-map.json",
     reportFile: "public/best-ever-runout-feed-report.json",
     searchFile: "cache/acf-new-demo-current.html",
-    searchUrl: "https://www.avoncityford.com/vehicles/search?Condition=1&Condition=2",
+    searchUrl: "https://www.avoncityford.com/vehicles/search?Condition=1",
     matchTitleOnly: true,
     requireSalePrice: true,
-    includeTitlePattern: "^(?:2025|2026) Ford (?:Everest\\b|Ranger .*\\b(?:Wildtrak|Platinum)\\b)"
+    includeYardPattern: "^New Cars$",
+    includeTitlePattern: "^2026 Ford (?:Ranger Wildtrak .*Bi[ -]?Turbo|Everest Sport .*Bi[ -]?Turbo)"
   }
 ];
 
@@ -70,6 +71,7 @@ for (const feed of feeds) {
     INCLUDE_TITLE_PATTERN: feed.includeTitlePattern || "",
     MATCH_TITLE_ONLY: feed.matchTitleOnly ? "1" : "",
     REQUIRE_SALE_PRICE: feed.requireSalePrice ? "1" : "",
+    INCLUDE_YARD_PATTERN: feed.includeYardPattern || "",
     INCLUDE_VEHICLE_IDS_FILE: feed.includeVehicleIdsFile || "",
     EXCLUDE_VEHICLE_IDS_FILE: feed.excludeVehicleIdsFile || ""
   });
