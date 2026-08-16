@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14T04:00:33.027Z",
+  "generated_at": "2026-08-16T20:56:06.546Z",
   "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684,13928,13929,13930&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
   "url_branch_id": null,
@@ -8,50 +8,23 @@
   "include_yard_pattern": null,
   "match_title_only": false,
   "require_sale_price": false,
-  "upstream_vehicles": 54,
-  "source_vehicles_before_filter": 67,
+  "allow_empty_source": false,
+  "upstream_vehicles": 53,
+  "source_vehicles_before_filter": 65,
   "include_vehicle_ids_file": null,
   "exclude_vehicle_ids_file": "config/rangiora-vehicle-ids.txt",
-  "published_vehicles": 49,
-  "match_rate": 0.9074074074074074,
-  "matched_by_title_and_mileage": 49,
+  "published_vehicles": 52,
+  "match_rate": 0.9811320754716981,
+  "matched_by_title_and_mileage": 52,
   "matched_by_title_only": null,
   "unmatched": [
-    {
-      "vehicle_id": "95521",
-      "title": "2026 Ford Everest New Gen Sport 4WD 2.0 Bi Turbo 7str",
-      "mileage": "13960",
-      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3944945",
-      "candidate_count": 0
-    },
     {
       "vehicle_id": "95546",
       "title": "2019 Hyundai iMax 2.5 Crdi Auto 8 Seater",
       "mileage": "95919",
       "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3950294",
       "candidate_count": 0
-    },
-    {
-      "vehicle_id": "95578",
-      "title": "2023 Ford Puma ST Line 1.0L Mild Hybrid",
-      "mileage": "77065",
-      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3961101",
-      "candidate_count": 0
-    },
-    {
-      "vehicle_id": "95549",
-      "title": "2024 Ford Ranger New Gen Tremor 4WD 2.0 Bi Turbo 10spd",
-      "mileage": "35779",
-      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3962818",
-      "candidate_count": 0
-    },
-    {
-      "vehicle_id": "95548",
-      "title": "2026 Ford Ranger New Gen XLT 4WD 2.0 Bi Turbo 10spd",
-      "mileage": "5267",
-      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3962899",
-      "candidate_count": 0
     }
   ],
-  "inventory_cards_found": 115
+  "inventory_cards_found": 117
 }
