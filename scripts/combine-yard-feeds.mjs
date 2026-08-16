@@ -1,4 +1,4 @@
-import { readFile, writeFile } from "node:fs/promises";
+import { mkdir, readFile, writeFile } from "node:fs/promises";
 
 const files = [
   "public/yard-1684-used.csv",
@@ -31,6 +31,11 @@ function cell(value) { return `"${String(value ?? "").replaceAll('"', '""')}"`; 
 const parsed = await Promise.all(files.map(async (file) => rows(await readFile(file, "utf8"))));
 const headers = parsed[0][0];
 const idIndex = headers.indexOf("vehicle_id");
+const modelIndex = headers.indexOf("model");
+const titleIndex = headers.indexOf("title");
+const descriptionIndex = headers.indexOf("description");
+const fuelTypeIndex = headers.indexOf("fueltype");
+const imageIndex = headers.indexOf("image[0].url");
 const seen = new Set();
 const records = parsed.flatMap((table) => table.slice(1)).filter((record) => {
   const id = record[idIndex];
@@ -40,4 +45,19 @@ const records = parsed.flatMap((table) => table.slice(1)).filter((record) => {
 });
 await writeFile("public/all-yards-meta-feed.csv", [headers, ...records].map((row) => row.map(cell).join(",")).join("\r\n") + "\r\n", "utf8");
 await writeFile("public/all-yards-feed-report.json", JSON.stringify({ generated_at: new Date().toISOString(), source_files: files, published_vehicles: records.length }, null, 2) + "\n", "utf8");
-console.log(JSON.stringify({ combined_yards: files.length, published_vehicles: records.length }, null, 2));
+
+function isHybrid(record) {
+  const text = [record[modelIndex], record[titleIndex], record[descriptionIndex], record[fuelTypeIndex]].join(" ");
+  return /\bPuma\b|\bEscape\b|Stormtrak|XLT.*Hybrid|Wildtrak.*Hybrid|Hybrid|MHEV|FHEV|PHEV|Plug[ -]?In/i.test(text);
+}
+
+const hybridRecords = records.filter(isHybrid);
+await mkdir("public/images/hybrid-vehicles", { recursive: true });
+const mirroredImages = await Promise.all(hybridRecords.map(async (record) => {
+  const response = await fetch(record[imageIndex]);
+  if (!response.ok) throw new Error(`Hybrid image request failed (${response.status}) for vehicle ${record[idIndex]}.`);
+  await writeFile(`public/images/hybrid-vehicles/${record[idIndex]}.jpg`, Buffer.from(await response.arrayBuffer()));
+  return record[idIndex];
+}));
+
+console.log(JSON.stringify({ combined_yards: files.length, published_vehicles: records.length, mirrored_hybrid_images: mirroredImages.length }, null, 2));
