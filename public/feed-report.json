@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-17T21:00:26.654Z",
+  "generated_at": "2026-08-18T00:00:31.186Z",
   "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684,13928,13929,13930&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
   "url_branch_id": null,
@@ -9,13 +9,13 @@
   "match_title_only": false,
   "require_sale_price": false,
   "allow_empty_source": false,
-  "upstream_vehicles": 54,
-  "source_vehicles_before_filter": 66,
+  "upstream_vehicles": 56,
+  "source_vehicles_before_filter": 68,
   "include_vehicle_ids_file": null,
   "exclude_vehicle_ids_file": "config/rangiora-vehicle-ids.txt",
-  "published_vehicles": 53,
-  "match_rate": 0.9814814814814815,
-  "matched_by_title_and_mileage": 53,
+  "published_vehicles": 52,
+  "match_rate": 0.9285714285714286,
+  "matched_by_title_and_mileage": 52,
   "matched_by_title_only": null,
   "unmatched": [
     {
@@ -23,6 +23,27 @@
       "title": "2019 Hyundai iMax 2.5 Crdi Auto 8 Seater",
       "mileage": "95919",
       "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3950294",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "95585",
+      "title": "2013 Ford Ranger PX 4WD 3.2TDiesel 6 spd Manual",
+      "mileage": "82339",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3963881",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "95588",
+      "title": "2024 Ford Mustang Dark Horse 5.0 V8 500hp 10spd Auto",
+      "mileage": "6973",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3963893",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "95569",
+      "title": "2019 Ford Ranger Wildtrak 2.0D/4Wd",
+      "mileage": "0",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3965680",
       "candidate_count": 0
     }
   ],
