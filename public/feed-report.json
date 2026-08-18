@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-18T04:00:45.914Z",
+  "generated_at": "2026-08-18T22:44:36.529Z",
   "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684,13928,13929,13930&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
   "url_branch_id": null,
@@ -9,43 +9,36 @@
   "match_title_only": false,
   "require_sale_price": false,
   "allow_empty_source": false,
-  "upstream_vehicles": 55,
-  "source_vehicles_before_filter": 66,
+  "upstream_vehicles": 54,
+  "source_vehicles_before_filter": 64,
   "include_vehicle_ids_file": null,
   "exclude_vehicle_ids_file": "config/rangiora-vehicle-ids.txt",
   "published_vehicles": 51,
-  "match_rate": 0.9272727272727272,
+  "match_rate": 0.9444444444444444,
   "matched_by_title_and_mileage": 51,
   "matched_by_title_only": null,
   "unmatched": [
+    {
+      "vehicle_id": "95035",
+      "title": "2025 Ford Everest New Gen Sport 4WD 2.0 Bi Turbo ON SALE",
+      "mileage": "17000",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3753424",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "95141",
+      "title": "2025 Ford Everest New Gen Sport 4WD 2.0 Bi Turbo 10spd ON SALE",
+      "mileage": "17000",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3780235",
+      "candidate_count": 0
+    },
     {
       "vehicle_id": "95546",
       "title": "2019 Hyundai iMax 2.5 Crdi Auto 8 Seater",
       "mileage": "95919",
       "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3950294",
       "candidate_count": 0
-    },
-    {
-      "vehicle_id": "95577",
-      "title": "2023 Ford Puma ST-Line 1.0L Mild Hybrid",
-      "mileage": "83784",
-      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3962895",
-      "candidate_count": 0
-    },
-    {
-      "vehicle_id": "95585",
-      "title": "2013 Ford Ranger PX 4WD 3.2TDiesel 6 spd Manual",
-      "mileage": "82339",
-      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3963881",
-      "candidate_count": 0
-    },
-    {
-      "vehicle_id": "95588",
-      "title": "2024 Ford Mustang Dark Horse 5.0 V8 500hp 10spd Auto",
-      "mileage": "6973",
-      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3963893",
-      "candidate_count": 0
     }
   ],
-  "inventory_cards_found": 115
+  "inventory_cards_found": 114
 }
