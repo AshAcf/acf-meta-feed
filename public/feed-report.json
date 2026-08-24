@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T00:00:23.303Z",
+  "generated_at": "2026-08-24T21:03:40.226Z",
   "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684,13928,13929,13930&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
   "url_branch_id": null,
@@ -9,13 +9,13 @@
   "match_title_only": false,
   "require_sale_price": false,
   "allow_empty_source": false,
-  "upstream_vehicles": 49,
-  "source_vehicles_before_filter": 59,
+  "upstream_vehicles": 50,
+  "source_vehicles_before_filter": 60,
   "include_vehicle_ids_file": null,
   "exclude_vehicle_ids_file": "config/rangiora-vehicle-ids.txt",
-  "published_vehicles": 46,
-  "match_rate": 0.9387755102040817,
-  "matched_by_title_and_mileage": 46,
+  "published_vehicles": 49,
+  "match_rate": 0.98,
+  "matched_by_title_and_mileage": 49,
   "matched_by_title_only": null,
   "unmatched": [
     {
@@ -24,21 +24,7 @@
       "mileage": "95919",
       "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3950294",
       "candidate_count": 0
-    },
-    {
-      "vehicle_id": "95567",
-      "title": "2016 Kia Sportage Urban EX 2.0 litre 6spd Auto NZ New",
-      "mileage": "133471",
-      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3967799",
-      "candidate_count": 0
-    },
-    {
-      "vehicle_id": "95582",
-      "title": "2019 Ford Ranger PX3 XLT 4WD 3.2TD 6spd Auto",
-      "mileage": "219728",
-      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3967813",
-      "candidate_count": 0
     }
   ],
-  "inventory_cards_found": 105
+  "inventory_cards_found": 107
 }
