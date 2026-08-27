@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-27T00:00:21.863Z",
+  "generated_at": "2026-08-27T07:58:58.076Z",
   "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684,13928,13929,13930&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
   "url_branch_id": null,
@@ -9,13 +9,13 @@
   "match_title_only": false,
   "require_sale_price": false,
   "allow_empty_source": false,
-  "upstream_vehicles": 56,
-  "source_vehicles_before_filter": 65,
+  "upstream_vehicles": 53,
+  "source_vehicles_before_filter": 62,
   "include_vehicle_ids_file": null,
   "exclude_vehicle_ids_file": "config/rangiora-vehicle-ids.txt",
-  "published_vehicles": 51,
-  "match_rate": 0.9107142857142857,
-  "matched_by_title_and_mileage": 51,
+  "published_vehicles": 49,
+  "match_rate": 0.9245283018867925,
+  "matched_by_title_and_mileage": 49,
   "matched_by_title_only": null,
   "unmatched": [
     {
@@ -37,13 +37,6 @@
       "title": "2018 Mitsubishi Outlander LS 2.4L CVT 7 Seater NZ New",
       "mileage": "119550",
       "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3972046",
-      "candidate_count": 0
-    },
-    {
-      "vehicle_id": "95581",
-      "title": "2023 Ford Puma St-Line 1.0Pmh",
-      "mileage": "0",
-      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3980183",
       "candidate_count": 0
     },
     {
