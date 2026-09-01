@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14T04:20:52.802Z",
+  "generated_at": "2026-09-01T00:52:49.094Z",
   "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1685&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
   "url_branch_id": null,
@@ -9,29 +9,64 @@
   "match_title_only": true,
   "require_sale_price": false,
   "allow_empty_source": false,
-  "upstream_vehicles": 43,
-  "source_vehicles_before_filter": 43,
+  "upstream_vehicles": 39,
+  "source_vehicles_before_filter": 39,
   "include_vehicle_ids_file": null,
   "exclude_vehicle_ids_file": null,
-  "published_vehicles": 41,
-  "match_rate": 0.9534883720930233,
+  "published_vehicles": 32,
+  "match_rate": 0.8205128205128205,
   "matched_by_title_and_mileage": null,
-  "matched_by_title_only": 41,
+  "matched_by_title_only": 32,
   "unmatched": [
     {
-      "vehicle_id": "165685",
-      "title": "2026 Ford Everest Tremor  3.0 V6 Turbo Diesel 7 Seater SUV",
+      "vehicle_id": "165135",
+      "title": "2026 Ford Transit Tourneo Custom Sport Mini Bus",
       "mileage": "100",
-      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3962939",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3758550",
       "candidate_count": 0
     },
     {
-      "vehicle_id": "165683",
-      "title": "2026 Ford Everest Tremor  3.0 V6 Turbo Diesel 7 Seater SUV",
+      "vehicle_id": "165180",
+      "title": "2026 Ford Mustang 5.0L V8 GT Fastback",
       "mileage": "100",
-      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3962957",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3762551",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "165612",
+      "title": "2026 Ford Ranger Platinum 3.0 V6 Turbo Diesel 4WD",
+      "mileage": "100",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3933467",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "165637",
+      "title": "2026 Ford Ranger XLT 2.0L Turbo Diesel Double cab 2WD",
+      "mileage": "100",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3937953",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "165682",
+      "title": "2026 Ford Everest Sport 3.0 V6 Turbo Diesel 7 Seater SUV",
+      "mileage": "100",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3959047",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "165687",
+      "title": "2026 Ford Ranger Wildtrak 3.0L V6 Diesel 4WD",
+      "mileage": "100",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3960103",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "165693",
+      "title": "2026 Ford Ranger Tremor 3.0 Turbo Diesel V6 Double cab 4WD",
+      "mileage": "100",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3981597",
       "candidate_count": 0
     }
   ],
-  "inventory_cards_found": 115
+  "inventory_cards_found": 87
 }

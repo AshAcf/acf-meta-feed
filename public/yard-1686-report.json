@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14T04:20:54.438Z",
+  "generated_at": "2026-09-01T00:52:50.722Z",
   "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1686&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
   "url_branch_id": null,
@@ -13,10 +13,25 @@
   "source_vehicles_before_filter": 10,
   "include_vehicle_ids_file": null,
   "exclude_vehicle_ids_file": null,
-  "published_vehicles": 10,
-  "match_rate": 1,
+  "published_vehicles": 8,
+  "match_rate": 0.8,
   "matched_by_title_and_mileage": null,
-  "matched_by_title_only": 10,
-  "unmatched": [],
-  "inventory_cards_found": 115
+  "matched_by_title_only": 8,
+  "unmatched": [
+    {
+      "vehicle_id": "165177",
+      "title": "2026 Ford Mustang V8 GT Mustang Black Edition / RTR",
+      "mileage": "100",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3864393",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "708789",
+      "title": "2026 Ford Ranger XLT 2.0 Bi Turbo Diesel Double cab 4WD",
+      "mileage": "9421",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3917314",
+      "candidate_count": 0
+    }
+  ],
+  "inventory_cards_found": 87
 }

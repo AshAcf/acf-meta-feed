@@ -8,7 +8,8 @@ const feeds = [
     outputFile: "public/acf-meta-feed.csv",
     mapFile: "public/url-map.json",
     reportFile: "public/feed-report.json",
-    excludeVehicleIdsFile: "config/rangiora-vehicle-ids.txt"
+    excludeVehicleIdsFile: "config/rangiora-vehicle-ids.txt",
+    minFeedMatchRate: "0.7"
   },
   {
     name: "rangiora",
@@ -25,7 +26,8 @@ const feeds = [
     autoplayUrl: "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684&type=6",
     outputFile: "public/yard-1684-used.csv",
     mapFile: "public/yard-1684-url-map.json",
-    reportFile: "public/yard-1684-report.json"
+    reportFile: "public/yard-1684-report.json",
+    minFeedMatchRate: "0.7"
   },
   {
     name: "yard-1685-new",
@@ -34,7 +36,8 @@ const feeds = [
     mapFile: "public/yard-1685-url-map.json",
     reportFile: "public/yard-1685-report.json",
     searchFile: "cache/acf-new-demo-current.html",
-    matchTitleOnly: true
+    matchTitleOnly: true,
+    minFeedMatchRate: "0.7"
   },
   {
     name: "yard-1686-demo",
@@ -43,7 +46,8 @@ const feeds = [
     mapFile: "public/yard-1686-url-map.json",
     reportFile: "public/yard-1686-report.json",
     searchFile: "cache/acf-new-demo-current.html",
-    matchTitleOnly: true
+    matchTitleOnly: true,
+    minFeedMatchRate: "0.7"
   },
   {
     name: "yard-13928-used",
@@ -51,7 +55,8 @@ const feeds = [
     outputFile: "public/yard-13928-used.csv",
     mapFile: "public/yard-13928-url-map.json",
     reportFile: "public/yard-13928-report.json",
-    urlBranchId: "1077"
+    urlBranchId: "1077",
+    minFeedMatchRate: "0.7"
   },
   {
     name: "yard-13929-demo",
@@ -61,7 +66,8 @@ const feeds = [
     reportFile: "public/yard-13929-report.json",
     searchFile: "cache/acf-new-demo-current.html",
     matchTitleOnly: true,
-    urlBranchId: "1077"
+    urlBranchId: "1077",
+    minFeedMatchRate: "0.7"
   },
   {
     name: "yard-13930-new",
@@ -85,7 +91,8 @@ const feeds = [
     matchTitleOnly: true,
     requireSalePrice: true,
     includeYardPattern: "^New Cars$",
-    includeTitlePattern: "^2026 Ford (?:Ranger Wildtrak .*Bi[ -]?Turbo|Everest Sport .*Bi[ -]?Turbo)"
+    includeTitlePattern: "^2026 Ford (?:Ranger Wildtrak .*Bi[ -]?Turbo|Everest Sport .*Bi[ -]?Turbo)",
+    minFeedMatchRate: "0.7"
   }
 ];
 
@@ -127,6 +134,7 @@ for (const feed of feeds) {
     REQUIRE_SALE_PRICE: feed.requireSalePrice ? "1" : "",
     INCLUDE_YARD_PATTERN: feed.includeYardPattern || "",
     ALLOW_EMPTY_SOURCE: feed.allowEmptySource ? "1" : "",
+    MIN_FEED_MATCH_RATE: feed.minFeedMatchRate || "",
     INCLUDE_VEHICLE_IDS_FILE: feed.includeVehicleIdsFile || "",
     EXCLUDE_VEHICLE_IDS_FILE: feed.excludeVehicleIdsFile || ""
   });

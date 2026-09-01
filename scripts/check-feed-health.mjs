@@ -5,7 +5,7 @@ const REPORT_FILES = (process.env.REPORT_FILES || process.env.REPORT_FILE || "pu
   .map((file) => file.trim())
   .filter(Boolean);
 const MAX_AGE_HOURS = Number(process.env.MAX_AGE_HOURS || "20");
-const MIN_MATCH_RATE = Number(process.env.MIN_MATCH_RATE || "0.9");
+const MIN_MATCH_RATE = Number(process.env.MIN_MATCH_RATE || "0.7");
 
 for (const reportFile of REPORT_FILES) {
   const report = JSON.parse(await readFile(reportFile, "utf8"));

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-31T04:00:48.978Z",
+  "generated_at": "2026-09-01T00:52:33.748Z",
   "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684,13928,13929,13930&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
   "url_branch_id": null,
@@ -9,22 +9,106 @@
   "match_title_only": false,
   "require_sale_price": false,
   "allow_empty_source": false,
-  "upstream_vehicles": 53,
-  "source_vehicles_before_filter": 62,
+  "upstream_vehicles": 52,
+  "source_vehicles_before_filter": 60,
   "include_vehicle_ids_file": null,
   "exclude_vehicle_ids_file": "config/rangiora-vehicle-ids.txt",
-  "published_vehicles": 52,
-  "match_rate": 0.9811320754716981,
-  "matched_by_title_and_mileage": 52,
+  "published_vehicles": 39,
+  "match_rate": 0.75,
+  "matched_by_title_and_mileage": 39,
   "matched_by_title_only": null,
   "unmatched": [
+    {
+      "vehicle_id": "95410",
+      "title": "2025 Ford Ranger New Gen Sport 4WD 2.0 Bi Turbo 10spd SALE",
+      "mileage": "25715",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3888607",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "95400",
+      "title": "2021 Ford Everest Sport 4WD 2.0L Bi-Turbo 7-Seater ON SALE",
+      "mileage": "80891",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3889843",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "QFB273",
+      "title": "2023 Ford Ranger New Gen Wildtrak 4WD 3.0TD V6 ON SALE",
+      "mileage": "64416",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3899006",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "95465",
+      "title": "2023 Ford Everest New Gen Platinum 4WD 3.0V6 TD 7 Seater",
+      "mileage": "88450",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3921338",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "95455",
+      "title": "2025 Ford Ranger New Gen Wildtrak 4WD 3.0L V6 TD 10spd",
+      "mileage": "28670",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3935758",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "95526",
+      "title": "2024 Ford Ranger New Gen Sport 4WD 2.0 Bi Turbo 10spd",
+      "mileage": "29561",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3937817",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "95522",
+      "title": "2026 Ford Everest New Gen Wildtrak 4WD 3.0TD V6",
+      "mileage": "11645",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3941923",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "95520",
+      "title": "2026 Ford Everest New Gen Sport 4WD 2.0 Bi Turbo 10spd 7 str",
+      "mileage": "16943",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3945061",
+      "candidate_count": 0
+    },
     {
       "vehicle_id": "95546",
       "title": "2019 Hyundai iMax 2.5 Crdi Auto 8 Seater",
       "mileage": "95919",
       "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3950294",
       "candidate_count": 0
+    },
+    {
+      "vehicle_id": "95547",
+      "title": "2025 Ford Everest New Gen Trend 4WD 2.0 Bi Turbo 7 seater",
+      "mileage": "16780",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3961072",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "95588",
+      "title": "2024 Ford Mustang Dark Horse 5.0 V8 500hp 10spd Auto",
+      "mileage": "6973",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3963893",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "95582",
+      "title": "2019 Ford Ranger PX3 XLT 4WD 3.2TD 6spd Auto",
+      "mileage": "219728",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3967813",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "95568",
+      "title": "2018 Mitsubishi Outlander LS 2.4L CVT 7 Seater NZ New",
+      "mileage": "119550",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3972046",
+      "candidate_count": 0
     }
   ],
-  "inventory_cards_found": 110
+  "inventory_cards_found": 87
 }

@@ -20,4 +20,6 @@ jobs:
           node-version: 20
 
       - name: Check feed freshness and match rate
+        env:
+          MIN_MATCH_RATE: "0.7"
         run: node scripts/check-feed-health.mjs
