@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T04:00:43.940Z",
+  "generated_at": "2026-09-02T22:55:52.234Z",
   "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684,13928,13929,13930&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
   "url_branch_id": "1077",
@@ -10,21 +10,13 @@
   "require_sale_price": false,
   "allow_empty_source": false,
   "upstream_vehicles": 18,
-  "source_vehicles_before_filter": 60,
+  "source_vehicles_before_filter": 63,
   "include_vehicle_ids_file": "config/rangiora-vehicle-ids.txt",
   "exclude_vehicle_ids_file": null,
-  "published_vehicles": 17,
-  "match_rate": 0.9444444444444444,
-  "matched_by_title_and_mileage": 17,
+  "published_vehicles": 18,
+  "match_rate": 1,
+  "matched_by_title_and_mileage": 18,
   "matched_by_title_only": null,
-  "unmatched": [
-    {
-      "vehicle_id": "95599",
-      "title": "2018 Nissan Navara RX 2WD Tipper flat deck",
-      "mileage": "143666",
-      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3984825",
-      "candidate_count": 0
-    }
-  ],
-  "inventory_cards_found": 109
+  "unmatched": [],
+  "inventory_cards_found": 111
 }
