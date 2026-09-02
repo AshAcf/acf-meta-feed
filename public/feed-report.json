@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T00:52:33.748Z",
+  "generated_at": "2026-09-02T03:08:38.293Z",
   "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684,13928,13929,13930&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
   "url_branch_id": null,
@@ -9,13 +9,13 @@
   "match_title_only": false,
   "require_sale_price": false,
   "allow_empty_source": false,
-  "upstream_vehicles": 52,
+  "upstream_vehicles": 42,
   "source_vehicles_before_filter": 60,
   "include_vehicle_ids_file": null,
   "exclude_vehicle_ids_file": "config/rangiora-vehicle-ids.txt",
-  "published_vehicles": 39,
-  "match_rate": 0.75,
-  "matched_by_title_and_mileage": 39,
+  "published_vehicles": 28,
+  "match_rate": 0.6666666666666666,
+  "matched_by_title_and_mileage": 28,
   "matched_by_title_only": null,
   "unmatched": [
     {
@@ -37,13 +37,6 @@
       "title": "2023 Ford Ranger New Gen Wildtrak 4WD 3.0TD V6 ON SALE",
       "mileage": "64416",
       "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3899006",
-      "candidate_count": 0
-    },
-    {
-      "vehicle_id": "95465",
-      "title": "2023 Ford Everest New Gen Platinum 4WD 3.0V6 TD 7 Seater",
-      "mileage": "88450",
-      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3921338",
       "candidate_count": 0
     },
     {
@@ -107,6 +100,20 @@
       "title": "2018 Mitsubishi Outlander LS 2.4L CVT 7 Seater NZ New",
       "mileage": "119550",
       "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3972046",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "95614",
+      "title": "2020 Ford Focus ST-Line X 1.5L EcoBoost",
+      "mileage": "72129",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3984054",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "95608",
+      "title": "2026 Ford Escape Titanium 2.5L Full Hybrid",
+      "mileage": "2517",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3984060",
       "candidate_count": 0
     }
   ],
