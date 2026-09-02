@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T03:08:45.010Z",
+  "generated_at": "2026-09-02T04:00:43.940Z",
   "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684,13928,13929,13930&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
   "url_branch_id": "1077",
@@ -13,18 +13,11 @@
   "source_vehicles_before_filter": 60,
   "include_vehicle_ids_file": "config/rangiora-vehicle-ids.txt",
   "exclude_vehicle_ids_file": null,
-  "published_vehicles": 16,
-  "match_rate": 0.8888888888888888,
-  "matched_by_title_and_mileage": 16,
+  "published_vehicles": 17,
+  "match_rate": 0.9444444444444444,
+  "matched_by_title_and_mileage": 17,
   "matched_by_title_only": null,
   "unmatched": [
-    {
-      "vehicle_id": "95465",
-      "title": "2023 Ford Everest New Gen Platinum 4WD 3.0V6 TD 7 Seater",
-      "mileage": "88450",
-      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3921338",
-      "candidate_count": 0
-    },
     {
       "vehicle_id": "95599",
       "title": "2018 Nissan Navara RX 2WD Tipper flat deck",
@@ -33,5 +26,5 @@
       "candidate_count": 0
     }
   ],
-  "inventory_cards_found": 87
+  "inventory_cards_found": 109
 }
