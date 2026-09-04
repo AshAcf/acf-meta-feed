@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-04T04:00:28.152Z",
+  "generated_at": "2026-09-04T21:00:28.523Z",
   "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684,13928,13929,13930&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
   "url_branch_id": null,
@@ -13,46 +13,18 @@
   "source_vehicles_before_filter": 66,
   "include_vehicle_ids_file": null,
   "exclude_vehicle_ids_file": "config/rangiora-vehicle-ids.txt",
-  "published_vehicles": 43,
-  "match_rate": 0.8958333333333334,
-  "matched_by_title_and_mileage": 43,
+  "published_vehicles": 47,
+  "match_rate": 0.9791666666666666,
+  "matched_by_title_and_mileage": 47,
   "matched_by_title_only": null,
   "unmatched": [
-    {
-      "vehicle_id": "95183",
-      "title": "2025 Ford Everest New Gen Sport 4WD 2.0 Bi Turbo 7str",
-      "mileage": "16000",
-      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3802831",
-      "candidate_count": 0
-    },
     {
       "vehicle_id": "95546",
       "title": "2019 Hyundai iMax 2.5 Crdi Auto 8 Seater",
       "mileage": "95919",
       "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3950294",
       "candidate_count": 0
-    },
-    {
-      "vehicle_id": "95621",
-      "title": "2022 Ford Ranger PX3 Ranger XL 4WD 3.2TD",
-      "mileage": "43880",
-      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3985953",
-      "candidate_count": 0
-    },
-    {
-      "vehicle_id": "95624",
-      "title": "2024 Mitsubishi Triton GLXR 4WD 2.4 Bi Turbo Diesel 6spd Auto",
-      "mileage": "74233",
-      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3987145",
-      "candidate_count": 0
-    },
-    {
-      "vehicle_id": "95636",
-      "title": "2024 Ford Ranger New Gen XLT 2WD 2.0 Bi Turbo 10spd",
-      "mileage": "26751",
-      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3988581",
-      "candidate_count": 0
     }
   ],
-  "inventory_cards_found": 114
+  "inventory_cards_found": 112
 }
