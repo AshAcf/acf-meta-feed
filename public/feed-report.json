@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09T04:00:28.911Z",
+  "generated_at": "2026-09-09T21:00:27.134Z",
   "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684,13928,13929,13930&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
   "url_branch_id": null,
@@ -9,43 +9,22 @@
   "match_title_only": false,
   "require_sale_price": false,
   "allow_empty_source": false,
-  "upstream_vehicles": 48,
-  "source_vehicles_before_filter": 66,
+  "upstream_vehicles": 47,
+  "source_vehicles_before_filter": 65,
   "include_vehicle_ids_file": null,
   "exclude_vehicle_ids_file": "config/rangiora-vehicle-ids.txt",
-  "published_vehicles": 44,
-  "match_rate": 0.9166666666666666,
-  "matched_by_title_and_mileage": 44,
+  "published_vehicles": 46,
+  "match_rate": 0.9787234042553191,
+  "matched_by_title_and_mileage": 46,
   "matched_by_title_only": null,
   "unmatched": [
-    {
-      "vehicle_id": "95035",
-      "title": "2025 Ford Everest New Gen Sport 4WD 2.0 Bi Turbo",
-      "mileage": "16555",
-      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3753424",
-      "candidate_count": 0
-    },
-    {
-      "vehicle_id": "95486",
-      "title": "2026 Ford Everest New Gen Sport 4WD 2.0 Bi Turbo 7 Str 10spd",
-      "mileage": "15901",
-      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3919233",
-      "candidate_count": 0
-    },
     {
       "vehicle_id": "95546",
       "title": "2019 Hyundai iMax 2.5 Crdi Auto 8 Seater",
       "mileage": "95919",
       "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3950294",
       "candidate_count": 0
-    },
-    {
-      "vehicle_id": "95644",
-      "title": "2026 Ford Everest New Gen Wildtrak 4WD 3.0V6 TD 7 seater",
-      "mileage": "13149",
-      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3992013",
-      "candidate_count": 0
     }
   ],
-  "inventory_cards_found": 104
+  "inventory_cards_found": 107
 }
