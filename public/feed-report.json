@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-10T00:00:26.577Z",
+  "generated_at": "2026-09-10T08:48:41.569Z",
   "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684,13928,13929,13930&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
   "url_branch_id": null,
@@ -10,12 +10,12 @@
   "require_sale_price": false,
   "allow_empty_source": false,
   "upstream_vehicles": 47,
-  "source_vehicles_before_filter": 65,
+  "source_vehicles_before_filter": 64,
   "include_vehicle_ids_file": null,
   "exclude_vehicle_ids_file": "config/rangiora-vehicle-ids.txt",
-  "published_vehicles": 46,
-  "match_rate": 0.9787234042553191,
-  "matched_by_title_and_mileage": 46,
+  "published_vehicles": 45,
+  "match_rate": 0.9574468085106383,
+  "matched_by_title_and_mileage": 45,
   "matched_by_title_only": null,
   "unmatched": [
     {
@@ -24,7 +24,14 @@
       "mileage": "95919",
       "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3950294",
       "candidate_count": 0
+    },
+    {
+      "vehicle_id": "95612",
+      "title": "2016 Mercedes-Benz A- Class A180 1.6 litre 7spd Auto NZ New",
+      "mileage": "70582",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3973164",
+      "candidate_count": 0
     }
   ],
-  "inventory_cards_found": 107
+  "inventory_cards_found": 106
 }
