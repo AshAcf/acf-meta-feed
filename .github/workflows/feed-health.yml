@@ -2,6 +2,14 @@ name: Monitor Meta vehicle feed
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/feed-health.yml"
+      - "scripts/check-feed-health.mjs"
+      - "public/feed-report.json"
+      - "public/rangiora-feed-report.json"
   schedule:
     - cron: "35 */3 * * *"
 
