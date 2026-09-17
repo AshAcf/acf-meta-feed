@@ -40,6 +40,13 @@ try {
     $SafePath = $ProjectRoot.Replace("\", "/")
     & $Git config --global --add safe.directory $SafePath
 
+    # Bring in harmless GitHub-side changes (for example, files uploaded in the
+    # browser) before committing the new feed so scheduled pushes do not stall.
+    & $Git pull --rebase --autostash origin main
+    if ($LASTEXITCODE -ne 0) {
+        throw "Git sync failed. Open GitHub Desktop and resolve the pending repository update."
+    }
+
     & $Git add "public/acf-meta-feed.csv" "public/url-map.json" "public/feed-report.json" "public/rangiora-meta-feed.csv" "public/rangiora-url-map.json" "public/rangiora-feed-report.json"
     & $Git diff --cached --quiet
     if ($LASTEXITCODE -eq 0) {
