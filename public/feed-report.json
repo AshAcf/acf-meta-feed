@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T21:00:32.919Z",
+  "generated_at": "2026-09-18T00:00:24.187Z",
   "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684,13928,13929,13930&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
   "url_branch_id": null,
@@ -9,13 +9,13 @@
   "match_title_only": false,
   "require_sale_price": false,
   "allow_empty_source": false,
-  "upstream_vehicles": 54,
-  "source_vehicles_before_filter": 69,
+  "upstream_vehicles": 57,
+  "source_vehicles_before_filter": 72,
   "include_vehicle_ids_file": null,
   "exclude_vehicle_ids_file": "config/rangiora-vehicle-ids.txt",
-  "published_vehicles": 53,
-  "match_rate": 0.9814814814814815,
-  "matched_by_title_and_mileage": 53,
+  "published_vehicles": 52,
+  "match_rate": 0.9122807017543859,
+  "matched_by_title_and_mileage": 52,
   "matched_by_title_only": null,
   "unmatched": [
     {
@@ -24,7 +24,35 @@
       "mileage": "95919",
       "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3950294",
       "candidate_count": 0
+    },
+    {
+      "vehicle_id": "95612",
+      "title": "2016 Mercedes-Benz A- Class A180 1.6 litre 7spd Auto NZ New",
+      "mileage": "70582",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3973164",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "95648",
+      "title": "2019 Ford Ranger PX3 XLT 4WD 3.2TD DCab 6 spd Auto",
+      "mileage": "205040",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3999262",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "QHQ653",
+      "title": "2023 Ford Escape ST-Line AWD FHEV 2.5L Hybrid",
+      "mileage": "87615",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4001744",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "95661",
+      "title": "2023 Ford Everest New Gen Sport 4WD 2.0 Bi Turbo 7 Seater 10spd",
+      "mileage": "88833",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4001788",
+      "candidate_count": 0
     }
   ],
-  "inventory_cards_found": 125
+  "inventory_cards_found": 124
 }
