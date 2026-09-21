@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T00:00:40.651Z",
+  "generated_at": "2026-09-21T04:00:49.489Z",
   "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
   "url_branch_id": null,
@@ -9,15 +9,22 @@
   "match_title_only": false,
   "require_sale_price": false,
   "allow_empty_source": false,
-  "upstream_vehicles": 52,
-  "source_vehicles_before_filter": 52,
+  "upstream_vehicles": 51,
+  "source_vehicles_before_filter": 51,
   "include_vehicle_ids_file": null,
   "exclude_vehicle_ids_file": null,
-  "published_vehicles": 51,
-  "match_rate": 0.9807692307692307,
-  "matched_by_title_and_mileage": 51,
+  "published_vehicles": 49,
+  "match_rate": 0.9607843137254902,
+  "matched_by_title_and_mileage": 49,
   "matched_by_title_only": null,
   "unmatched": [
+    {
+      "vehicle_id": "95465",
+      "title": "2023 Ford Everest New Gen Platinum 4WD 3.0 V6 TD 7 Seater",
+      "mileage": "89166",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3921338",
+      "candidate_count": 0
+    },
     {
       "vehicle_id": "95546",
       "title": "2019 Hyundai iMax 2.5 Crdi Auto 8 Seater",
