@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T04:00:40.194Z",
+  "generated_at": "2026-09-22T21:00:43.382Z",
   "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684,13928,13929,13930&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
   "url_branch_id": null,
@@ -10,14 +10,21 @@
   "require_sale_price": false,
   "allow_empty_source": false,
   "upstream_vehicles": 58,
-  "source_vehicles_before_filter": 73,
+  "source_vehicles_before_filter": 74,
   "include_vehicle_ids_file": null,
   "exclude_vehicle_ids_file": "config/rangiora-vehicle-ids.txt",
-  "published_vehicles": 57,
-  "match_rate": 0.9827586206896551,
-  "matched_by_title_and_mileage": 57,
+  "published_vehicles": 56,
+  "match_rate": 0.9655172413793104,
+  "matched_by_title_and_mileage": 56,
   "matched_by_title_only": null,
   "unmatched": [
+    {
+      "vehicle_id": "95141",
+      "title": "2025 Ford Everest New Gen Sport 4WD 2.0 Bi Turbo 10spd ON SALE",
+      "mileage": "17500",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3780235",
+      "candidate_count": 0
+    },
     {
       "vehicle_id": "95546",
       "title": "2019 Hyundai iMax 2.5 Crdi Auto 8 Seater",
@@ -26,5 +33,5 @@
       "candidate_count": 0
     }
   ],
-  "inventory_cards_found": 133
+  "inventory_cards_found": 138
 }

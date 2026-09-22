@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T04:00:48.218Z",
+  "generated_at": "2026-09-22T21:00:51.948Z",
   "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684,13928,13929,13930&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
   "url_branch_id": "1077",
@@ -9,22 +9,22 @@
   "match_title_only": false,
   "require_sale_price": false,
   "allow_empty_source": false,
-  "upstream_vehicles": 15,
-  "source_vehicles_before_filter": 73,
+  "upstream_vehicles": 16,
+  "source_vehicles_before_filter": 74,
   "include_vehicle_ids_file": "config/rangiora-vehicle-ids.txt",
   "exclude_vehicle_ids_file": null,
-  "published_vehicles": 14,
-  "match_rate": 0.9333333333333333,
-  "matched_by_title_and_mileage": 14,
+  "published_vehicles": 15,
+  "match_rate": 0.9375,
+  "matched_by_title_and_mileage": 15,
   "matched_by_title_only": null,
   "unmatched": [
     {
-      "vehicle_id": "95484",
-      "title": "2026 Ford Everest New Gen Sport 4WD 2.0 Bi Turbo 7 str ON SALE",
-      "mileage": "15665",
-      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3917996",
+      "vehicle_id": "95465",
+      "title": "2023 Ford Everest New Gen Platinum 4WD 3.0 V6 TD 7 Seater",
+      "mileage": "89166",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3921338",
       "candidate_count": 0
     }
   ],
-  "inventory_cards_found": 133
+  "inventory_cards_found": 138
 }
