@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T21:01:02.982Z",
+  "generated_at": "2026-09-23T00:01:03.931Z",
   "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1685&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
   "url_branch_id": null,
@@ -9,14 +9,29 @@
   "match_title_only": true,
   "require_sale_price": false,
   "allow_empty_source": false,
-  "upstream_vehicles": 56,
-  "source_vehicles_before_filter": 56,
+  "upstream_vehicles": 58,
+  "source_vehicles_before_filter": 58,
   "include_vehicle_ids_file": null,
   "exclude_vehicle_ids_file": null,
   "published_vehicles": 56,
-  "match_rate": 1,
+  "match_rate": 0.9655172413793104,
   "matched_by_title_and_mileage": null,
   "matched_by_title_only": 56,
-  "unmatched": [],
+  "unmatched": [
+    {
+      "vehicle_id": "139403",
+      "title": "2026 Ford Ranger STORMTRAK 2.3L PHEV Double cab 4WD",
+      "mileage": "100",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4005679",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "140095",
+      "title": "2026 Ford Ranger STORMTRAK 2.3L PHEV Double cab 4WD",
+      "mileage": "0",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4005688",
+      "candidate_count": 0
+    }
+  ],
   "inventory_cards_found": 138
 }
