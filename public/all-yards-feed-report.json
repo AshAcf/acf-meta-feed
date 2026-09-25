@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-25T00:01:05.970Z",
+  "generated_at": "2026-09-25T04:01:06.548Z",
   "source_files": [
     "public/yard-1684-used.csv",
     "public/yard-1685-new.csv",
@@ -8,5 +8,5 @@
     "public/yard-13929-demo.csv",
     "public/yard-13930-new.csv"
   ],
-  "published_vehicles": 133
+  "published_vehicles": 131
 }
