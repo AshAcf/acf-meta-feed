@@ -1,0 +1,26 @@
+{
+  "generated_at": "2026-09-25T04:35:16.073Z",
+  "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1685,1686&type=6",
+  "used_source_generated_at": [
+    "2026-09-25T04:00:28.573Z",
+    "2026-09-25T04:00:36.697Z"
+  ],
+  "published_vehicles": 131,
+  "new_demo_source_vehicles": 65,
+  "new_demo_published_vehicles": 62,
+  "unresolved": [
+    {
+      "vehicle_id": "165715",
+      "title": "2026 Ford Everest Tremor 3.0L V6 Diesel 7 Seater 4WD SUV"
+    },
+    {
+      "vehicle_id": "165742",
+      "title": "2026 Ford Everest Tremor 3.0L V6 Diesel 7 Seater 4WD SUV"
+    },
+    {
+      "vehicle_id": "165683",
+      "title": "2026 Ford Everest Tremor 3.0D/4Wd/10At"
+    }
+  ],
+  "wolftrak_vehicles": 4
+}
