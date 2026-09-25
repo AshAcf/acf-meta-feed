@@ -1,0 +1,45 @@
+name: Update website inventory feed
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '15 */3 * * *'
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/*website-feed.mjs'
+      - '.github/workflows/website-feed.yml'
+      - 'public/acf-meta-feed.csv'
+      - 'public/rangiora-meta-feed.csv'
+      - 'public/yard-1685-url-map.json'
+      - 'public/yard-1686-url-map.json'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: website-inventory-feed
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Test website normalization
+        run: node --test scripts/test-website-feed.mjs
+      - name: Generate and validate website CSV
+        run: node scripts/update-website-feed.mjs
+      - name: Publish only website outputs
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add public/acf-vehicle-feed.csv public/acf-vehicle-feed-report.json
+          git diff --cached --quiet && exit 0
+          git commit -m 'Update website inventory feed'
+          git pull --rebase origin main
+          git push origin HEAD:main
