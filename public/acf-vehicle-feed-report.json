@@ -1,17 +1,21 @@
 {
-  "generated_at": "2026-09-27T21:23:27.100Z",
+  "generated_at": "2026-09-28T00:01:50.286Z",
   "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1685,1686&type=6",
   "used_source_generated_at": [
-    "2026-09-27T21:00:25.494Z",
-    "2026-09-27T21:00:35.173Z"
+    "2026-09-28T00:00:41.765Z",
+    "2026-09-28T00:00:51.124Z"
   ],
-  "published_vehicles": 134,
-  "new_demo_source_vehicles": 66,
+  "published_vehicles": 133,
+  "new_demo_source_vehicles": 67,
   "new_demo_published_vehicles": 65,
   "unresolved": [
     {
       "vehicle_id": "165678",
       "title": "2026 Ford Ranger XLT 2.0L Turbo Diesel Double cab 2WD"
+    },
+    {
+      "vehicle_id": "165778",
+      "title": "2026 Ford Ranger XLT 2.0L Turbo Diesel Double Cab 2WD"
     }
   ],
   "wolftrak_vehicles": 4
