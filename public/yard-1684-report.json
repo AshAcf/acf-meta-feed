@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-28T00:00:56.581Z",
+  "generated_at": "2026-09-28T04:00:41.440Z",
   "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
   "url_branch_id": null,
@@ -9,20 +9,41 @@
   "match_title_only": false,
   "require_sale_price": false,
   "allow_empty_source": false,
-  "upstream_vehicles": 47,
-  "source_vehicles_before_filter": 47,
+  "upstream_vehicles": 49,
+  "source_vehicles_before_filter": 49,
   "include_vehicle_ids_file": null,
   "exclude_vehicle_ids_file": null,
-  "published_vehicles": 46,
-  "match_rate": 0.9787234042553191,
-  "matched_by_title_and_mileage": 46,
+  "published_vehicles": 45,
+  "match_rate": 0.9183673469387755,
+  "matched_by_title_and_mileage": 45,
   "matched_by_title_only": null,
   "unmatched": [
+    {
+      "vehicle_id": "95291",
+      "title": "2025 Mitsubishi Pajero Sport VRX Black Edition 4WD 2.4TDiesel 7str ON SALE",
+      "mileage": "35250",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3839633",
+      "candidate_count": 0
+    },
     {
       "vehicle_id": "95546",
       "title": "2019 Hyundai iMax 2.5 Crdi Auto 8 Seater",
       "mileage": "95919",
       "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3950294",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "95682",
+      "title": "2023 Ford Focus ST Line-X 1.0L EcoBoost 7 spd Auto",
+      "mileage": "75066",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4009689",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "95698",
+      "title": "2026 Ford Ranger New Gen Wildtrak 4WD 3.0L TD V6 10spd",
+      "mileage": "8693",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4009779",
       "candidate_count": 0
     }
   ],
