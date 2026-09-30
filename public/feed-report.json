@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T00:00:23.268Z",
+  "generated_at": "2026-09-30T04:00:45.290Z",
   "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684,13928,13929,13930&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
   "url_branch_id": null,
@@ -9,13 +9,13 @@
   "match_title_only": false,
   "require_sale_price": false,
   "allow_empty_source": false,
-  "upstream_vehicles": 53,
-  "source_vehicles_before_filter": 68,
+  "upstream_vehicles": 55,
+  "source_vehicles_before_filter": 70,
   "include_vehicle_ids_file": null,
   "exclude_vehicle_ids_file": "config/rangiora-vehicle-ids.txt",
-  "published_vehicles": 48,
-  "match_rate": 0.9056603773584906,
-  "matched_by_title_and_mileage": 48,
+  "published_vehicles": 47,
+  "match_rate": 0.8545454545454545,
+  "matched_by_title_and_mileage": 47,
   "matched_by_title_only": null,
   "unmatched": [
     {
@@ -47,12 +47,33 @@
       "candidate_count": 0
     },
     {
+      "vehicle_id": "95567",
+      "title": "2016 Kia Sportage Urban EX 2.0 litre 6spd Auto NZ New",
+      "mileage": "133471",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3967799",
+      "candidate_count": 0
+    },
+    {
       "vehicle_id": "95646",
       "title": "2023 Ford Escape ST-Line AWD FHEV 2.5L Hybrid",
       "mileage": "87615",
       "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4001744",
       "candidate_count": 0
+    },
+    {
+      "vehicle_id": "QHQ619",
+      "title": "2023 Ford Focus ST-Line X 1.0L EcoBoost Mild Hybrid",
+      "mileage": "76419",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4011753",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "95656",
+      "title": "2021 Nissan Navara ST-X 2.3TD 4WD Auto",
+      "mileage": "100390",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4011895",
+      "candidate_count": 0
     }
   ],
-  "inventory_cards_found": 136
+  "inventory_cards_found": 135
 }
