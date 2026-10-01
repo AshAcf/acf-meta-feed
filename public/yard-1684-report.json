@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T00:01:13.225Z",
+  "generated_at": "2026-10-01T07:00:25.377Z",
   "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
   "url_branch_id": null,
@@ -9,12 +9,12 @@
   "match_title_only": false,
   "require_sale_price": false,
   "allow_empty_source": false,
-  "upstream_vehicles": 50,
-  "source_vehicles_before_filter": 50,
+  "upstream_vehicles": 51,
+  "source_vehicles_before_filter": 51,
   "include_vehicle_ids_file": null,
   "exclude_vehicle_ids_file": null,
   "published_vehicles": 47,
-  "match_rate": 0.94,
+  "match_rate": 0.9215686274509803,
   "matched_by_title_and_mileage": 47,
   "matched_by_title_only": null,
   "unmatched": [
@@ -34,9 +34,16 @@
     },
     {
       "vehicle_id": "95669",
-      "title": "2025 Ford Ranger Xlt Double Cab W/Sa",
-      "mileage": "0",
+      "title": "2025 Ford Ranger New Gen XLT 4WD 2.0L",
+      "mileage": "16175",
       "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4013722",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "95708",
+      "title": "2025 Ford Ranger Wildtrak 10-Year Edition 4WD 3.0L V6",
+      "mileage": "15959",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4014063",
       "candidate_count": 0
     }
   ],
