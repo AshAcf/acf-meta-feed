@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-05T00:00:52.394Z",
+  "generated_at": "2026-10-05T21:00:56.311Z",
   "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684,13928,13929,13930&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
   "url_branch_id": null,
@@ -9,27 +9,20 @@
   "match_title_only": false,
   "require_sale_price": false,
   "allow_empty_source": false,
-  "upstream_vehicles": 60,
-  "source_vehicles_before_filter": 74,
+  "upstream_vehicles": 59,
+  "source_vehicles_before_filter": 73,
   "include_vehicle_ids_file": null,
   "exclude_vehicle_ids_file": "config/rangiora-vehicle-ids.txt",
   "published_vehicles": 58,
-  "match_rate": 0.9666666666666667,
+  "match_rate": 0.9830508474576272,
   "matched_by_title_and_mileage": 58,
   "matched_by_title_only": null,
   "unmatched": [
     {
       "vehicle_id": "95546",
-      "title": "2019 Hyundai iMax 2.5 Crdi Auto 8 Seater",
+      "title": "2019 Hyundai iMax 2.5 Crdi Auto 8 Seater ON SALE",
       "mileage": "95919",
       "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3950294",
-      "candidate_count": 0
-    },
-    {
-      "vehicle_id": "95695",
-      "title": "2024 Ford Everest New Gen Everest Sport 4WD 2.0L 7-Seater",
-      "mileage": "78680",
-      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4015395",
       "candidate_count": 0
     }
   ],
