@@ -1,13 +1,18 @@
 {
-  "generated_at": "2026-10-05T00:01:58.992Z",
+  "generated_at": "2026-10-05T05:44:28.431Z",
   "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1685,1686&type=6",
   "used_source_generated_at": [
     "2026-10-05T00:00:52.394Z",
     "2026-10-05T00:01:00.787Z"
   ],
   "published_vehicles": 133,
-  "new_demo_source_vehicles": 62,
+  "new_demo_source_vehicles": 63,
   "new_demo_published_vehicles": 62,
-  "unresolved": [],
+  "unresolved": [
+    {
+      "vehicle_id": "165697",
+      "title": "2026 Ford Ranger XL 4X4 2.0L Diesel Super Cab Chassis"
+    }
+  ],
   "wolftrak_vehicles": 4
 }
