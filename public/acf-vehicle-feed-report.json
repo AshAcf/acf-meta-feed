@@ -1,18 +1,26 @@
 {
-  "generated_at": "2026-10-05T22:02:18.195Z",
+  "generated_at": "2026-10-06T00:02:10.691Z",
   "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1685,1686&type=6",
   "used_source_generated_at": [
-    "2026-10-05T21:00:56.311Z",
-    "2026-10-05T21:01:08.084Z"
+    "2026-10-06T00:00:57.502Z",
+    "2026-10-06T00:01:06.150Z"
   ],
-  "published_vehicles": 135,
-  "new_demo_source_vehicles": 64,
-  "new_demo_published_vehicles": 63,
+  "published_vehicles": 134,
+  "new_demo_source_vehicles": 65,
+  "new_demo_published_vehicles": 62,
   "unresolved": [
     {
       "vehicle_id": "165604",
       "title": "2026 Ford Ranger XL Double Cab W/Side 4X4"
+    },
+    {
+      "vehicle_id": "165782",
+      "title": "2026 Ford Everest Sport 3.0L V6 Turbo Diesel 4WD 7 Seater SUV"
+    },
+    {
+      "vehicle_id": "165642",
+      "title": "2026 Ford Ranger Raptor 3.0L V6 Turbo Petrol 4WD"
     }
   ],
-  "wolftrak_vehicles": 4
+  "wolftrak_vehicles": 3
 }
