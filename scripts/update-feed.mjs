@@ -143,6 +143,36 @@ function displayPrice(price, salePrice) {
   return current > 0 ? "$" + current.toLocaleString("en-NZ", { maximumFractionDigits: 2 }) : "";
 }
 
+function vehicleHeadlines(record) {
+  const base = [record.year, record.make, record.model].map(value => stripTags(value)).filter(Boolean).join(" ");
+  const title = stripTags(record.variant || record.title || record.description || "");
+  // Recognise trim names explicitly; unknown specification text is never copied.
+  const trims = [
+    [/\bST[ -]?Line[ -]?X\b/i, "ST-Line X"],
+    [/\bST[ -]?Line\b/i, "ST-Line"],
+    [/\bWildtrak[ -]?X\b/i, "Wildtrak X"],
+    [/\bWildtrak\b/i, "Wildtrak"],
+    [/\bStormtrak\b/i, "Stormtrak"],
+    [/\bWolftrak\b/i, "Wolftrak"],
+    [/\bMonte Carlo\b/i, "Monte Carlo"],
+    [/\bAX7L\b/i, "AX7L"],
+    [/\bUrban EX\b/i, "Urban EX"],
+    [/\b25S Proactive\b/i, "25S Proactive"],
+    [/\bSR5 Cruiser\b/i, "SR5 Cruiser"],
+    [/\bST-X\b/i, "ST-X"],
+    [/\bST-L\b/i, "ST-L"],
+    [/\bA180\b/i, "A180"],
+    [/\b(Raptor|Platinum|Titanium|Tremor|Active|Sport|Trend|XLT|XL|Ultra|LS|RX|GT|SR5)\b/i, null]
+  ];
+  let trim = "";
+  for (const [pattern, label] of trims) {
+    const match = title.match(pattern);
+    if (match) { trim = label || match[1]; break; }
+  }
+  const powertrain = /\bPHEV\b/i.test(title) ? "PHEV" : "";
+  return { short: base, trimmed: [base, trim, powertrain].filter(Boolean).join(" ") };
+}
+
 function withBranchId(url, branchId) {
   if (!branchId) return url;
   return String(url).replace(/(\/vehicles\/stock\/\d+\/)\d+(\b|\/)/, `$1${branchId}$2`);
@@ -204,6 +234,8 @@ async function main() {
   if (!headers.includes("custom_label_0")) headers.push("custom_label_0");
   if (!headers.includes("custom_label_1")) headers.push("custom_label_1");
   if (!headers.includes("custom_label_2")) headers.push("custom_label_2");
+  if (!headers.includes("custom_label_3")) headers.push("custom_label_3");
+  if (!headers.includes("custom_label_4")) headers.push("custom_label_4");
 
   const inventory = inventoryCards(searchHtml);
   if (inventory.length < MIN_INVENTORY_CARDS) {
@@ -261,7 +293,8 @@ async function main() {
     const price = priceValue(record.price);
     const salePrice = priceValue(record.sale_price);
     const saleLabel = salePrice > 0 && (!price || salePrice < price) ? "SALE" : "";
-    return [{ ...record, URL: outputUrl, custom_label_0: saleLabel, custom_label_1: CUSTOM_LABEL_1, custom_label_2: displayPrice(price, salePrice) }];
+    const headlines = vehicleHeadlines(record);
+    return [{ ...record, URL: outputUrl, custom_label_0: saleLabel, custom_label_1: CUSTOM_LABEL_1, custom_label_2: displayPrice(price, salePrice), custom_label_3: headlines.short, custom_label_4: headlines.trimmed }];
   });
 
   if (!corrected.length && !(ALLOW_EMPTY_SOURCE && sourceRecords.length === 0)) throw new Error("No Autoplay vehicles matched the live ACF inventory. Last good feed was preserved.");
