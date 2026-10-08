@@ -138,6 +138,11 @@ function priceValue(value) {
   return number ? Number(number) : 0;
 }
 
+function displayPrice(price, salePrice) {
+  const current = salePrice > 0 && (!price || salePrice < price) ? salePrice : price;
+  return current > 0 ? "$" + current.toLocaleString("en-NZ", { maximumFractionDigits: 2 }) : "";
+}
+
 function withBranchId(url, branchId) {
   if (!branchId) return url;
   return String(url).replace(/(\/vehicles\/stock\/\d+\/)\d+(\b|\/)/, `$1${branchId}$2`);
@@ -198,6 +203,7 @@ async function main() {
   }
   if (!headers.includes("custom_label_0")) headers.push("custom_label_0");
   if (!headers.includes("custom_label_1")) headers.push("custom_label_1");
+  if (!headers.includes("custom_label_2")) headers.push("custom_label_2");
 
   const inventory = inventoryCards(searchHtml);
   if (inventory.length < MIN_INVENTORY_CARDS) {
@@ -255,7 +261,7 @@ async function main() {
     const price = priceValue(record.price);
     const salePrice = priceValue(record.sale_price);
     const saleLabel = salePrice > 0 && (!price || salePrice < price) ? "SALE" : "";
-    return [{ ...record, URL: outputUrl, custom_label_0: saleLabel, custom_label_1: CUSTOM_LABEL_1 }];
+    return [{ ...record, URL: outputUrl, custom_label_0: saleLabel, custom_label_1: CUSTOM_LABEL_1, custom_label_2: displayPrice(price, salePrice) }];
   });
 
   if (!corrected.length && !(ALLOW_EMPTY_SOURCE && sourceRecords.length === 0)) throw new Error("No Autoplay vehicles matched the live ACF inventory. Last good feed was preserved.");

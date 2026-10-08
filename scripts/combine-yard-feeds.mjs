@@ -37,7 +37,7 @@ const descriptionIndex = headers.indexOf("description");
 const fuelTypeIndex = headers.indexOf("fueltype");
 const imageIndex = headers.indexOf("image[0].url");
 const seen = new Set();
-const records = parsed.flatMap((table) => table.slice(1)).filter((record) => {
+const records = parsed.flatMap((table) => table.slice(1).map((row) => headers.map((header) => row[table[0].indexOf(header)] || ""))).filter((record) => {
   const id = record[idIndex];
   if (!id || seen.has(id)) return false;
   seen.add(id);
