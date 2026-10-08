@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T04:00:41.444Z",
+  "generated_at": "2026-10-08T21:00:42.174Z",
   "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684,13928,13929,13930&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
   "url_branch_id": "1077",
@@ -10,13 +10,21 @@
   "require_sale_price": false,
   "allow_empty_source": false,
   "upstream_vehicles": 12,
-  "source_vehicles_before_filter": 77,
+  "source_vehicles_before_filter": 78,
   "include_vehicle_ids_file": "config/rangiora-vehicle-ids.txt",
   "exclude_vehicle_ids_file": null,
-  "published_vehicles": 12,
-  "match_rate": 1,
-  "matched_by_title_and_mileage": 12,
+  "published_vehicles": 11,
+  "match_rate": 0.9166666666666666,
+  "matched_by_title_and_mileage": 11,
   "matched_by_title_only": null,
-  "unmatched": [],
-  "inventory_cards_found": 136
+  "unmatched": [
+    {
+      "vehicle_id": "95496",
+      "title": "2024 Ford Ranger Tremor 4WD 2.0 Bi Turbo 10spd ON SALE",
+      "mileage": "15288",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3919059",
+      "candidate_count": 2
+    }
+  ],
+  "inventory_cards_found": 142
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T04:00:56.512Z",
+  "generated_at": "2026-10-08T21:00:56.199Z",
   "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1685&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
   "url_branch_id": null,
@@ -13,18 +13,11 @@
   "source_vehicles_before_filter": 51,
   "include_vehicle_ids_file": null,
   "exclude_vehicle_ids_file": null,
-  "published_vehicles": 49,
-  "match_rate": 0.9607843137254902,
+  "published_vehicles": 50,
+  "match_rate": 0.9803921568627451,
   "matched_by_title_and_mileage": null,
-  "matched_by_title_only": 49,
+  "matched_by_title_only": 50,
   "unmatched": [
-    {
-      "vehicle_id": "165779",
-      "title": "2026 Ford Everest Active 2.0L Diesel 4WD 7 Seater SUV",
-      "mileage": "100",
-      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4006713",
-      "candidate_count": 0
-    },
     {
       "vehicle_id": "165770",
       "title": "2025 Ford Courier Transit Courier Active 1.0L Petrol 7 Speed Auto",
@@ -33,5 +26,5 @@
       "candidate_count": 0
     }
   ],
-  "inventory_cards_found": 138
+  "inventory_cards_found": 142
 }

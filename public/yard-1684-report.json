@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T04:00:49.407Z",
+  "generated_at": "2026-10-08T21:00:50.227Z",
   "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
   "url_branch_id": null,
@@ -13,11 +13,18 @@
   "source_vehicles_before_filter": 59,
   "include_vehicle_ids_file": null,
   "exclude_vehicle_ids_file": null,
-  "published_vehicles": 52,
-  "match_rate": 0.8813559322033898,
-  "matched_by_title_and_mileage": 52,
+  "published_vehicles": 56,
+  "match_rate": 0.9491525423728814,
+  "matched_by_title_and_mileage": 56,
   "matched_by_title_only": null,
   "unmatched": [
+    {
+      "vehicle_id": "95496",
+      "title": "2024 Ford Ranger Tremor 4WD 2.0 Bi Turbo 10spd ON SALE",
+      "mileage": "15288",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3919059",
+      "candidate_count": 2
+    },
     {
       "vehicle_id": "95546",
       "title": "2019 Hyundai iMax 2.5 Crdi Auto 8 Seater ON SALE",
@@ -26,47 +33,12 @@
       "candidate_count": 0
     },
     {
-      "vehicle_id": "95567",
-      "title": "2016 Kia Sportage Urban EX 2.0 litre 6spd Auto NZ New",
-      "mileage": "133471",
-      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3967799",
-      "candidate_count": 0
-    },
-    {
-      "vehicle_id": "95633",
-      "title": "2024 GWM Cannon Alpha Ultra HEV 2.0L Petrol",
-      "mileage": "32500",
-      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3985556",
-      "candidate_count": 0
-    },
-    {
-      "vehicle_id": "95681",
-      "title": "2014 Nissan X-Trail ST-L AWD 2.5L",
-      "mileage": "128270",
-      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4018353",
-      "candidate_count": 0
-    },
-    {
-      "vehicle_id": "95700",
-      "title": "2025 Ford Ranger New Gen XLT 2WD 2.0L Bi-Turbo 10spd",
-      "mileage": "16445",
-      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4023764",
-      "candidate_count": 0
-    },
-    {
-      "vehicle_id": "95667",
-      "title": "2025 Ford Mustang Mach-E RWD 78KWH",
-      "mileage": "6390",
-      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4024023",
-      "candidate_count": 0
-    },
-    {
       "vehicle_id": "95672",
-      "title": "2025 Ford Escape ST-Line X PHEV",
+      "title": "2025 Ford Escape ST-Line X PHEV 2.5L",
       "mileage": "13199",
       "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4024029",
       "candidate_count": 0
     }
   ],
-  "inventory_cards_found": 136
+  "inventory_cards_found": 142
 }
