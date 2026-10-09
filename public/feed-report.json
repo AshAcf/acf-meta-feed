@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T00:00:30.848Z",
+  "generated_at": "2026-10-09T04:02:17.713Z",
   "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684,13928,13929,13930&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
   "url_branch_id": null,
@@ -13,9 +13,9 @@
   "source_vehicles_before_filter": 76,
   "include_vehicle_ids_file": null,
   "exclude_vehicle_ids_file": "config/rangiora-vehicle-ids.txt",
-  "published_vehicles": 61,
-  "match_rate": 0.953125,
-  "matched_by_title_and_mileage": 61,
+  "published_vehicles": 59,
+  "match_rate": 0.921875,
+  "matched_by_title_and_mileage": 59,
   "matched_by_title_only": null,
   "unmatched": [
     {
@@ -30,6 +30,20 @@
       "title": "2025 Ford Escape ST-Line X PHEV 2.5L",
       "mileage": "13199",
       "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4024029",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "95739",
+      "title": "2026 Ford Everest New Gen Platinum 4WD 3.0L V6",
+      "mileage": "12050",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4025520",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "95673",
+      "title": "2025 Ford Ranger New Gen Wildtrak 4WD 3.0L V6",
+      "mileage": "11223",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4025523",
       "candidate_count": 0
     },
     {
