@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T21:00:58.162Z",
+  "generated_at": "2026-10-09T00:01:02.221Z",
   "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1686&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
   "url_branch_id": null,
@@ -9,14 +9,22 @@
   "match_title_only": true,
   "require_sale_price": false,
   "allow_empty_source": false,
-  "upstream_vehicles": 14,
-  "source_vehicles_before_filter": 14,
+  "upstream_vehicles": 16,
+  "source_vehicles_before_filter": 16,
   "include_vehicle_ids_file": null,
   "exclude_vehicle_ids_file": null,
-  "published_vehicles": 14,
-  "match_rate": 1,
+  "published_vehicles": 15,
+  "match_rate": 0.9375,
   "matched_by_title_and_mileage": null,
-  "matched_by_title_only": 14,
-  "unmatched": [],
+  "matched_by_title_only": 15,
+  "unmatched": [
+    {
+      "vehicle_id": "41750",
+      "title": "2025 Ford Courier Transit Tourneo 1.0L P  7 Speed Auto",
+      "mileage": "8005",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4024666",
+      "candidate_count": 0
+    }
+  ],
   "inventory_cards_found": 142
 }
