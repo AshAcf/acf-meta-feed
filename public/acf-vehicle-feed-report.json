@@ -1,25 +1,17 @@
 {
-  "generated_at": "2026-10-10T00:53:40.995Z",
+  "generated_at": "2026-10-10T02:05:01.297Z",
   "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1685,1686&type=6",
   "used_source_generated_at": [
-    "2026-10-09T04:02:17.713Z",
-    "2026-10-09T04:02:26.559Z"
+    "2026-10-10T02:03:37.495Z",
+    "2026-10-10T02:03:46.672Z"
   ],
-  "published_vehicles": 136,
+  "published_vehicles": 142,
   "new_demo_source_vehicles": 68,
-  "new_demo_published_vehicles": 65,
+  "new_demo_published_vehicles": 67,
   "unresolved": [
     {
       "vehicle_id": "165770",
       "title": "2025 Ford Courier Transit Courier Active 1.0L Petrol 7 Speed Auto"
-    },
-    {
-      "vehicle_id": "41750",
-      "title": "2025 Ford Courier Transit Tourneo 1.0L P  7 Speed Auto"
-    },
-    {
-      "vehicle_id": "713800",
-      "title": "2026 Ford Ranger XLT Double Cab W/Side 4X4"
     }
   ],
   "wolftrak_vehicles": 3
