@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-12T00:46:16.748Z",
+  "generated_at": "2026-10-12T04:00:52.416Z",
   "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1685&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
   "url_branch_id": null,
@@ -9,20 +9,41 @@
   "match_title_only": true,
   "require_sale_price": false,
   "allow_empty_source": false,
-  "upstream_vehicles": 51,
-  "source_vehicles_before_filter": 51,
+  "upstream_vehicles": 52,
+  "source_vehicles_before_filter": 52,
   "include_vehicle_ids_file": null,
   "exclude_vehicle_ids_file": null,
-  "published_vehicles": 50,
-  "match_rate": 0.9803921568627451,
+  "published_vehicles": 48,
+  "match_rate": 0.9230769230769231,
   "matched_by_title_and_mileage": null,
-  "matched_by_title_only": 50,
+  "matched_by_title_only": 48,
   "unmatched": [
     {
       "vehicle_id": "165770",
       "title": "2025 Ford Courier Transit Courier Active 1.0L Petrol 7 Speed Auto",
       "mileage": "100",
       "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4019458",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "165681",
+      "title": "2026 Ford Ranger Platinum 3.0 V6 Turbo Diesel 4WD",
+      "mileage": "100",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4026632",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "165729",
+      "title": "2026 Ford Ranger XLT 2.0L Turbo Diesel Double cab 2WD",
+      "mileage": "100",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4026755",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "165785",
+      "title": "2026 Ford Courier Active 1.0L Petrol 7 Speed Auto",
+      "mileage": "100",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4026779",
       "candidate_count": 0
     }
   ],
