@@ -11,7 +11,7 @@
   "95519": "https://www.avoncityford.com/vehicles/stock/159178/1077/ford-ranger-new-gen-wildtrak-4wd-3-0td-v6-10spd-sale",
   "95520": "https://www.avoncityford.com/vehicles/stock/148322/1002/ford-everest-new-gen-sport-4wd-2-0-bi-turbo-10spd-7-str-sale",
   "95526": "https://www.avoncityford.com/vehicles/stock/148317/1002/ford-ranger-new-gen-sport-4wd-2-0-bi-turbo-10spd-sale",
-  "95567": "https://www.avoncityford.com/vehicles/stock/147896/1002/kia-sportage-urban-ex-2-0-litre-6spd-auto-nz-new",
+  "95567": "https://www.avoncityford.com/vehicles/stock/160220/1077/kia-sportage-urban-ex-2-0-litre-6spd-auto-nz-new",
   "95568": "https://www.avoncityford.com/vehicles/stock/148313/1002/mitsubishi-outlander-ls-2-4l-cvt-7-seater-nz-new",
   "95577": "https://www.avoncityford.com/vehicles/stock/148540/1077/ford-puma-st-line-1-0l-mild-hybrid",
   "95581": "https://www.avoncityford.com/vehicles/stock/148160/1002/ford-puma-st-line-1-0l-mild-hybrid",
@@ -22,7 +22,6 @@
   "95607": "https://www.avoncityford.com/vehicles/stock/147944/1002/ford-puma-st-line-1-0l-mild-hybrid",
   "95609": "https://www.avoncityford.com/vehicles/stock/148508/1002/ford-escape-st-line-x-awd-fhev-2-5-litre",
   "95611": "https://www.avoncityford.com/vehicles/stock/148507/1002/ford-puma-st-line-1-0l-mild-hybrid",
-  "95612": "https://www.avoncityford.com/vehicles/stock/148158/1002/mercedes-benz-a-class-a180-1-6-litre-7spd-auto-nz-new",
   "95620": "https://www.avoncityford.com/vehicles/stock/159429/1002/ford-puma-st-line-1-0l-mild-hybrid",
   "95626": "https://www.avoncityford.com/vehicles/stock/159474/1077/toyota-hilux-sr5-cruiser-4wd-2-8td-d-cab-flatdeck-nz-new",
   "95627": "https://www.avoncityford.com/vehicles/stock/159990/1077/nissan-navara-st-x-4wd-2-3l-twin-turbo-diesel",
@@ -33,6 +32,7 @@
   "95645": "https://www.avoncityford.com/vehicles/stock/159641/1077/ford-everest-new-gen-sport-4wd-2-0l-bi-turbo-7-seater",
   "95647": "https://www.avoncityford.com/vehicles/stock/159473/1077/ford-ranger-new-gen-xlt-4wd-2-0-bi-turbo-10spd",
   "95655": "https://www.avoncityford.com/vehicles/stock/158954/1002/ford-ranger-new-gen-platinum-4wd-3-0l-10spd",
+  "95660": "https://www.avoncityford.com/vehicles/stock/160230/1002/kia-sportage-urban-sx-2-0l",
   "95662": "https://www.avoncityford.com/vehicles/stock/159432/1002/ford-everest-new-gen-sport-4wd-2-0l-bi-turbo-7-seater",
   "95663": "https://www.avoncityford.com/vehicles/stock/159202/1002/ford-ranger-new-gen-xlt-4wd-2-0l",
   "95665": "https://www.avoncityford.com/vehicles/stock/159383/1002/ford-everest-new-gen-wildtrak-4wd-3-0l-v6-td-7-seater",
@@ -60,5 +60,6 @@
   "165223": "https://www.avoncityford.com/vehicles/stock/160121/1077/ford-ranger-4wd-2-0l-bi-turbo-double-cab-xlt",
   "165242": "https://www.avoncityford.com/vehicles/stock/158978/1077/ford-ranger-xlt-2-0l-bi-turbo-diesel-double-cab-4x4",
   "713800": "https://www.avoncityford.com/vehicles/stock/160193/1077/ford-ranger-xlt-2-0l-bi-turbo-diesel-4wd-double-cab",
-  "NUR238": "https://www.avoncityford.com/vehicles/stock/158979/1077/ford-everest-sport-4wd-2-0-bi-turbo-7str-10spd"
+  "NUR238": "https://www.avoncityford.com/vehicles/stock/158979/1077/ford-everest-sport-4wd-2-0-bi-turbo-7str-10spd",
+  "RNN803": "https://www.avoncityford.com/vehicles/stock/160219/1077/ford-courier-transittrend-1-0p-7at"
 }
