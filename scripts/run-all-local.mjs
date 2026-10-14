@@ -13,13 +13,12 @@ const feeds = [
   },
   {
     name: "rangiora",
-    autoplayUrl: "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684,13928,13929,13930&type=6",
+    autoplayUrl: "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=13928,13929,13930&type=6",
     outputFile: "public/rangiora-meta-feed.csv",
     mapFile: "public/rangiora-url-map.json",
     reportFile: "public/rangiora-feed-report.json",
     urlBranchId: "1077",
-    customLabel1: "RANGIORA",
-    includeVehicleIdsFile: "config/rangiora-vehicle-ids.txt"
+    customLabel1: "RANGIORA"
   },
   {
     name: "yard-1684-used",
