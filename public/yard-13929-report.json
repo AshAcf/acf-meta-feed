@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-14T21:01:00.453Z",
+  "generated_at": "2026-10-14T23:06:25.007Z",
   "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=13929&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
   "url_branch_id": "1077",
@@ -20,8 +20,8 @@
   "unmatched": [
     {
       "vehicle_id": "SBS576",
-      "title": "2026 Ford Ranger Xlt Double Cab W/Sa",
-      "mileage": "0",
+      "title": "2026 Ford Ranger XLT 2.0L Turbo Diesel Double Cab Wellside",
+      "mileage": "50",
       "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4026909",
       "candidate_count": 0
     }

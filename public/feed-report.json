@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-14T21:00:31.958Z",
+  "generated_at": "2026-10-14T23:06:02.816Z",
   "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684,13928,13929,13930&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
   "url_branch_id": null,
@@ -9,15 +9,36 @@
   "match_title_only": false,
   "require_sale_price": false,
   "allow_empty_source": false,
-  "upstream_vehicles": 69,
-  "source_vehicles_before_filter": 81,
+  "upstream_vehicles": 72,
+  "source_vehicles_before_filter": 84,
   "include_vehicle_ids_file": null,
   "exclude_vehicle_ids_file": "config/rangiora-vehicle-ids.txt",
   "published_vehicles": 67,
-  "match_rate": 0.9710144927536232,
+  "match_rate": 0.9305555555555556,
   "matched_by_title_and_mileage": 67,
   "matched_by_title_only": null,
   "unmatched": [
+    {
+      "vehicle_id": "95723",
+      "title": "2025 Mahindra XUV700 AX7L 2.0 litre 6spd Auto 7 Seater",
+      "mileage": "4916",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3733854",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "95724",
+      "title": "2025 Mahindra XUV700 AX7L 2.0 litre 7 Seater 6spd Auto",
+      "mileage": "16861",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3771620",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "95725",
+      "title": "2025 Mahindra XUV3XO AX7L 1.2 litre 6spd Auto",
+      "mileage": "13022",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3874914",
+      "candidate_count": 0
+    },
     {
       "vehicle_id": "95716",
       "title": "2024 Ford Everest Sport 4WD 2.0 Bi Turbo 7str 10spd",
@@ -27,8 +48,8 @@
     },
     {
       "vehicle_id": "SBS576",
-      "title": "2026 Ford Ranger Xlt Double Cab W/Sa",
-      "mileage": "0",
+      "title": "2026 Ford Ranger XLT 2.0L Turbo Diesel Double Cab Wellside",
+      "mileage": "50",
       "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4026909",
       "candidate_count": 0
     }
