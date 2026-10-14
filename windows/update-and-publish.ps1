@@ -1,3 +1,4 @@
+param([switch]$NoPublish)
 $ErrorActionPreference = "Stop"
 $ProjectRoot = Split-Path -Parent $PSScriptRoot
 $Node = Join-Path $env:USERPROFILE ".cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin\node.exe"
@@ -9,6 +10,13 @@ Start-Transcript -Path $LogFile -Append | Out-Null
 
 try {
     if (-not (Test-Path -LiteralPath $Node)) {
+        $NodeCommand = Get-Command node.exe -ErrorAction SilentlyContinue
+        if ($NodeCommand) {
+            $Node = $NodeCommand.Source
+        }
+    }
+
+    if (-not $Node -or -not (Test-Path -LiteralPath $Node)) {
         $Node = Get-ChildItem -Path (Join-Path $env:USERPROFILE ".cache\codex-runtimes") -Filter node.exe -Recurse -ErrorAction SilentlyContinue |
             Where-Object { $_.FullName -match "dependencies\\node\\bin\\node.exe$" } |
             Sort-Object LastWriteTime -Descending |
@@ -24,13 +32,24 @@ try {
     & $Node "scripts\run-all-local.mjs"
     if ($LASTEXITCODE -ne 0) { throw "Feed generation failed; nothing was published." }
 
+    if ($NoPublish) {
+        Write-Host 'Manual test complete. Local feeds generated; nothing published.'
+        return
+    }
+
     $Git = Get-ChildItem -Path (Join-Path $env:LOCALAPPDATA "GitHubDesktop") -Filter git.exe -Recurse -ErrorAction SilentlyContinue |
         Where-Object { $_.FullName -match "resources\\app\\git\\cmd\\git.exe$" } |
         Sort-Object FullName -Descending |
         Select-Object -First 1 -ExpandProperty FullName
 
     if (-not $Git) {
-        throw "GitHub Desktop's Git was not found. Install GitHub Desktop and publish this folder first."
+        $Git = (Get-Command git.exe -ErrorAction SilentlyContinue).Source
+    }
+    if (-not $Git) {
+        $Git = Join-Path $env:USERPROFILE '.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd\git.exe'
+    }
+    if (-not (Test-Path -LiteralPath $Git)) {
+        throw 'Git was not found. Install Git before publishing.'
     }
 
     if (-not (Test-Path -LiteralPath (Join-Path $ProjectRoot ".git"))) {
@@ -47,7 +66,8 @@ try {
         throw "Git sync failed. Open GitHub Desktop and resolve the pending repository update."
     }
 
-    & $Git add "public/acf-meta-feed.csv" "public/url-map.json" "public/feed-report.json" "public/rangiora-meta-feed.csv" "public/rangiora-url-map.json" "public/rangiora-feed-report.json"
+    & $Git add -- 'public/*.csv' 'public/*report.json' 'public/*url-map.json' 'public/images/hybrid-vehicles/*.jpg'
+    if ($LASTEXITCODE -ne 0) { throw 'Could not stage generated feeds.' }
     & $Git diff --cached --quiet
     if ($LASTEXITCODE -eq 0) {
         Write-Host "No feed changes to publish."
