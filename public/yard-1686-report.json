@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-14T00:00:54.304Z",
+  "generated_at": "2026-10-14T04:01:07.549Z",
   "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1686&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
   "url_branch_id": null,
@@ -13,11 +13,18 @@
   "source_vehicles_before_filter": 18,
   "include_vehicle_ids_file": null,
   "exclude_vehicle_ids_file": null,
-  "published_vehicles": 17,
-  "match_rate": 0.9444444444444444,
+  "published_vehicles": 16,
+  "match_rate": 0.8888888888888888,
   "matched_by_title_and_mileage": null,
-  "matched_by_title_only": 17,
+  "matched_by_title_only": 16,
   "unmatched": [
+    {
+      "vehicle_id": "05675",
+      "title": "2026 Ford Mustang Mach-E Full Electric RWD",
+      "mileage": "5461",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4010800",
+      "candidate_count": 0
+    },
     {
       "vehicle_id": "SBS576",
       "title": "2026 Ford Ranger Xlt Double Cab W/Sa",

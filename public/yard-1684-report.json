@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-14T00:00:46.509Z",
+  "generated_at": "2026-10-14T04:00:59.130Z",
   "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
   "url_branch_id": null,
@@ -9,12 +9,12 @@
   "match_title_only": false,
   "require_sale_price": false,
   "allow_empty_source": false,
-  "upstream_vehicles": 58,
-  "source_vehicles_before_filter": 58,
+  "upstream_vehicles": 60,
+  "source_vehicles_before_filter": 60,
   "include_vehicle_ids_file": null,
   "exclude_vehicle_ids_file": null,
   "published_vehicles": 54,
-  "match_rate": 0.9310344827586207,
+  "match_rate": 0.9,
   "matched_by_title_and_mileage": 54,
   "matched_by_title_only": null,
   "unmatched": [
@@ -41,9 +41,23 @@
     },
     {
       "vehicle_id": "95718",
-      "title": "2013 Ford Fiesta ST 1.6L Ecoboost",
+      "title": "2013 Ford Fiesta ST 1.6L Ecoboost 6spd Manual",
       "mileage": "121935",
       "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4028723",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "95719",
+      "title": "2022 Toyota Highlander Limited ZR PHEV Hybrid 4WD 2.5L 7 Seater",
+      "mileage": "152974",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4028768",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "95743",
+      "title": "2023 Ford Ranger New Gen Raptor 4WD 3.0L V6 Twin Turbo",
+      "mileage": "44144",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4028769",
       "candidate_count": 0
     }
   ],

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-14T00:00:30.135Z",
+  "generated_at": "2026-10-14T04:00:43.055Z",
   "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684,13928,13929,13930&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
   "url_branch_id": null,
@@ -9,13 +9,13 @@
   "match_title_only": false,
   "require_sale_price": false,
   "allow_empty_source": false,
-  "upstream_vehicles": 67,
-  "source_vehicles_before_filter": 79,
+  "upstream_vehicles": 68,
+  "source_vehicles_before_filter": 80,
   "include_vehicle_ids_file": null,
   "exclude_vehicle_ids_file": "config/rangiora-vehicle-ids.txt",
-  "published_vehicles": 62,
-  "match_rate": 0.9253731343283582,
-  "matched_by_title_and_mileage": 62,
+  "published_vehicles": 61,
+  "match_rate": 0.8970588235294118,
+  "matched_by_title_and_mileage": 61,
   "matched_by_title_only": null,
   "unmatched": [
     {
@@ -41,13 +41,27 @@
     },
     {
       "vehicle_id": "95718",
-      "title": "2013 Ford Fiesta ST 1.6L Ecoboost",
+      "title": "2013 Ford Fiesta ST 1.6L Ecoboost 6spd Manual",
       "mileage": "121935",
       "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4028723",
       "candidate_count": 0
     },
     {
-      "vehicle_id": "QUA945",
+      "vehicle_id": "95719",
+      "title": "2022 Toyota Highlander Limited ZR PHEV Hybrid 4WD 2.5L 7 Seater",
+      "mileage": "152974",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4028768",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "95743",
+      "title": "2023 Ford Ranger New Gen Raptor 4WD 3.0L V6 Twin Turbo",
+      "mileage": "44144",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4028769",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "95716",
       "title": "2024 Ford Everest Sport 4WD 2.0 Bi Turbo 7str 10spd",
       "mileage": "61998",
       "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4027659",
