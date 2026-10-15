@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T00:00:38.301Z",
+  "generated_at": "2026-10-15T21:01:05.268Z",
   "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684,13928,13929,13930&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
   "url_branch_id": null,
@@ -9,50 +9,22 @@
   "match_title_only": false,
   "require_sale_price": false,
   "allow_empty_source": false,
-  "upstream_vehicles": 70,
-  "source_vehicles_before_filter": 82,
+  "upstream_vehicles": 72,
+  "source_vehicles_before_filter": 84,
   "include_vehicle_ids_file": null,
   "exclude_vehicle_ids_file": "config/rangiora-vehicle-ids.txt",
-  "published_vehicles": 65,
-  "match_rate": 0.9285714285714286,
-  "matched_by_title_and_mileage": 65,
+  "published_vehicles": 71,
+  "match_rate": 0.9861111111111112,
+  "matched_by_title_and_mileage": 71,
   "matched_by_title_only": null,
   "unmatched": [
     {
-      "vehicle_id": "95723",
-      "title": "2025 Mahindra XUV700 AX7L 2.0 litre 6spd Auto 7 Seater",
-      "mileage": "4916",
-      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3733854",
-      "candidate_count": 0
-    },
-    {
-      "vehicle_id": "95724",
-      "title": "2025 Mahindra XUV700 AX7L 2.0 litre 7 Seater 6spd Auto",
-      "mileage": "16861",
-      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3771620",
-      "candidate_count": 0
-    },
-    {
-      "vehicle_id": "95725",
-      "title": "2025 Mahindra XUV3XO AX7L 1.2 litre 6spd Auto",
-      "mileage": "13022",
-      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3874914",
-      "candidate_count": 0
-    },
-    {
-      "vehicle_id": "95716",
-      "title": "2024 Ford Everest Sport 4WD 2.0 Bi Turbo 7str 10spd",
-      "mileage": "61998",
-      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4027659",
-      "candidate_count": 0
-    },
-    {
-      "vehicle_id": "SBS576",
-      "title": "2026 Ford Ranger XLT 2.0L Turbo Diesel Double Cab Wellside",
-      "mileage": "50",
-      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4026909",
+      "vehicle_id": "95655",
+      "title": "2026 Ford Ranger New Gen Platinum 4WD 3.0TD V6 10spd",
+      "mileage": "13344",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3997644",
       "candidate_count": 0
     }
   ],
-  "inventory_cards_found": 146
+  "inventory_cards_found": 150
 }
