@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T00:00:54.877Z",
+  "generated_at": "2026-10-16T04:00:31.333Z",
   "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684,13928,13929,13930&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
   "url_branch_id": null,
@@ -9,15 +9,36 @@
   "match_title_only": false,
   "require_sale_price": false,
   "allow_empty_source": false,
-  "upstream_vehicles": 72,
-  "source_vehicles_before_filter": 84,
+  "upstream_vehicles": 76,
+  "source_vehicles_before_filter": 88,
   "include_vehicle_ids_file": null,
   "exclude_vehicle_ids_file": "config/rangiora-vehicle-ids.txt",
-  "published_vehicles": 71,
-  "match_rate": 0.9861111111111112,
-  "matched_by_title_and_mileage": 71,
+  "published_vehicles": 72,
+  "match_rate": 0.9473684210526315,
+  "matched_by_title_and_mileage": 72,
   "matched_by_title_only": null,
   "unmatched": [
+    {
+      "vehicle_id": "95754",
+      "title": "2024 Ford Transit Custom 320 SWB 2.0D",
+      "mileage": "12376",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4031522",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "95746",
+      "title": "2026 Ford Ranger New Gen Platinum 4WD 3.0L V6",
+      "mileage": "11007",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4031527",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "95760",
+      "title": "2026 Ford Ranger New Gen Wildtrak 4WD 2.0L Bi-Turbo",
+      "mileage": "7317",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4031532",
+      "candidate_count": 0
+    },
     {
       "vehicle_id": "95655",
       "title": "2026 Ford Ranger New Gen Platinum 4WD 3.0TD V6 10spd",
