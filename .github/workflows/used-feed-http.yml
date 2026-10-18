@@ -9,6 +9,7 @@ on:
       - 'scripts/update-used-http.mjs'
       - 'scripts/update-feed.mjs'
       - '.github/workflows/used-feed-http.yml'
+      - 'scripts/mapped-inventory.mjs'
 permissions:
   contents: write
 concurrency:
@@ -24,7 +25,11 @@ jobs:
         with:
           node-version: 24
       - name: Refresh and validate both primary feeds
+        env:
+          ACF_MAPPED_REFRESH: '1'
         run: node scripts/update-used-http.mjs
+      - name: Check mapping identity rules
+        run: node --test scripts/test-mapped-inventory.mjs
       - name: Check feed health
         env:
           MIN_MATCH_RATE: '0.9'

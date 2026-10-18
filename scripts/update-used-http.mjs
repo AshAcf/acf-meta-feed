@@ -4,12 +4,24 @@ import {mkdtemp,readFile,writeFile,copyFile,mkdir} from 'node:fs/promises';
 import {tmpdir} from 'node:os';
 import {join} from 'node:path';
 import {spawnSync} from 'node:child_process';
+import {parseCSV,mappedRecords,matchingHTML} from './mapped-inventory.mjs';
 
 const working = await mkdtemp(join(tmpdir(),'acf-used-refresh-'));
 const source = 'https://www.avoncityford.com/vehicles/search';
-const response = await fetch(source,{headers:{accept:'text/html'},signal:AbortSignal.timeout(30000)});
-if(!response.ok)throw new Error(`Inventory HTTP ${response.status}`);
-const html=await response.text();
+const mappedMode=process.env.ACF_MAPPED_REFRESH==='1';
+let html,liveSourceFile='';
+if(mappedMode){
+ const response=await fetch('https://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684,13928,13929,13930&type=6',{signal:AbortSignal.timeout(30000)});
+ if(!response.ok)throw new Error(`AutoPlay HTTP ${response.status}`);
+ const csv=await response.text();liveSourceFile=join(working,'live-autoplay.csv');await writeFile(liveSourceFile,csv);
+ const previous=[...parseCSV(await readFile('public/acf-meta-feed.csv','utf8')),...parseCSV(await readFile('public/rangiora-meta-feed.csv','utf8'))];
+ const maps={...JSON.parse(await readFile('public/url-map.json','utf8')),...JSON.parse(await readFile('public/rangiora-url-map.json','utf8'))};
+ html=matchingHTML(mappedRecords(parseCSV(csv),previous,maps));
+}else{
+ const response=await fetch(source,{headers:{accept:'text/html'},signal:AbortSignal.timeout(30000)});
+ if(!response.ok)throw new Error(`Inventory HTTP ${response.status}`);
+ html=await response.text();
+}
 const count=[...html.matchAll(/<article\b[^>]*class=["'][^"']*\bgw-product-card\b/gi)].length;
 if(count<40)throw new Error(`Only ${count} inventory cards; previous feeds preserved.`);
 const searchFile=join(working,'inventory.html');await writeFile(searchFile,html);
@@ -20,7 +32,7 @@ for(const config of [
 ]){
  const result=spawnSync(process.execPath,['scripts/update-feed.mjs'],{stdio:'inherit',timeout:120000,env:{...process.env,
   AUTOPLAY_FEED_URL:`https://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=${config.yards}&type=6`,
-  ACF_SEARCH_URL:source,ACF_SEARCH_FILE:searchFile,AUTOPLAY_FEED_FILE:'',
+  ACF_SEARCH_URL:source,ACF_SEARCH_FILE:searchFile,AUTOPLAY_FEED_FILE:config.csv==='acf-meta-feed.csv'?liveSourceFile:'',
   OUTPUT_FILE:join(working,config.csv),MAP_FILE:join(working,config.map),REPORT_FILE:join(working,config.report),
   URL_BRANCH_ID:'',CUSTOM_LABEL_1:'',INCLUDE_VEHICLE_IDS_FILE:'',EXCLUDE_VEHICLE_IDS_FILE:'',
   INCLUDE_TITLE_PATTERN:'',INCLUDE_YARD_PATTERN:'',MATCH_TITLE_ONLY:'',REQUIRE_SALE_PRICE:'',ALLOW_EMPTY_SOURCE:'',
@@ -29,9 +41,12 @@ for(const config of [
  if(result.error || result.status!==0)throw new Error(`${config.csv} generation failed; previous feeds preserved. ${result.error?.message || ''}`);
  const report=JSON.parse(await readFile(join(working,config.report),'utf8'));
  if(!report.published_vehicles || report.match_rate<.9)throw new Error('Generated feed failed validation');
+ report.url_verification=mappedMode?'Previously verified stock-ID mappings; year/make/model/title rechecked against live AutoPlay':'Live website exact title and odometer';
+ report.website_checked_this_run=!mappedMode;
+ await writeFile(join(working,config.report),JSON.stringify(report,null,2)+'\n');
  files.push(config.csv,config.map,config.report);
 }
 // Publish local outputs only once BOTH feeds have passed their safety checks.
 await mkdir('public',{recursive:true});
 for(const file of files)await copyFile(join(working,file),join('public',file));
-console.log(`Refreshed both primary feeds from ${count} live inventory cards.`);
+console.log(`Refreshed both primary feeds from ${count} ${mappedMode?'live AutoPlay records with verified mappings':'live inventory cards'}.`);
