@@ -1,0 +1,40 @@
+name: Refresh primary stock feeds
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '5 */3 * * *'
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/update-used-http.mjs'
+      - 'scripts/update-feed.mjs'
+      - '.github/workflows/used-feed-http.yml'
+permissions:
+  contents: write
+concurrency:
+  group: primary-stock-feed-refresh
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Refresh and validate both primary feeds
+        run: node scripts/update-used-http.mjs
+      - name: Check feed health
+        env:
+          MIN_MATCH_RATE: '0.9'
+        run: node scripts/check-feed-health.mjs
+      - name: Publish validated stock outputs
+        run: |
+          git config user.name 'acf-feed-updater'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add public/acf-meta-feed.csv public/feed-report.json public/url-map.json public/rangiora-meta-feed.csv public/rangiora-feed-report.json public/rangiora-url-map.json
+          git diff --cached --quiet && exit 0
+          git commit -m 'Refresh primary stock feeds from live inventory'
+          git pull --rebase origin main
+          git push origin HEAD:main

@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-16T04:00:34.618Z",
-  "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=13928,13929,13930&type=6",
+  "generated_at": "2026-10-18T20:29:39.286Z",
+  "upstream_feed": "https://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=13928,13929,13930&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
   "url_branch_id": "1077",
   "custom_label_1": "RANGIORA",
@@ -9,22 +9,14 @@
   "match_title_only": false,
   "require_sale_price": false,
   "allow_empty_source": false,
-  "upstream_vehicles": 22,
-  "source_vehicles_before_filter": 22,
+  "upstream_vehicles": 23,
+  "source_vehicles_before_filter": 23,
   "include_vehicle_ids_file": null,
   "exclude_vehicle_ids_file": null,
-  "published_vehicles": 21,
-  "match_rate": 0.9545454545454546,
-  "matched_by_title_and_mileage": 21,
+  "published_vehicles": 23,
+  "match_rate": 1,
+  "matched_by_title_and_mileage": 23,
   "matched_by_title_only": null,
-  "unmatched": [
-    {
-      "vehicle_id": "95655",
-      "title": "2026 Ford Ranger New Gen Platinum 4WD 3.0TD V6 10spd",
-      "mileage": "13344",
-      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3997644",
-      "candidate_count": 0
-    }
-  ],
-  "inventory_cards_found": 150
+  "unmatched": [],
+  "inventory_cards_found": 148
 }
