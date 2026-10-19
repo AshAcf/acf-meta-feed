@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-19T20:31:52.849Z",
+  "generated_at": "2026-10-19T20:41:20.771Z",
   "upstream_feed": "https://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684,13928,13929,13930&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
   "url_branch_id": null,
@@ -9,6 +9,7 @@
   "match_title_only": false,
   "require_sale_price": false,
   "allow_empty_source": false,
+  "allow_empty_result": false,
   "upstream_vehicles": 71,
   "source_vehicles_before_filter": 83,
   "include_vehicle_ids_file": null,
