@@ -19,6 +19,7 @@ const MATCH_TITLE_ONLY = process.env.MATCH_TITLE_ONLY === "1";
 const REQUIRE_SALE_PRICE = process.env.REQUIRE_SALE_PRICE === "1";
 const INCLUDE_YARD_PATTERN = process.env.INCLUDE_YARD_PATTERN || "";
 const ALLOW_EMPTY_SOURCE = process.env.ALLOW_EMPTY_SOURCE === "1";
+const ALLOW_EMPTY_RESULT = process.env.ALLOW_EMPTY_RESULT === "1";
 const MIN_INVENTORY_CARDS = Number(process.env.MIN_INVENTORY_CARDS || "40");
 const MIN_FEED_MATCH_RATE = Number(process.env.MIN_FEED_MATCH_RATE || "0.9");
 const USER_AGENT = "AvonCityFordFeedUpdater/1.0 (+https://www.avoncityford.com)";
@@ -297,9 +298,9 @@ async function main() {
     return [{ ...record, URL: outputUrl, custom_label_0: saleLabel, custom_label_1: CUSTOM_LABEL_1, custom_label_2: displayPrice(price, salePrice), custom_label_3: headlines.short, custom_label_4: headlines.trimmed }];
   });
 
-  if (!corrected.length && !(ALLOW_EMPTY_SOURCE && sourceRecords.length === 0)) throw new Error("No Autoplay vehicles matched the live ACF inventory. Last good feed was preserved.");
+  if (!corrected.length && !ALLOW_EMPTY_RESULT && !(ALLOW_EMPTY_SOURCE && sourceRecords.length === 0)) throw new Error("No Autoplay vehicles matched the live ACF inventory. Last good feed was preserved.");
   const matchRate = sourceRecords.length ? corrected.length / sourceRecords.length : 0;
-  if (sourceRecords.length && matchRate < MIN_FEED_MATCH_RATE) {
+  if (sourceRecords.length && corrected.length && matchRate < MIN_FEED_MATCH_RATE) {
     throw new Error(`Matched ${(matchRate * 100).toFixed(1)}% of the Autoplay feed; minimum is ${(MIN_FEED_MATCH_RATE * 100).toFixed(1)}%. Last good feed was preserved.`);
   }
 
@@ -315,6 +316,7 @@ async function main() {
     match_title_only: MATCH_TITLE_ONLY,
     require_sale_price: REQUIRE_SALE_PRICE,
     allow_empty_source: ALLOW_EMPTY_SOURCE,
+    allow_empty_result: ALLOW_EMPTY_RESULT,
     upstream_vehicles: sourceRecords.length,
     source_vehicles_before_filter: records.length,
     include_vehicle_ids_file: INCLUDE_VEHICLE_IDS_FILE || null,

@@ -91,6 +91,7 @@ const feeds = [
     requireSalePrice: true,
     includeYardPattern: "^New Cars$",
     includeTitlePattern: "^2026 Ford (?:Ranger Wildtrak .*Bi[ -]?Turbo|Everest Sport .*Bi[ -]?Turbo)",
+    allowEmptyResult: true,
     minFeedMatchRate: "0.7"
   }
 ];
@@ -133,6 +134,7 @@ for (const feed of feeds) {
     REQUIRE_SALE_PRICE: feed.requireSalePrice ? "1" : "",
     INCLUDE_YARD_PATTERN: feed.includeYardPattern || "",
     ALLOW_EMPTY_SOURCE: feed.allowEmptySource ? "1" : "",
+    ALLOW_EMPTY_RESULT: feed.allowEmptyResult ? "1" : "",
     MIN_FEED_MATCH_RATE: feed.minFeedMatchRate || "",
     INCLUDE_VEHICLE_IDS_FILE: feed.includeVehicleIdsFile || "",
     EXCLUDE_VEHICLE_IDS_FILE: feed.excludeVehicleIdsFile || ""
