@@ -1,21 +1,17 @@
 {
-  "generated_at": "2026-10-20T19:18:21.184Z",
+  "generated_at": "2026-10-20T23:54:16.617Z",
   "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1685,1686&type=6",
   "used_source_generated_at": [
-    "2026-10-20T19:09:12.779Z",
-    "2026-10-20T19:09:15.574Z"
+    "2026-10-20T23:46:59.812Z",
+    "2026-10-20T23:47:02.803Z"
   ],
   "published_vehicles": 135,
   "new_demo_source_vehicles": 65,
-  "new_demo_published_vehicles": 63,
+  "new_demo_published_vehicles": 64,
   "unresolved": [
     {
       "vehicle_id": "165770",
       "title": "2025 Ford Transit Courier Tourneo Active"
-    },
-    {
-      "vehicle_id": "165796",
-      "title": "2026 Ford Everest Sport 2.0 Turbo Diesel 4WD 7 Seater SUV"
     }
   ],
   "wolftrak_vehicles": 3
