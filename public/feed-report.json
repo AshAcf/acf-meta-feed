@@ -1,11 +1,6 @@
 {
-<<<<<<< Updated upstream
-  "generated_at": "2026-10-20T00:13:31.878Z",
+  "generated_at": "2026-10-20T08:25:14.114Z",
   "upstream_feed": "https://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684,13928,13929,13930&type=6",
-=======
-  "generated_at": "2026-10-20T04:00:57.953Z",
-  "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684,13928,13929,13930&type=6",
->>>>>>> Stashed changes
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
   "url_branch_id": null,
   "custom_label_1": null,
@@ -39,7 +34,7 @@
       "candidate_count": 0
     }
   ],
-  "inventory_cards_found": 73,
+  "inventory_cards_found": 72,
   "url_verification": "Previously verified stock-ID mappings; year/make/model/title rechecked against live AutoPlay",
   "website_checked_this_run": false
 }
