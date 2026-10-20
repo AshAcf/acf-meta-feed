@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T00:01:03.790Z",
+  "generated_at": "2026-10-20T04:01:07.354Z",
   "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
   "url_branch_id": null,
@@ -10,14 +10,29 @@
   "require_sale_price": false,
   "allow_empty_source": false,
   "allow_empty_result": false,
-  "upstream_vehicles": 60,
-  "source_vehicles_before_filter": 60,
+  "upstream_vehicles": 61,
+  "source_vehicles_before_filter": 61,
   "include_vehicle_ids_file": null,
   "exclude_vehicle_ids_file": null,
-  "published_vehicles": 60,
-  "match_rate": 1,
-  "matched_by_title_and_mileage": 60,
+  "published_vehicles": 59,
+  "match_rate": 0.9672131147540983,
+  "matched_by_title_and_mileage": 59,
   "matched_by_title_only": null,
-  "unmatched": [],
+  "unmatched": [
+    {
+      "vehicle_id": "95465",
+      "title": "2023 Ford Everest New Gen Platinum 4WD 3.0 V6 TD 7 Str - ON SALE",
+      "mileage": "89166",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3921338",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "95756",
+      "title": "2016 Toyota Land Cruiser Prado VX 4WD 2.8TD 7 Seater NZ New",
+      "mileage": "136236",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4034743",
+      "candidate_count": 0
+    }
+  ],
   "inventory_cards_found": 145
 }
