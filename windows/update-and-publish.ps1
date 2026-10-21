@@ -27,16 +27,6 @@ try {
         throw "The Codex Node runtime was not found."
     }
 
-    Set-Location -LiteralPath $ProjectRoot
-    Remove-Item Env:ACF_BROWSER_VISIBLE -ErrorAction SilentlyContinue
-    & $Node "scripts\run-all-local.mjs"
-    if ($LASTEXITCODE -ne 0) { throw "Feed generation failed; nothing was published." }
-
-    if ($NoPublish) {
-        Write-Host 'Manual test complete. Local feeds generated; nothing published.'
-        return
-    }
-
     $Git = Get-ChildItem -Path (Join-Path $env:LOCALAPPDATA "GitHubDesktop") -Filter git.exe -Recurse -ErrorAction SilentlyContinue |
         Where-Object { $_.FullName -match "resources\\app\\git\\cmd\\git.exe$" } |
         Sort-Object FullName -Descending |
@@ -59,11 +49,34 @@ try {
     $SafePath = $ProjectRoot.Replace("\", "/")
     & $Git config --global --add safe.directory $SafePath
 
-    # Bring in harmless GitHub-side changes (for example, files uploaded in the
-    # browser) before committing the new feed so scheduled pushes do not stall.
-    & $Git pull --rebase --autostash origin main
+    Set-Location -LiteralPath $ProjectRoot
+
+    # Sync before generating files. Pulling after generation can make autostash
+    # restore conflicts into generated JSON and accidentally publish them.
+    & $Git pull --rebase origin main
     if ($LASTEXITCODE -ne 0) {
         throw "Git sync failed. Open GitHub Desktop and resolve the pending repository update."
+    }
+
+    $Unmerged = & $Git diff --name-only --diff-filter=U
+    if ($LASTEXITCODE -ne 0 -or $Unmerged) {
+        throw "Git has unresolved files. Nothing was generated or published."
+    }
+
+    Remove-Item Env:ACF_BROWSER_VISIBLE -ErrorAction SilentlyContinue
+    & $Node "scripts\run-all-local.mjs"
+    if ($LASTEXITCODE -ne 0) { throw "Feed generation failed; nothing was published." }
+
+    if ($NoPublish) {
+        Write-Host 'Manual test complete. Local feeds generated; nothing published.'
+        return
+    }
+
+    $ConflictMarkers = Get-ChildItem -LiteralPath (Join-Path $ProjectRoot 'public') -File |
+        Where-Object { $_.Name -match '(report\.json|url-map\.json|\.csv)$' } |
+        Select-String -Pattern '^(<<<<<<<|=======|>>>>>>>)' -List
+    if ($ConflictMarkers) {
+        throw "Generated feed files contain Git conflict markers. Nothing was published."
     }
 
     & $Git add -- 'public/*.csv' 'public/*report.json' 'public/*url-map.json' 'public/images/hybrid-vehicles/*.jpg'
