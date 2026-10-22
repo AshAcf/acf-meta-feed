@@ -1,9 +1,11 @@
 {
-  "generated_at": "2026-10-22T00:00:57.424Z",
+  "generated_at": "2026-10-22T20:00:18.231Z",
   "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1686&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
   "url_branch_id": null,
   "custom_label_1": null,
+  "street_address": "162 Main South Road",
+  "city": "Christchurch",
   "include_title_pattern": null,
   "include_yard_pattern": null,
   "match_title_only": true,

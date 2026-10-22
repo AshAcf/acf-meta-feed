@@ -1,9 +1,11 @@
 {
-  "generated_at": "2026-10-22T00:01:01.491Z",
+  "generated_at": "2026-10-22T20:00:21.893Z",
   "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=13930&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
   "url_branch_id": "1077",
   "custom_label_1": null,
+  "street_address": "336 Flaxton Road",
+  "city": "Rangiora",
   "include_title_pattern": null,
   "include_yard_pattern": null,
   "match_title_only": true,
