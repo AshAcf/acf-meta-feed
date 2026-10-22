@@ -14,6 +14,8 @@ const MAP_FILE = resolve(process.env.MAP_FILE || "public/url-map.json");
 const REPORT_FILE = resolve(process.env.REPORT_FILE || "public/feed-report.json");
 const URL_BRANCH_ID = process.env.URL_BRANCH_ID || "";
 const CUSTOM_LABEL_1 = process.env.CUSTOM_LABEL_1 || "";
+const STREET_ADDRESS = process.env.STREET_ADDRESS || "";
+const CITY = process.env.CITY || "";
 const INCLUDE_TITLE_PATTERN = process.env.INCLUDE_TITLE_PATTERN || "";
 const MATCH_TITLE_ONLY = process.env.MATCH_TITLE_ONLY === "1";
 const REQUIRE_SALE_PRICE = process.env.REQUIRE_SALE_PRICE === "1";
@@ -237,6 +239,8 @@ async function main() {
   if (!headers.includes("custom_label_2")) headers.push("custom_label_2");
   if (!headers.includes("custom_label_3")) headers.push("custom_label_3");
   if (!headers.includes("custom_label_4")) headers.push("custom_label_4");
+  if (!headers.includes("street_address")) headers.push("street_address");
+  if (!headers.includes("city")) headers.push("city");
 
   const inventory = inventoryCards(searchHtml);
   if (inventory.length < MIN_INVENTORY_CARDS) {
@@ -295,7 +299,19 @@ async function main() {
     const salePrice = priceValue(record.sale_price);
     const saleLabel = salePrice > 0 && (!price || salePrice < price) ? "SALE" : "";
     const headlines = vehicleHeadlines(record);
-    return [{ ...record, URL: outputUrl, custom_label_0: saleLabel, custom_label_1: CUSTOM_LABEL_1, custom_label_2: displayPrice(price, salePrice), custom_label_3: headlines.short, custom_label_4: headlines.trimmed }];
+    return [{
+      ...record,
+      URL: outputUrl,
+      "address.addr1": STREET_ADDRESS,
+      "address.city": CITY,
+      street_address: STREET_ADDRESS,
+      city: CITY,
+      custom_label_0: saleLabel,
+      custom_label_1: CUSTOM_LABEL_1,
+      custom_label_2: displayPrice(price, salePrice),
+      custom_label_3: headlines.short,
+      custom_label_4: headlines.trimmed
+    }];
   });
 
   if (!corrected.length && !ALLOW_EMPTY_RESULT && !(ALLOW_EMPTY_SOURCE && sourceRecords.length === 0)) throw new Error("No Autoplay vehicles matched the live ACF inventory. Last good feed was preserved.");
@@ -311,6 +327,8 @@ async function main() {
     acf_inventory_url: ACF_SEARCH_URL,
     url_branch_id: URL_BRANCH_ID || null,
     custom_label_1: CUSTOM_LABEL_1 || null,
+    street_address: STREET_ADDRESS || null,
+    city: CITY || null,
     include_title_pattern: INCLUDE_TITLE_PATTERN || null,
     include_yard_pattern: INCLUDE_YARD_PATTERN || null,
     match_title_only: MATCH_TITLE_ONLY,

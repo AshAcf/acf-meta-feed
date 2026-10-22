@@ -120,6 +120,7 @@ await run("scripts/capture-inventory.mjs", {
 
 for (const feed of feeds) {
   console.log(`Generating ${feed.name} feed...`);
+  const isRangiora = feed.urlBranchId === "1077";
   await run("scripts/update-feed.mjs", {
     AUTOPLAY_FEED_URL: feed.autoplayUrl,
     ACF_SEARCH_URL: feed.searchUrl || "https://www.avoncityford.com/vehicles/search",
@@ -129,6 +130,8 @@ for (const feed of feeds) {
     REPORT_FILE: feed.reportFile,
     URL_BRANCH_ID: feed.urlBranchId || "",
     CUSTOM_LABEL_1: feed.customLabel1 || "",
+    STREET_ADDRESS: isRangiora ? "78 Ivory Street" : "162 Main South Road",
+    CITY: isRangiora ? "Rangiora" : "Christchurch",
     INCLUDE_TITLE_PATTERN: feed.includeTitlePattern || "",
     MATCH_TITLE_ONLY: feed.matchTitleOnly ? "1" : "",
     REQUIRE_SALE_PRICE: feed.requireSalePrice ? "1" : "",
