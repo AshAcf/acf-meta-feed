@@ -130,7 +130,7 @@ for (const feed of feeds) {
     REPORT_FILE: feed.reportFile,
     URL_BRANCH_ID: feed.urlBranchId || "",
     CUSTOM_LABEL_1: feed.customLabel1 || "",
-    STREET_ADDRESS: isRangiora ? "78 Ivory Street" : "162 Main South Road",
+    STREET_ADDRESS: isRangiora ? "336 Flaxton Road" : "162 Main South Road",
     CITY: isRangiora ? "Rangiora" : "Christchurch",
     INCLUDE_TITLE_PATTERN: feed.includeTitlePattern || "",
     MATCH_TITLE_ONLY: feed.matchTitleOnly ? "1" : "",
