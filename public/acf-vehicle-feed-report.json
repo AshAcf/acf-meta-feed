@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-22T17:12:41.849Z",
+  "generated_at": "2026-10-22T20:00:58.230Z",
   "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1685,1686&type=6",
   "used_source_generated_at": [
-    "2026-10-22T17:03:32.924Z",
-    "2026-10-22T17:03:36.105Z"
+    "2026-10-22T19:59:57.695Z",
+    "2026-10-22T20:00:00.360Z"
   ],
-  "published_vehicles": 136,
+  "published_vehicles": 139,
   "new_demo_source_vehicles": 65,
   "new_demo_published_vehicles": 64,
   "unresolved": [
