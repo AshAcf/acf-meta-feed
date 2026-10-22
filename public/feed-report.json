@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-22T00:00:37.755Z",
-  "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684,13928,13929,13930&type=6",
+  "generated_at": "2026-10-22T04:28:50.685Z",
+  "upstream_feed": "https://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684,13928,13929,13930&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
   "url_branch_id": null,
   "custom_label_1": null,
@@ -10,14 +10,38 @@
   "require_sale_price": false,
   "allow_empty_source": false,
   "allow_empty_result": false,
-  "upstream_vehicles": 67,
-  "source_vehicles_before_filter": 78,
+  "upstream_vehicles": 70,
+  "source_vehicles_before_filter": 80,
   "include_vehicle_ids_file": null,
   "exclude_vehicle_ids_file": "config/rangiora-vehicle-ids.txt",
   "published_vehicles": 67,
-  "match_rate": 1,
+  "match_rate": 0.9571428571428572,
   "matched_by_title_and_mileage": 67,
   "matched_by_title_only": null,
-  "unmatched": [],
-  "inventory_cards_found": 145
+  "unmatched": [
+    {
+      "vehicle_id": "95748",
+      "title": "2026 Ford Everest New Gen Platinum 4WD 3.0L V6 TDiesel 7str",
+      "mileage": "11954",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4037496",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "95744",
+      "title": "2023 Ford Ranger New Gen Sport 2WD 2.0L Bi-Turbo",
+      "mileage": "37257",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4037502",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "95738",
+      "title": "2017 Ford Ranger PX2 XLT 2WD 3.2TDiesel 6spd Auto",
+      "mileage": "73834",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4037515",
+      "candidate_count": 0
+    }
+  ],
+  "inventory_cards_found": 72,
+  "url_verification": "Previously verified stock-ID mappings; year/make/model/title rechecked against live AutoPlay",
+  "website_checked_this_run": false
 }
