@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-22T20:00:58.230Z",
+  "generated_at": "2026-10-22T21:01:51.539Z",
   "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1685,1686&type=6",
   "used_source_generated_at": [
-    "2026-10-22T19:59:57.695Z",
-    "2026-10-22T20:00:00.360Z"
+    "2026-10-22T21:00:51.947Z",
+    "2026-10-22T21:00:54.682Z"
   ],
-  "published_vehicles": 139,
-  "new_demo_source_vehicles": 65,
-  "new_demo_published_vehicles": 64,
+  "published_vehicles": 138,
+  "new_demo_source_vehicles": 64,
+  "new_demo_published_vehicles": 63,
   "unresolved": [
     {
       "vehicle_id": "165770",
