@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-22T21:28:14.267Z",
-  "upstream_feed": "https://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=13928,13929,13930&type=6",
+  "generated_at": "2026-10-23T00:00:48.038Z",
+  "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=13928,13929,13930&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
   "url_branch_id": "1077",
   "custom_label_1": "RANGIORA",
-  "street_address": null,
-  "city": null,
+  "street_address": "336 Flaxton Road",
+  "city": "Rangiora",
   "include_title_pattern": null,
   "include_yard_pattern": null,
   "match_title_only": false,
@@ -21,7 +21,5 @@
   "matched_by_title_and_mileage": 19,
   "matched_by_title_only": null,
   "unmatched": [],
-  "inventory_cards_found": 75,
-  "url_verification": "Previously verified stock-ID mappings; year/make/model/title rechecked against live AutoPlay",
-  "website_checked_this_run": false
+  "inventory_cards_found": 145
 }
