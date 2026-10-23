@@ -1,17 +1,21 @@
 {
-  "generated_at": "2026-10-23T00:01:41.242Z",
+  "generated_at": "2026-10-23T04:53:00.173Z",
   "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1685,1686&type=6",
   "used_source_generated_at": [
-    "2026-10-23T00:00:45.296Z",
-    "2026-10-23T00:00:48.038Z"
+    "2026-10-23T04:34:22.799Z",
+    "2026-10-23T04:34:25.476Z"
   ],
-  "published_vehicles": 136,
+  "published_vehicles": 134,
   "new_demo_source_vehicles": 64,
-  "new_demo_published_vehicles": 63,
+  "new_demo_published_vehicles": 62,
   "unresolved": [
     {
       "vehicle_id": "165770",
       "title": "2025 Ford Transit Courier Tourneo Active"
+    },
+    {
+      "vehicle_id": "165807",
+      "title": "2026 Ford Ranger XLT PHEV Double Cab 4X4 Wellside"
     }
   ],
   "wolftrak_vehicles": 3
