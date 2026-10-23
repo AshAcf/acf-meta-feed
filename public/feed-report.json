@@ -1,24 +1,24 @@
 {
-  "generated_at": "2026-10-23T00:00:45.296Z",
-  "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684,13928,13929,13930&type=6",
+  "generated_at": "2026-10-23T04:34:22.799Z",
+  "upstream_feed": "https://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684,13928,13929,13930&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
   "url_branch_id": null,
   "custom_label_1": null,
-  "street_address": "162 Main South Road",
-  "city": "Christchurch",
+  "street_address": null,
+  "city": null,
   "include_title_pattern": null,
   "include_yard_pattern": null,
   "match_title_only": false,
   "require_sale_price": false,
   "allow_empty_source": false,
   "allow_empty_result": false,
-  "upstream_vehicles": 69,
-  "source_vehicles_before_filter": 79,
+  "upstream_vehicles": 68,
+  "source_vehicles_before_filter": 78,
   "include_vehicle_ids_file": null,
   "exclude_vehicle_ids_file": "config/rangiora-vehicle-ids.txt",
-  "published_vehicles": 68,
-  "match_rate": 0.9855072463768116,
-  "matched_by_title_and_mileage": 68,
+  "published_vehicles": 67,
+  "match_rate": 0.9852941176470589,
+  "matched_by_title_and_mileage": 67,
   "matched_by_title_only": null,
   "unmatched": [
     {
@@ -29,5 +29,7 @@
       "candidate_count": 0
     }
   ],
-  "inventory_cards_found": 145
+  "inventory_cards_found": 72,
+  "url_verification": "Previously verified stock-ID mappings; year/make/model/title rechecked against live AutoPlay",
+  "website_checked_this_run": false
 }
