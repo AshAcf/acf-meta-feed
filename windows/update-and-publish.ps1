@@ -51,6 +51,26 @@ try {
 
     Set-Location -LiteralPath $ProjectRoot
 
+    # Generated outputs may differ locally after a previous run or after the
+    # GitHub website-feed workflow updates the same files. They are disposable
+    # build products, so reset only these paths before syncing. Never discard
+    # edits to scripts, configuration or other source files.
+    $GeneratedPaths = @(
+        'public/*.csv',
+        'public/*report.json',
+        'public/*url-map.json',
+        'public/images/hybrid-vehicles/*.jpg'
+    )
+    & $Git restore --staged --worktree -- $GeneratedPaths
+    if ($LASTEXITCODE -ne 0) {
+        throw 'Could not reset stale generated feed outputs.'
+    }
+
+    $SourceChanges = & $Git status --porcelain --untracked-files=no
+    if ($LASTEXITCODE -ne 0 -or $SourceChanges) {
+        throw "Source or configuration files have local changes. Nothing was generated or published.`n$SourceChanges"
+    }
+
     # Sync before generating files. Pulling after generation can make autostash
     # restore conflicts into generated JSON and accidentally publish them.
     & $Git pull --rebase origin main
