@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-03T16:58:28.127Z",
+  "generated_at": "2026-11-03T23:12:41.583Z",
   "upstream_feed": "https://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=13928,13929,13930&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
   "url_branch_id": "1077",
@@ -23,13 +23,13 @@
   "unmatched": [
     {
       "vehicle_id": "LAZ755",
-      "title": "2017 Toyota Land Cruiser VX 4.5 V8 Turbo Diesel 4WD",
+      "title": "2017 Toyota Land Cruiser VX 4.5 V8 Turbo Diesel 4WD 7 str NZ New",
       "mileage": "98605",
       "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4061659",
       "candidate_count": 0
     }
   ],
-  "inventory_cards_found": 66,
+  "inventory_cards_found": 65,
   "url_verification": "Previously verified stock-ID mappings; year/make/model/title rechecked against live AutoPlay",
   "website_checked_this_run": false
 }
