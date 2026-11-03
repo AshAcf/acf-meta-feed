@@ -1,17 +1,21 @@
 {
-  "generated_at": "2026-11-03T17:05:26.985Z",
+  "generated_at": "2026-11-03T23:24:50.259Z",
   "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1685,1686&type=6",
   "used_source_generated_at": [
-    "2026-11-03T16:58:25.530Z",
-    "2026-11-03T16:58:28.127Z"
+    "2026-11-03T23:12:38.825Z",
+    "2026-11-03T23:12:41.583Z"
   ],
-  "published_vehicles": 122,
+  "published_vehicles": 119,
   "new_demo_source_vehicles": 57,
-  "new_demo_published_vehicles": 56,
+  "new_demo_published_vehicles": 55,
   "unresolved": [
     {
       "vehicle_id": "165770",
       "title": "2025 Ford Transit Courier Tourneo Active"
+    },
+    {
+      "vehicle_id": "165686",
+      "title": "2026 Ford Ranger Wolftrak 3.0L V6 Turbo Diesel Double Cab 4WD"
     }
   ],
   "wolftrak_vehicles": 3
