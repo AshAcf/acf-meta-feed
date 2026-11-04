@@ -27,6 +27,8 @@ if(count<40)throw new Error(`Only ${count} inventory cards; previous feeds prese
 const searchFile=join(working,'inventory.html');await writeFile(searchFile,html);
 const files=[];
 for(const config of [
+ {csv:'yard-1684-used.csv',map:'yard-1684-url-map.json',report:'yard-1684-report.json',yards:'1684',env:{STREET_ADDRESS:'162 Main South Road',CITY:'Christchurch'}},
+ {csv:'yard-13928-used.csv',map:'yard-13928-url-map.json',report:'yard-13928-report.json',yards:'13928',env:{URL_BRANCH_ID:'1077',STREET_ADDRESS:'336 Flaxton Road',CITY:'Rangiora'}},
  {csv:'acf-meta-feed.csv',map:'url-map.json',report:'feed-report.json',yards:'1684,13928,13929,13930',env:{EXCLUDE_VEHICLE_IDS_FILE:'config/rangiora-vehicle-ids.txt'}},
  {csv:'rangiora-meta-feed.csv',map:'rangiora-url-map.json',report:'rangiora-feed-report.json',yards:'13928,13929,13930',env:{URL_BRANCH_ID:'1077',CUSTOM_LABEL_1:'RANGIORA'}}
 ]){
