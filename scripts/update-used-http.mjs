@@ -14,15 +14,9 @@ if(mappedMode){
  const response=await fetch('https://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684,13928,13929,13930&type=6',{signal:AbortSignal.timeout(30000)});
  if(!response.ok)throw new Error(`AutoPlay HTTP ${response.status}`);
  const csv=await response.text();liveSourceFile=join(working,'live-autoplay.csv');await writeFile(liveSourceFile,csv);
- const previous=[...parseCSV(await readFile('public/acf-meta-feed.csv','utf8')),...parseCSV(await readFile('public/rangiora-meta-feed.csv','utf8'))];
- const maps={...JSON.parse(await readFile('public/url-map.json','utf8')),...JSON.parse(await readFile('public/rangiora-url-map.json','utf8'))};
- const liveWebsite=await fetch(source,{headers:{accept:'text/html'},signal:AbortSignal.timeout(30000)});
- if(!liveWebsite.ok)throw new Error(`Inventory HTTP ${liveWebsite.status}`);
- const websiteHTML=await liveWebsite.text();
- const mapped=mappedRecords(parseCSV(csv),previous,maps);
- // Prefer current website cards. Keep previously verified mappings only where
- // the current inventory HTML does not already contain that exact stock URL.
- html=websiteHTML+'\n'+matchingHTML(mapped.filter(r=>!websiteHTML.includes(new URL(r.URL).pathname)));
+ const previous=[...parseCSV(await readFile('public/acf-meta-feed.csv','utf8')),...parseCSV(await readFile('public/rangiora-meta-feed.csv','utf8')),...parseCSV(await readFile('public/yard-1684-used.csv','utf8')),...parseCSV(await readFile('public/yard-13928-used.csv','utf8'))];
+ const maps={...JSON.parse(await readFile('public/yard-1684-url-map.json','utf8')),...JSON.parse(await readFile('public/yard-13928-url-map.json','utf8')),...JSON.parse(await readFile('public/url-map.json','utf8')),...JSON.parse(await readFile('public/rangiora-url-map.json','utf8'))};
+ html=matchingHTML(mappedRecords(parseCSV(csv),previous,maps));
 }else{
  const response=await fetch(source,{headers:{accept:'text/html'},signal:AbortSignal.timeout(30000)});
  if(!response.ok)throw new Error(`Inventory HTTP ${response.status}`);
