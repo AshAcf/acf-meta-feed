@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T03:28:08.309Z",
+  "generated_at": "2026-11-04T06:02:00.935Z",
   "upstream_feed": "https://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
   "url_branch_id": null,
@@ -12,12 +12,12 @@
   "require_sale_price": false,
   "allow_empty_source": false,
   "allow_empty_result": false,
-  "upstream_vehicles": 54,
-  "source_vehicles_before_filter": 54,
+  "upstream_vehicles": 55,
+  "source_vehicles_before_filter": 55,
   "include_vehicle_ids_file": null,
   "exclude_vehicle_ids_file": null,
   "published_vehicles": 52,
-  "match_rate": 0.9629629629629629,
+  "match_rate": 0.9454545454545454,
   "matched_by_title_and_mileage": 52,
   "matched_by_title_only": null,
   "unmatched": [
@@ -33,6 +33,13 @@
       "title": "2021 Ford Transit Custom SWB Low Roof",
       "mileage": "135889",
       "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4060130",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "95778",
+      "title": "2021 Ford Ranger PX3  XLT 2WD 3.2L Turbo-Diesel",
+      "mileage": "95880",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4063666",
       "candidate_count": 0
     }
   ],
