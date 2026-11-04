@@ -38,7 +38,7 @@ jobs:
         run: |
           git config user.name 'acf-feed-updater'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add public/acf-meta-feed.csv public/feed-report.json public/url-map.json public/rangiora-meta-feed.csv public/rangiora-feed-report.json public/rangiora-url-map.json
+          git add public/acf-meta-feed.csv public/feed-report.json public/url-map.json public/rangiora-meta-feed.csv public/rangiora-feed-report.json public/rangiora-url-map.json public/yard-1684-used.csv public/yard-1684-report.json public/yard-1684-url-map.json public/yard-13928-used.csv public/yard-13928-report.json public/yard-13928-url-map.json
           git diff --cached --quiet && exit 0
           git commit -m 'Refresh primary stock feeds from live inventory'
           git pull --rebase origin main
