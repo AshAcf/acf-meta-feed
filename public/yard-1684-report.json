@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T21:14:51.943Z",
+  "generated_at": "2026-11-05T06:28:24.898Z",
   "upstream_feed": "https://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
   "url_branch_id": null,
@@ -12,13 +12,13 @@
   "require_sale_price": false,
   "allow_empty_source": false,
   "allow_empty_result": false,
-  "upstream_vehicles": 54,
-  "source_vehicles_before_filter": 54,
+  "upstream_vehicles": 51,
+  "source_vehicles_before_filter": 51,
   "include_vehicle_ids_file": null,
   "exclude_vehicle_ids_file": null,
-  "published_vehicles": 51,
-  "match_rate": 0.9444444444444444,
-  "matched_by_title_and_mileage": 51,
+  "published_vehicles": 49,
+  "match_rate": 0.9607843137254902,
+  "matched_by_title_and_mileage": 49,
   "matched_by_title_only": null,
   "unmatched": [
     {
@@ -34,16 +34,9 @@
       "mileage": "135889",
       "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4060130",
       "candidate_count": 0
-    },
-    {
-      "vehicle_id": "95778",
-      "title": "2021 Ford Ranger PX3  XLT 2WD 3.2L Turbo-Diesel",
-      "mileage": "95880",
-      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4063666",
-      "candidate_count": 0
     }
   ],
-  "inventory_cards_found": 68,
+  "inventory_cards_found": 66,
   "url_verification": "Previously verified stock-ID mappings; year/make/model/title rechecked against live AutoPlay",
   "website_checked_this_run": false
 }

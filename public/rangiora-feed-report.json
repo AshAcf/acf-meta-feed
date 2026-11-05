@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T21:14:56.910Z",
+  "generated_at": "2026-11-05T06:28:29.880Z",
   "upstream_feed": "https://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=13928,13929,13930&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
   "url_branch_id": "1077",
@@ -29,7 +29,7 @@
       "candidate_count": 0
     }
   ],
-  "inventory_cards_found": 68,
+  "inventory_cards_found": 66,
   "url_verification": "Previously verified stock-ID mappings; year/make/model/title rechecked against live AutoPlay",
   "website_checked_this_run": false
 }
