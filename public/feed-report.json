@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T23:32:46.566Z",
+  "generated_at": "2026-11-06T06:23:09.493Z",
   "upstream_feed": "https://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684,13928,13929,13930&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
   "url_branch_id": null,
@@ -12,12 +12,12 @@
   "require_sale_price": false,
   "allow_empty_source": false,
   "allow_empty_result": false,
-  "upstream_vehicles": 60,
-  "source_vehicles_before_filter": 68,
+  "upstream_vehicles": 63,
+  "source_vehicles_before_filter": 71,
   "include_vehicle_ids_file": null,
   "exclude_vehicle_ids_file": "config/rangiora-vehicle-ids.txt",
   "published_vehicles": 57,
-  "match_rate": 0.95,
+  "match_rate": 0.9047619047619048,
   "matched_by_title_and_mileage": 57,
   "matched_by_title_only": null,
   "unmatched": [
@@ -33,6 +33,27 @@
       "title": "2021 Ford Transit Custom SWB Low Roof",
       "mileage": "135889",
       "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4060130",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "95677",
+      "title": "2017 Toyota C-HR G-Spec Hybrid",
+      "mileage": "141737",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4065840",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "95768",
+      "title": "2018 Ford Escape Ambiente FWD 1.5L EcoBoost Petrol",
+      "mileage": "85814",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4066126",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "95769",
+      "title": "2021 Ford Ranger PX3 XLT 2WD 2.0 Bi Turbo 10spd",
+      "mileage": "141443",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4066179",
       "candidate_count": 0
     },
     {
