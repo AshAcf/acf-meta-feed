@@ -46,6 +46,18 @@ try {
         throw "This folder has not been published as a GitHub repository yet."
     }
 
+    $IndexLock = Join-Path $ProjectRoot '.git\index.lock'
+    if (Test-Path -LiteralPath $IndexLock) {
+        $ActiveGit = Get-Process git, git-remote-https, ssh -ErrorAction SilentlyContinue
+        $LockAge = (Get-Date) - (Get-Item -LiteralPath $IndexLock).LastWriteTime
+        if ($ActiveGit -or $LockAge.TotalMinutes -lt 10) {
+            throw 'Git is currently active or its repository lock is recent. Nothing was generated or published.'
+        }
+
+        Remove-Item -LiteralPath $IndexLock -Force
+        Write-Host "Removed stale Git repository lock ($([math]::Round($LockAge.TotalHours, 1)) hours old)."
+    }
+
     $SafePath = $ProjectRoot.Replace("\", "/")
     & $Git config --global --add safe.directory $SafePath
 
