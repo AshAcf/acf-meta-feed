@@ -29,15 +29,15 @@ const files=[];
 for(const config of [
  {csv:'yard-1684-used.csv',map:'yard-1684-url-map.json',report:'yard-1684-report.json',yards:'1684',env:{STREET_ADDRESS:'162 Main South Road',CITY:'Christchurch'}},
  {csv:'yard-13928-used.csv',map:'yard-13928-url-map.json',report:'yard-13928-report.json',yards:'13928',env:{URL_BRANCH_ID:'1077',STREET_ADDRESS:'336 Flaxton Road',CITY:'Rangiora'}},
- {csv:'acf-meta-feed.csv',map:'url-map.json',report:'feed-report.json',yards:'1684,13928,13929,13930',env:{EXCLUDE_VEHICLE_IDS_FILE:'config/rangiora-vehicle-ids.txt'}},
- {csv:'rangiora-meta-feed.csv',map:'rangiora-url-map.json',report:'rangiora-feed-report.json',yards:'13928,13929,13930',env:{URL_BRANCH_ID:'1077',CUSTOM_LABEL_1:'RANGIORA'}}
+ {csv:'acf-meta-feed.csv',map:'url-map.json',report:'feed-report.json',yards:'1684,13928,13929,13930',env:{EXCLUDE_YARD_PATTERN:'^Rangiora\\b',STREET_ADDRESS:'162 Main South Road',CITY:'Christchurch'}},
+ {csv:'rangiora-meta-feed.csv',map:'rangiora-url-map.json',report:'rangiora-feed-report.json',yards:'13928,13929,13930',env:{URL_BRANCH_ID:'1077',CUSTOM_LABEL_1:'RANGIORA',STREET_ADDRESS:'336 Flaxton Road',CITY:'Rangiora'}}
 ]){
  const result=spawnSync(process.execPath,['scripts/update-feed.mjs'],{stdio:'inherit',timeout:120000,env:{...process.env,
   AUTOPLAY_FEED_URL:`https://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=${config.yards}&type=6`,
   ACF_SEARCH_URL:source,ACF_SEARCH_FILE:searchFile,AUTOPLAY_FEED_FILE:config.csv==='acf-meta-feed.csv'?liveSourceFile:'',
   OUTPUT_FILE:join(working,config.csv),MAP_FILE:join(working,config.map),REPORT_FILE:join(working,config.report),
   URL_BRANCH_ID:'',CUSTOM_LABEL_1:'',INCLUDE_VEHICLE_IDS_FILE:'',EXCLUDE_VEHICLE_IDS_FILE:'',
-  INCLUDE_TITLE_PATTERN:'',INCLUDE_YARD_PATTERN:'',MATCH_TITLE_ONLY:'',REQUIRE_SALE_PRICE:'',ALLOW_EMPTY_SOURCE:'',
+  INCLUDE_TITLE_PATTERN:'',INCLUDE_YARD_PATTERN:'',EXCLUDE_YARD_PATTERN:'',MATCH_TITLE_ONLY:'',REQUIRE_SALE_PRICE:'',ALLOW_EMPTY_SOURCE:'',
   MIN_INVENTORY_CARDS:'40',MIN_FEED_MATCH_RATE:'0.9',...config.env
  }});
  if(result.error || result.status!==0)throw new Error(`${config.csv} generation failed; previous feeds preserved. ${result.error?.message || ''}`);
