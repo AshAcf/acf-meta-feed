@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T00:57:58.169Z",
+  "generated_at": "2026-11-11T04:00:47.744Z",
   "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1685&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
   "url_branch_id": null,
@@ -13,20 +13,76 @@
   "require_sale_price": false,
   "allow_empty_source": false,
   "allow_empty_result": false,
-  "upstream_vehicles": 38,
-  "source_vehicles_before_filter": 38,
+  "upstream_vehicles": 46,
+  "source_vehicles_before_filter": 46,
   "include_vehicle_ids_file": null,
   "exclude_vehicle_ids_file": null,
   "published_vehicles": 37,
-  "match_rate": 0.9736842105263158,
+  "match_rate": 0.8043478260869565,
   "matched_by_title_and_mileage": null,
   "matched_by_title_only": 37,
   "unmatched": [
+    {
+      "vehicle_id": "798336",
+      "title": "2026 Ford Ranger Raptor 3.0L Petrol 4WD 10 Speed Auto",
+      "mileage": "100",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3943392",
+      "candidate_count": 0
+    },
     {
       "vehicle_id": "165770",
       "title": "2025 Ford Transit Courier Tourneo Active",
       "mileage": "100",
       "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4019458",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "806341",
+      "title": "2027 Ford Ranger XLT 2.0L Turbo Diesel Double Cab 2WD",
+      "mileage": "50",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4070183",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "803084",
+      "title": "2027 Ford Ranger XLT 2.0L Turbo Diesel Double Cab 2WD",
+      "mileage": "50",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4070190",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "165834",
+      "title": "2027 Ford Ranger XLT 2.0L Turbo Diesel Double Cab 4X4",
+      "mileage": "50",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4070204",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "165878",
+      "title": "2027 Ford Ranger XLT 2.0L Turbo Diesel Double Cab 4X4",
+      "mileage": "50",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4070226",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "165868",
+      "title": "2027 Ford Ranger XLT 2.0L Turbo Diesel Double Cab 4X4",
+      "mileage": "50",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4070231",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "165824",
+      "title": "2027 Ford Ranger XLT 2.0L Turbo Diesel Double Cab 4X4",
+      "mileage": "50",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4070232",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "802770",
+      "title": "2027 Ford Ranger XLT Double Cab 4WD 3.0L V6 Diesel",
+      "mileage": "50",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4070238",
       "candidate_count": 0
     }
   ],
