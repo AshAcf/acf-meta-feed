@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T00:01:11.632Z",
+  "generated_at": "2026-11-11T00:58:10.971Z",
   "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1685,1686&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search?Condition=1",
   "url_branch_id": null,
@@ -8,6 +8,7 @@
   "city": "Christchurch",
   "include_title_pattern": "^2026 Ford (?:Ranger Wildtrak .*Bi[ -]?Turbo|Everest Sport .*Bi[ -]?Turbo)",
   "include_yard_pattern": "^New Cars$",
+  "exclude_yard_pattern": null,
   "match_title_only": true,
   "require_sale_price": true,
   "allow_empty_source": false,

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T00:01:03.053Z",
+  "generated_at": "2026-11-11T00:58:03.395Z",
   "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=13929&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
   "url_branch_id": "1077",
@@ -8,6 +8,7 @@
   "city": "Rangiora",
   "include_title_pattern": null,
   "include_yard_pattern": null,
+  "exclude_yard_pattern": null,
   "match_title_only": true,
   "require_sale_price": false,
   "allow_empty_source": false,
