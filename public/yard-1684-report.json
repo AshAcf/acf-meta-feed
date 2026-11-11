@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-11T00:00:48.350Z",
-  "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684&type=6",
+  "generated_at": "2026-11-11T00:57:38.272Z",
+  "upstream_feed": "https://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
   "url_branch_id": null,
   "custom_label_1": null,
@@ -8,6 +8,7 @@
   "city": "Christchurch",
   "include_title_pattern": null,
   "include_yard_pattern": null,
+  "exclude_yard_pattern": null,
   "match_title_only": false,
   "require_sale_price": false,
   "allow_empty_source": false,
@@ -36,5 +37,7 @@
       "candidate_count": 0
     }
   ],
-  "inventory_cards_found": 117
+  "inventory_cards_found": 62,
+  "url_verification": "Previously verified stock-ID mappings; year/make/model/title rechecked against live AutoPlay",
+  "website_checked_this_run": false
 }
