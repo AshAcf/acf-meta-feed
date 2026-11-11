@@ -8,7 +8,7 @@ const feeds = [
     outputFile: "public/acf-meta-feed.csv",
     mapFile: "public/url-map.json",
     reportFile: "public/feed-report.json",
-    excludeVehicleIdsFile: "config/rangiora-vehicle-ids.txt",
+    excludeYardPattern: "^Rangiora\\b",
     minFeedMatchRate: "0.7"
   },
   {
@@ -136,6 +136,7 @@ for (const feed of feeds) {
     MATCH_TITLE_ONLY: feed.matchTitleOnly ? "1" : "",
     REQUIRE_SALE_PRICE: feed.requireSalePrice ? "1" : "",
     INCLUDE_YARD_PATTERN: feed.includeYardPattern || "",
+    EXCLUDE_YARD_PATTERN: feed.excludeYardPattern || "",
     ALLOW_EMPTY_SOURCE: feed.allowEmptySource ? "1" : "",
     ALLOW_EMPTY_RESULT: feed.allowEmptyResult ? "1" : "",
     MIN_FEED_MATCH_RATE: feed.minFeedMatchRate || "",

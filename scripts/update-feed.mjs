@@ -20,6 +20,7 @@ const INCLUDE_TITLE_PATTERN = process.env.INCLUDE_TITLE_PATTERN || "";
 const MATCH_TITLE_ONLY = process.env.MATCH_TITLE_ONLY === "1";
 const REQUIRE_SALE_PRICE = process.env.REQUIRE_SALE_PRICE === "1";
 const INCLUDE_YARD_PATTERN = process.env.INCLUDE_YARD_PATTERN || "";
+const EXCLUDE_YARD_PATTERN = process.env.EXCLUDE_YARD_PATTERN || "";
 const ALLOW_EMPTY_SOURCE = process.env.ALLOW_EMPTY_SOURCE === "1";
 const ALLOW_EMPTY_RESULT = process.env.ALLOW_EMPTY_RESULT === "1";
 const MIN_INVENTORY_CARDS = Number(process.env.MIN_INVENTORY_CARDS || "40");
@@ -262,12 +263,14 @@ async function main() {
 
   const includeTitleRegex = INCLUDE_TITLE_PATTERN ? new RegExp(INCLUDE_TITLE_PATTERN, "i") : null;
   const includeYardRegex = INCLUDE_YARD_PATTERN ? new RegExp(INCLUDE_YARD_PATTERN, "i") : null;
+  const excludeYardRegex = EXCLUDE_YARD_PATTERN ? new RegExp(EXCLUDE_YARD_PATTERN, "i") : null;
   const sourceRecords = records.filter((record) => {
     const reference = String(record.vehicle_id || "").trim();
     if (includeVehicleIds.size && !includeVehicleIds.has(reference)) return false;
     if (excludeVehicleIds.has(reference)) return false;
     if (includeTitleRegex && !includeTitleRegex.test(record.title || record.description || "")) return false;
     if (includeYardRegex && !includeYardRegex.test(record.yardname || "")) return false;
+    if (excludeYardRegex && excludeYardRegex.test(record.yardname || "")) return false;
     if (REQUIRE_SALE_PRICE && !priceValue(record.sale_price)) return false;
     return true;
   });
@@ -331,6 +334,7 @@ async function main() {
     city: CITY || null,
     include_title_pattern: INCLUDE_TITLE_PATTERN || null,
     include_yard_pattern: INCLUDE_YARD_PATTERN || null,
+    exclude_yard_pattern: EXCLUDE_YARD_PATTERN || null,
     match_title_only: MATCH_TITLE_ONLY,
     require_sale_price: REQUIRE_SALE_PRICE,
     allow_empty_source: ALLOW_EMPTY_SOURCE,
