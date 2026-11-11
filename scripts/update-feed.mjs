@@ -16,6 +16,10 @@ const URL_BRANCH_ID = process.env.URL_BRANCH_ID || "";
 const CUSTOM_LABEL_1 = process.env.CUSTOM_LABEL_1 || "";
 const STREET_ADDRESS = process.env.STREET_ADDRESS || "";
 const CITY = process.env.CITY || "";
+const LOCATION_YARD_PATTERN = process.env.LOCATION_YARD_PATTERN || "";
+const LOCATION_CUSTOM_LABEL_1 = process.env.LOCATION_CUSTOM_LABEL_1 || "";
+const LOCATION_STREET_ADDRESS = process.env.LOCATION_STREET_ADDRESS || "";
+const LOCATION_CITY = process.env.LOCATION_CITY || "";
 const INCLUDE_TITLE_PATTERN = process.env.INCLUDE_TITLE_PATTERN || "";
 const MATCH_TITLE_ONLY = process.env.MATCH_TITLE_ONLY === "1";
 const REQUIRE_SALE_PRICE = process.env.REQUIRE_SALE_PRICE === "1";
@@ -264,6 +268,7 @@ async function main() {
   const includeTitleRegex = INCLUDE_TITLE_PATTERN ? new RegExp(INCLUDE_TITLE_PATTERN, "i") : null;
   const includeYardRegex = INCLUDE_YARD_PATTERN ? new RegExp(INCLUDE_YARD_PATTERN, "i") : null;
   const excludeYardRegex = EXCLUDE_YARD_PATTERN ? new RegExp(EXCLUDE_YARD_PATTERN, "i") : null;
+  const locationYardRegex = LOCATION_YARD_PATTERN ? new RegExp(LOCATION_YARD_PATTERN, "i") : null;
   const sourceRecords = records.filter((record) => {
     const reference = String(record.vehicle_id || "").trim();
     if (includeVehicleIds.size && !includeVehicleIds.has(reference)) return false;
@@ -302,15 +307,19 @@ async function main() {
     const salePrice = priceValue(record.sale_price);
     const saleLabel = salePrice > 0 && (!price || salePrice < price) ? "SALE" : "";
     const headlines = vehicleHeadlines(record);
+    const usesLocationOverride = locationYardRegex?.test(record.yardname || "") || false;
+    const streetAddress = usesLocationOverride ? LOCATION_STREET_ADDRESS : STREET_ADDRESS;
+    const city = usesLocationOverride ? LOCATION_CITY : CITY;
+    const customLabel1 = usesLocationOverride ? LOCATION_CUSTOM_LABEL_1 : CUSTOM_LABEL_1;
     return [{
       ...record,
       URL: outputUrl,
-      "address.addr1": STREET_ADDRESS,
-      "address.city": CITY,
-      street_address: STREET_ADDRESS,
-      city: CITY,
+      "address.addr1": streetAddress,
+      "address.city": city,
+      street_address: streetAddress,
+      city,
       custom_label_0: saleLabel,
-      custom_label_1: CUSTOM_LABEL_1,
+      custom_label_1: customLabel1,
       custom_label_2: displayPrice(price, salePrice),
       custom_label_3: headlines.short,
       custom_label_4: headlines.trimmed
@@ -332,6 +341,10 @@ async function main() {
     custom_label_1: CUSTOM_LABEL_1 || null,
     street_address: STREET_ADDRESS || null,
     city: CITY || null,
+    location_yard_pattern: LOCATION_YARD_PATTERN || null,
+    location_custom_label_1: LOCATION_CUSTOM_LABEL_1 || null,
+    location_street_address: LOCATION_STREET_ADDRESS || null,
+    location_city: LOCATION_CITY || null,
     include_title_pattern: INCLUDE_TITLE_PATTERN || null,
     include_yard_pattern: INCLUDE_YARD_PATTERN || null,
     exclude_yard_pattern: EXCLUDE_YARD_PATTERN || null,

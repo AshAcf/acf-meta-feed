@@ -8,7 +8,10 @@ const feeds = [
     outputFile: "public/acf-meta-feed.csv",
     mapFile: "public/url-map.json",
     reportFile: "public/feed-report.json",
-    excludeYardPattern: "^Rangiora\\b",
+    locationYardPattern: "^Rangiora\\b",
+    locationCustomLabel1: "RANGIORA",
+    locationStreetAddress: "336 Flaxton Road",
+    locationCity: "Rangiora",
     minFeedMatchRate: "0.7"
   },
   {
@@ -132,6 +135,10 @@ for (const feed of feeds) {
     CUSTOM_LABEL_1: feed.customLabel1 || "",
     STREET_ADDRESS: isRangiora ? "336 Flaxton Road" : "162 Main South Road",
     CITY: isRangiora ? "Rangiora" : "Christchurch",
+    LOCATION_YARD_PATTERN: feed.locationYardPattern || "",
+    LOCATION_CUSTOM_LABEL_1: feed.locationCustomLabel1 || "",
+    LOCATION_STREET_ADDRESS: feed.locationStreetAddress || "",
+    LOCATION_CITY: feed.locationCity || "",
     INCLUDE_TITLE_PATTERN: feed.includeTitlePattern || "",
     MATCH_TITLE_ONLY: feed.matchTitleOnly ? "1" : "",
     REQUIRE_SALE_PRICE: feed.requireSalePrice ? "1" : "",
