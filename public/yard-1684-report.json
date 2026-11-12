@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-12T02:12:28.451Z",
-  "upstream_feed": "https://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684&type=6",
+  "generated_at": "2026-11-12T06:54:36.129Z",
+  "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
   "url_branch_id": null,
   "custom_label_1": null,
@@ -17,16 +17,36 @@
   "require_sale_price": false,
   "allow_empty_source": false,
   "allow_empty_result": false,
-  "upstream_vehicles": 47,
-  "source_vehicles_before_filter": 47,
+  "upstream_vehicles": 50,
+  "source_vehicles_before_filter": 50,
   "include_vehicle_ids_file": null,
   "exclude_vehicle_ids_file": null,
   "published_vehicles": 47,
-  "match_rate": 1,
+  "match_rate": 0.94,
   "matched_by_title_and_mileage": 47,
   "matched_by_title_only": null,
-  "unmatched": [],
-  "inventory_cards_found": 65,
-  "url_verification": "Previously verified stock-ID mappings; year/make/model/title rechecked against live AutoPlay",
-  "website_checked_this_run": false
+  "unmatched": [
+    {
+      "vehicle_id": "95765",
+      "title": "2026 Ford Everest Platinum 4WD 3.0L V6 TD 10spd",
+      "mileage": "12429",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4071945",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "95797",
+      "title": "2018 Suzuki S-Cross SX4 S-Cross Ltd 1.6L Auto NZ New",
+      "mileage": "95655",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4071957",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "95804",
+      "title": "2019 Ford EcoSport Titanium 1.0 EcoBoost",
+      "mileage": "65195",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4071964",
+      "candidate_count": 0
+    }
+  ],
+  "inventory_cards_found": 130
 }
