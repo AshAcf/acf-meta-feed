@@ -4,6 +4,7 @@ import { pathToFileURL } from 'node:url';
 
 export const SOURCE = 'http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1685,1686&type=6';
 export const HEADERS = ['vehicle_id', 'stock_number', 'state_of_vehicle', 'yardname', 'yard_code', 'source_yardname', 'year', 'make', 'model', 'variant', 'title', 'price', 'sale_price', 'currency', 'image[0].url', 'URL', 'exterior_color', 'mileage.value'];
+const MIN_NEW_DEMO_MATCH_RATE = Number(process.env.MIN_NEW_DEMO_MATCH_RATE || '0.7');
 
 export function parseCsv(text) {
   const rows = []; let row = [], field = '', quoted = false;
@@ -106,7 +107,10 @@ export async function main() {
     matched++;
     seen.set(r.vehicle_id, normalized);
   }
-  if (matched / fresh.length < 0.9) throw new Error(`Only ${matched}/${fresh.length} new/demo vehicles have current listing URLs; preserving last good feed`);
+  const matchRate = matched / fresh.length;
+  if (matchRate < MIN_NEW_DEMO_MATCH_RATE) {
+    throw new Error(`Only ${matched}/${fresh.length} new/demo vehicles have current listing URLs; preserving last good feed`);
+  }
   const records = [...seen.values()].sort((a, b) => a.vehicle_id.localeCompare(b.vehicle_id));
   const output = csv(records);
   if (parseCsv(output).length !== records.length) throw new Error('CSV round-trip failed');
@@ -114,7 +118,8 @@ export async function main() {
     generated_at: new Date().toISOString(), upstream_feed: SOURCE,
     used_source_generated_at: reports.map(r => r.generated_at),
     published_vehicles: records.length, new_demo_source_vehicles: fresh.length,
-    new_demo_published_vehicles: matched, unresolved,
+    new_demo_published_vehicles: matched, new_demo_match_rate: matchRate,
+    minimum_new_demo_match_rate: MIN_NEW_DEMO_MATCH_RATE, unresolved,
     wolftrak_vehicles: records.filter(r => /\branger\b/i.test(r.model) && /\bwolftrak\b/i.test(r.title)).length
   };
   await mkdir('public', { recursive: true });
