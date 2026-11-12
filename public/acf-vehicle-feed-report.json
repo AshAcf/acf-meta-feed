@@ -1,17 +1,55 @@
 {
-  "generated_at": "2026-11-11T00:59:02.859Z",
+  "generated_at": "2026-11-12T00:48:40.376Z",
   "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1685,1686&type=6",
   "used_source_generated_at": [
-    "2026-11-11T00:57:46.507Z",
-    "2026-11-11T00:57:48.717Z"
+    "2026-11-12T00:00:42.222Z",
+    "2026-11-12T00:00:46.401Z"
   ],
-  "published_vehicles": 114,
-  "new_demo_source_vehicles": 53,
-  "new_demo_published_vehicles": 52,
+  "published_vehicles": 120,
+  "new_demo_source_vehicles": 63,
+  "new_demo_published_vehicles": 53,
+  "new_demo_match_rate": 0.8412698412698413,
+  "minimum_new_demo_match_rate": 0.7,
   "unresolved": [
     {
       "vehicle_id": "165770",
       "title": "2025 Ford Transit Courier Tourneo Active"
+    },
+    {
+      "vehicle_id": "806341",
+      "title": "2027 Ford Ranger XLT 2.0L Turbo Diesel Double Cab 2WD"
+    },
+    {
+      "vehicle_id": "803084",
+      "title": "2027 Ford Ranger XLT 2.0L Turbo Diesel Double Cab 2WD"
+    },
+    {
+      "vehicle_id": "165834",
+      "title": "2027 Ford Ranger XLT 2.0L Turbo Diesel Double Cab 4X4"
+    },
+    {
+      "vehicle_id": "165878",
+      "title": "2027 Ford Ranger XLT 2.0L Turbo Diesel Double Cab 4X4"
+    },
+    {
+      "vehicle_id": "165868",
+      "title": "2027 Ford Ranger XLT 2.0L Turbo Diesel Double Cab 4X4"
+    },
+    {
+      "vehicle_id": "165824",
+      "title": "2027 Ford Ranger XLT 2.0L Turbo Diesel Double Cab 4X4"
+    },
+    {
+      "vehicle_id": "802770",
+      "title": "2027 Ford Ranger XLT Double Cab 4WD 3.0L V6 Diesel"
+    },
+    {
+      "vehicle_id": "809591",
+      "title": "2027 Ford Ranger XLT Double Cab 4WD 3.0L V6 Diesel"
+    },
+    {
+      "vehicle_id": "798384",
+      "title": "2027 Ford Ranger Wildtrak 2.0L Turbo Diesel Double Cab 4WD"
     }
   ],
   "wolftrak_vehicles": 4
