@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-15T06:12:15.866Z",
-  "upstream_feed": "https://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684,13928,13929,13930&type=6",
+  "generated_at": "2026-11-15T06:18:56.938Z",
+  "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684,13928,13929,13930&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
   "url_branch_id": null,
   "custom_label_1": null,
@@ -21,27 +21,10 @@
   "source_vehicles_before_filter": 65,
   "include_vehicle_ids_file": null,
   "exclude_vehicle_ids_file": null,
-  "published_vehicles": 63,
-  "match_rate": 0.9692307692307692,
-  "matched_by_title_and_mileage": 63,
+  "published_vehicles": 65,
+  "match_rate": 1,
+  "matched_by_title_and_mileage": 65,
   "matched_by_title_only": null,
-  "unmatched": [
-    {
-      "vehicle_id": "95765",
-      "title": "2026 Ford Everest Platinum 4WD 3.0L V6 TD 10spd",
-      "mileage": "12429",
-      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4071945",
-      "candidate_count": 0
-    },
-    {
-      "vehicle_id": "95804",
-      "title": "2019 Ford EcoSport Titanium 1.0 EcoBoost",
-      "mileage": "65195",
-      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4071964",
-      "candidate_count": 0
-    }
-  ],
-  "inventory_cards_found": 63,
-  "url_verification": "Previously verified stock-ID mappings; year/make/model/title rechecked against live AutoPlay",
-  "website_checked_this_run": false
+  "unmatched": [],
+  "inventory_cards_found": 128
 }
