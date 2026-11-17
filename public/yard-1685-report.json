@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T00:01:01.115Z",
+  "generated_at": "2026-11-17T04:01:03.957Z",
   "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1685&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
   "url_branch_id": null,
@@ -17,14 +17,14 @@
   "require_sale_price": false,
   "allow_empty_source": false,
   "allow_empty_result": false,
-  "upstream_vehicles": 48,
-  "source_vehicles_before_filter": 48,
+  "upstream_vehicles": 46,
+  "source_vehicles_before_filter": 46,
   "include_vehicle_ids_file": null,
   "exclude_vehicle_ids_file": null,
-  "published_vehicles": 38,
-  "match_rate": 0.7916666666666666,
+  "published_vehicles": 36,
+  "match_rate": 0.782608695652174,
   "matched_by_title_and_mileage": null,
-  "matched_by_title_only": 38,
+  "matched_by_title_only": 36,
   "unmatched": [
     {
       "vehicle_id": "165770",
