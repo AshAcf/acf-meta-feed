@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-17T03:55:27.209Z",
+  "generated_at": "2026-11-17T04:01:48.929Z",
   "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1685,1686&type=6",
   "used_source_generated_at": [
-    "2026-11-17T03:41:48.302Z",
-    "2026-11-17T03:41:51.943Z"
+    "2026-11-17T04:00:47.315Z",
+    "2026-11-17T04:00:50.732Z"
   ],
-  "published_vehicles": 108,
+  "published_vehicles": 111,
   "new_demo_source_vehicles": 56,
-  "new_demo_published_vehicles": 44,
-  "new_demo_match_rate": 0.7857142857142857,
+  "new_demo_published_vehicles": 46,
+  "new_demo_match_rate": 0.8214285714285714,
   "minimum_new_demo_match_rate": 0.7,
   "unresolved": [
     {
@@ -50,14 +50,6 @@
     {
       "vehicle_id": "798384",
       "title": "2027 Ford Ranger Wildtrak 2.0L Turbo Diesel Double Cab 4WD"
-    },
-    {
-      "vehicle_id": "165658",
-      "title": "2026 Ford Ranger XLT 2.0L Turbo Diesel Double Cab 2WD"
-    },
-    {
-      "vehicle_id": "713802",
-      "title": "2026 Ford Ranger XLT Double Cab W/S 4x4"
     }
   ],
   "wolftrak_vehicles": 4
