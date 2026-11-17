@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-17T00:00:54.955Z",
-  "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684&type=6",
+  "generated_at": "2026-11-17T03:41:45.697Z",
+  "upstream_feed": "https://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
   "url_branch_id": null,
   "custom_label_1": null,
@@ -17,14 +17,38 @@
   "require_sale_price": false,
   "allow_empty_source": false,
   "allow_empty_result": false,
-  "upstream_vehicles": 44,
-  "source_vehicles_before_filter": 44,
+  "upstream_vehicles": 47,
+  "source_vehicles_before_filter": 47,
   "include_vehicle_ids_file": null,
   "exclude_vehicle_ids_file": null,
   "published_vehicles": 44,
-  "match_rate": 1,
+  "match_rate": 0.9361702127659575,
   "matched_by_title_and_mileage": 44,
   "matched_by_title_only": null,
-  "unmatched": [],
-  "inventory_cards_found": 126
+  "unmatched": [
+    {
+      "vehicle_id": "95812",
+      "title": "2024 Ford Everest New Gen Platinum 4WD 3.0L V6",
+      "mileage": "64355",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4074383",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "95794",
+      "title": "2010 Ford Falcon FG XR6 4.0 litre Auto",
+      "mileage": "176230",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4074438",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "95802",
+      "title": "2023 Ford Escape ST-Line X AWD FHEV",
+      "mileage": "82390",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4076821",
+      "candidate_count": 0
+    }
+  ],
+  "inventory_cards_found": 64,
+  "url_verification": "Previously verified stock-ID mappings; year/make/model/title rechecked against live AutoPlay",
+  "website_checked_this_run": false
 }
