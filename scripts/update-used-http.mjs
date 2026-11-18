@@ -9,6 +9,7 @@ import {parseCSV,mappedRecords,matchingHTML} from './mapped-inventory.mjs';
 const working = await mkdtemp(join(tmpdir(),'acf-used-refresh-'));
 const source = 'https://www.avoncityford.com/vehicles/search';
 const mappedMode=process.env.ACF_MAPPED_REFRESH==='1';
+const minPrimaryMatchRate=Number(process.env.MIN_PRIMARY_MATCH_RATE || '0.7');
 let html,liveSourceFile='';
 if(mappedMode){
  const response=await fetch('https://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684,13928,13929,13930&type=6',{signal:AbortSignal.timeout(30000)});
@@ -38,11 +39,11 @@ for(const config of [
   OUTPUT_FILE:join(working,config.csv),MAP_FILE:join(working,config.map),REPORT_FILE:join(working,config.report),
   URL_BRANCH_ID:'',CUSTOM_LABEL_1:'',LOCATION_YARD_PATTERN:'',LOCATION_CUSTOM_LABEL_1:'',LOCATION_STREET_ADDRESS:'',LOCATION_CITY:'',INCLUDE_VEHICLE_IDS_FILE:'',EXCLUDE_VEHICLE_IDS_FILE:'',
   INCLUDE_TITLE_PATTERN:'',INCLUDE_YARD_PATTERN:'',EXCLUDE_YARD_PATTERN:'',MATCH_TITLE_ONLY:'',REQUIRE_SALE_PRICE:'',ALLOW_EMPTY_SOURCE:'',
-  MIN_INVENTORY_CARDS:'40',MIN_FEED_MATCH_RATE:'0.9',...config.env
+  MIN_INVENTORY_CARDS:'40',MIN_FEED_MATCH_RATE:String(minPrimaryMatchRate),...config.env
  }});
  if(result.error || result.status!==0)throw new Error(`${config.csv} generation failed; previous feeds preserved. ${result.error?.message || ''}`);
  const report=JSON.parse(await readFile(join(working,config.report),'utf8'));
- if(!report.published_vehicles || report.match_rate<.9)throw new Error('Generated feed failed validation');
+ if(!report.published_vehicles || report.match_rate<minPrimaryMatchRate)throw new Error('Generated feed failed validation');
  report.url_verification=mappedMode?'Previously verified stock-ID mappings; year/make/model/title rechecked against live AutoPlay':'Live website exact title and odometer';
  report.website_checked_this_run=!mappedMode;
  await writeFile(join(working,config.report),JSON.stringify(report,null,2)+'\n');

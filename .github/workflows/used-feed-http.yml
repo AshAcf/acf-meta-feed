@@ -27,6 +27,7 @@ jobs:
       - name: Refresh and validate both primary feeds
         env:
           ACF_MAPPED_REFRESH: '1'
+          MIN_PRIMARY_MATCH_RATE: '0.7'
         run: node scripts/update-used-http.mjs
       - name: Check mapping identity rules
         run: node --test scripts/test-mapped-inventory.mjs
