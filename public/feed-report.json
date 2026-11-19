@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T11:27:21.413Z",
+  "generated_at": "2026-11-19T20:27:21.980Z",
   "upstream_feed": "https://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684,13928,13929,13930&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
   "url_branch_id": null,
@@ -35,8 +35,8 @@
     },
     {
       "vehicle_id": "95776",
-      "title": "2021 Ford Everest Titanium 2.0D/4Wd",
-      "mileage": "0",
+      "title": "2021 Ford Everest Titanium 4WD 2.0 Bi Turbo 7 Seater",
+      "mileage": "81421",
       "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4077138",
       "candidate_count": 0
     }
