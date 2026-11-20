@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T00:00:42.240Z",
+  "generated_at": "2026-11-20T04:00:57.629Z",
   "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1685&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
   "url_branch_id": null,
@@ -17,12 +17,12 @@
   "require_sale_price": false,
   "allow_empty_source": false,
   "allow_empty_result": false,
-  "upstream_vehicles": 47,
-  "source_vehicles_before_filter": 47,
+  "upstream_vehicles": 48,
+  "source_vehicles_before_filter": 48,
   "include_vehicle_ids_file": null,
   "exclude_vehicle_ids_file": null,
   "published_vehicles": 37,
-  "match_rate": 0.7872340425531915,
+  "match_rate": 0.7708333333333334,
   "matched_by_title_and_mileage": null,
   "matched_by_title_only": 37,
   "unmatched": [
@@ -94,6 +94,13 @@
       "title": "2027 Ford Ranger Wildtrak 2.0L Turbo Diesel Double Cab 4WD",
       "mileage": "50",
       "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4070277",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "165863",
+      "title": "2027 Ford Everest Platinum 3.0 V6 Diesel Turbo SUV 7 Seater 4WD",
+      "mileage": "100",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4082231",
       "candidate_count": 0
     }
   ],

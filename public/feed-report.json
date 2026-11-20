@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-20T02:14:04.409Z",
-  "upstream_feed": "https://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684,13928,13929,13930&type=6",
+  "generated_at": "2026-11-20T04:00:36.347Z",
+  "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684,13928,13929,13930&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
   "url_branch_id": null,
   "custom_label_1": null,
@@ -17,12 +17,12 @@
   "require_sale_price": false,
   "allow_empty_source": false,
   "allow_empty_result": false,
-  "upstream_vehicles": 68,
-  "source_vehicles_before_filter": 68,
+  "upstream_vehicles": 71,
+  "source_vehicles_before_filter": 71,
   "include_vehicle_ids_file": null,
   "exclude_vehicle_ids_file": null,
   "published_vehicles": 66,
-  "match_rate": 0.9705882352941176,
+  "match_rate": 0.9295774647887324,
   "matched_by_title_and_mileage": 66,
   "matched_by_title_only": null,
   "unmatched": [
@@ -34,6 +34,27 @@
       "candidate_count": 0
     },
     {
+      "vehicle_id": "95828",
+      "title": "2024 Ford Ranger New Gen XLT 2WD 2.0L Bi-Turbo",
+      "mileage": "50138",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4082428",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "95831",
+      "title": "2023 Mazda CX-60 AWD Skyactiv",
+      "mileage": "23806",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4082444",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "95834",
+      "title": "2025 Toyota Land Cruiser 300 VX 4WD 3.3L",
+      "mileage": "46470",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4082446",
+      "candidate_count": 0
+    },
+    {
       "vehicle_id": "95776",
       "title": "2021 Ford Everest Titanium 4WD 2.0 Bi Turbo 7 Seater",
       "mileage": "81421",
@@ -41,7 +62,5 @@
       "candidate_count": 0
     }
   ],
-  "inventory_cards_found": 66,
-  "url_verification": "Previously verified stock-ID mappings; year/make/model/title rechecked against live AutoPlay",
-  "website_checked_this_run": false
+  "inventory_cards_found": 123
 }
