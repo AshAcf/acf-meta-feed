@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-22T19:27:30.022Z",
-  "upstream_feed": "https://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684,13928,13929,13930&type=6",
+  "generated_at": "2026-11-22T20:00:24.834Z",
+  "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684,13928,13929,13930&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
   "url_branch_id": null,
   "custom_label_1": null,
@@ -21,48 +21,10 @@
   "source_vehicles_before_filter": 68,
   "include_vehicle_ids_file": null,
   "exclude_vehicle_ids_file": null,
-  "published_vehicles": 63,
-  "match_rate": 0.9264705882352942,
-  "matched_by_title_and_mileage": 63,
+  "published_vehicles": 68,
+  "match_rate": 1,
+  "matched_by_title_and_mileage": 68,
   "matched_by_title_only": null,
-  "unmatched": [
-    {
-      "vehicle_id": "95805",
-      "title": "2023 Ford Ranger New Gen Wildtrak 4WD 2.0L Bi Turbo 10spd",
-      "mileage": "24022",
-      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4081807",
-      "candidate_count": 0
-    },
-    {
-      "vehicle_id": "95828",
-      "title": "2024 Ford Ranger New Gen XLT 2WD 2.0L Bi-Turbo",
-      "mileage": "50138",
-      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4082428",
-      "candidate_count": 0
-    },
-    {
-      "vehicle_id": "95831",
-      "title": "2023 Mazda CX-60 AWD Skyactiv 2.5L DOHC VVT",
-      "mileage": "23806",
-      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4082444",
-      "candidate_count": 0
-    },
-    {
-      "vehicle_id": "95834",
-      "title": "2025 Toyota Land Cruiser 300 VX 4WD 3.3 V6 Twin Turbo Diesel 7str",
-      "mileage": "46470",
-      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4082446",
-      "candidate_count": 0
-    },
-    {
-      "vehicle_id": "95776",
-      "title": "2021 Ford Everest Titanium 4WD 2.0 Bi Turbo 7 Seater",
-      "mileage": "81421",
-      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4077138",
-      "candidate_count": 0
-    }
-  ],
-  "inventory_cards_found": 63,
-  "url_verification": "Previously verified stock-ID mappings; year/make/model/title rechecked against live AutoPlay",
-  "website_checked_this_run": false
+  "unmatched": [],
+  "inventory_cards_found": 126
 }

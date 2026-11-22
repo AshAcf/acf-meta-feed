@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-22T19:27:29.973Z",
-  "upstream_feed": "https://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=13928&type=6",
+  "generated_at": "2026-11-22T20:01:48.965Z",
+  "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=13928&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
   "url_branch_id": "1077",
   "custom_label_1": null,
@@ -21,20 +21,10 @@
   "source_vehicles_before_filter": 14,
   "include_vehicle_ids_file": null,
   "exclude_vehicle_ids_file": null,
-  "published_vehicles": 13,
-  "match_rate": 0.9285714285714286,
-  "matched_by_title_and_mileage": 13,
+  "published_vehicles": 14,
+  "match_rate": 1,
+  "matched_by_title_and_mileage": 14,
   "matched_by_title_only": null,
-  "unmatched": [
-    {
-      "vehicle_id": "95776",
-      "title": "2021 Ford Everest Titanium 4WD 2.0 Bi Turbo 7 Seater",
-      "mileage": "81421",
-      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4077138",
-      "candidate_count": 0
-    }
-  ],
-  "inventory_cards_found": 63,
-  "url_verification": "Previously verified stock-ID mappings; year/make/model/title rechecked against live AutoPlay",
-  "website_checked_this_run": false
+  "unmatched": [],
+  "inventory_cards_found": 126
 }
