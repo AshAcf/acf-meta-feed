@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-25T00:01:31.594Z",
+  "generated_at": "2026-11-25T04:01:21.560Z",
   "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1685,1686&type=6",
   "used_source_generated_at": [
-    "2026-11-25T00:00:38.081Z",
-    "2026-11-25T00:00:41.864Z"
+    "2026-11-25T04:00:28.287Z",
+    "2026-11-25T04:00:31.136Z"
   ],
   "published_vehicles": 110,
-  "new_demo_source_vehicles": 58,
-  "new_demo_published_vehicles": 47,
-  "new_demo_match_rate": 0.8103448275862069,
+  "new_demo_source_vehicles": 61,
+  "new_demo_published_vehicles": 48,
+  "new_demo_match_rate": 0.7868852459016393,
   "minimum_new_demo_match_rate": 0.7,
   "unresolved": [
     {
@@ -54,6 +54,14 @@
     {
       "vehicle_id": "165863",
       "title": "2027 Ford Everest Platinum 3.0 V6 Diesel Turbo SUV 7 Seater 4WD"
+    },
+    {
+      "vehicle_id": "165852",
+      "title": "2026 Ford Everest Sport 3.0 V6 Turbo Diesel 7 Seater SUV"
+    },
+    {
+      "vehicle_id": "165891",
+      "title": "2026 Ford Ranger Wildtrak 3.0L V6 Diesel 4WD"
     }
   ],
   "wolftrak_vehicles": 4
