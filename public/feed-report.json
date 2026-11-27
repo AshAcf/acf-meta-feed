@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-27T01:40:16.804Z",
-  "upstream_feed": "https://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684,13928,13929,13930&type=6",
+  "generated_at": "2026-11-27T04:00:30.531Z",
+  "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1684,13928,13929,13930&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
   "url_branch_id": null,
   "custom_label_1": null,
@@ -17,16 +17,43 @@
   "require_sale_price": false,
   "allow_empty_source": false,
   "allow_empty_result": false,
-  "upstream_vehicles": 62,
-  "source_vehicles_before_filter": 62,
+  "upstream_vehicles": 64,
+  "source_vehicles_before_filter": 64,
   "include_vehicle_ids_file": null,
   "exclude_vehicle_ids_file": null,
-  "published_vehicles": 62,
-  "match_rate": 1,
-  "matched_by_title_and_mileage": 62,
+  "published_vehicles": 60,
+  "match_rate": 0.9375,
+  "matched_by_title_and_mileage": 60,
   "matched_by_title_only": null,
-  "unmatched": [],
-  "inventory_cards_found": 62,
-  "url_verification": "Previously verified stock-ID mappings; year/make/model/title rechecked against live AutoPlay",
-  "website_checked_this_run": false
+  "unmatched": [
+    {
+      "vehicle_id": "95809",
+      "title": "2023 Ford Escape ST-Line X AWD FHEV 2.5L",
+      "mileage": "87522",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4089839",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "95839",
+      "title": "2025 Ford Ranger New Gen Wildtrak 4WD 2.0 Bi Turbo 10spd",
+      "mileage": "23068",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4089845",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "95810",
+      "title": "2026 Ford Ranger New Gen Wildtrak 4WD 3.0L V6",
+      "mileage": "7815",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=4089854",
+      "candidate_count": 0
+    },
+    {
+      "vehicle_id": "165138",
+      "title": "2026 Ford Everest Sport 2.0L Bi Turbo Diesel 7 Seater SUV 4WD",
+      "mileage": "6656",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3777593",
+      "candidate_count": 0
+    }
+  ],
+  "inventory_cards_found": 123
 }

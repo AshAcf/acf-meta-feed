@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-27T01:40:21.198Z",
-  "upstream_feed": "https://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=13928,13929,13930&type=6",
+  "generated_at": "2026-11-27T04:00:33.376Z",
+  "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=13928,13929,13930&type=6",
   "acf_inventory_url": "https://www.avoncityford.com/vehicles/search",
   "url_branch_id": "1077",
   "custom_label_1": "RANGIORA",
@@ -21,12 +21,18 @@
   "source_vehicles_before_filter": 21,
   "include_vehicle_ids_file": null,
   "exclude_vehicle_ids_file": null,
-  "published_vehicles": 21,
-  "match_rate": 1,
-  "matched_by_title_and_mileage": 21,
+  "published_vehicles": 20,
+  "match_rate": 0.9523809523809523,
+  "matched_by_title_and_mileage": 20,
   "matched_by_title_only": null,
-  "unmatched": [],
-  "inventory_cards_found": 62,
-  "url_verification": "Previously verified stock-ID mappings; year/make/model/title rechecked against live AutoPlay",
-  "website_checked_this_run": false
+  "unmatched": [
+    {
+      "vehicle_id": "165138",
+      "title": "2026 Ford Everest Sport 2.0L Bi Turbo Diesel 7 Seater SUV 4WD",
+      "mileage": "6656",
+      "original_url": "https://www.avoncityford.co.nz/used-car-detail?id=3777593",
+      "candidate_count": 0
+    }
+  ],
+  "inventory_cards_found": 123
 }
