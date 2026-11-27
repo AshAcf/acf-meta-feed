@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-27T01:44:49.716Z",
+  "generated_at": "2026-11-27T04:01:20.214Z",
   "upstream_feed": "http://dataapi.autoplay.co.nz/fbookAd.ashx?id=29&yardList=1685,1686&type=6",
   "used_source_generated_at": [
-    "2026-11-27T01:40:16.804Z",
-    "2026-11-27T01:40:21.198Z"
+    "2026-11-27T04:00:30.531Z",
+    "2026-11-27T04:00:33.376Z"
   ],
-  "published_vehicles": 112,
+  "published_vehicles": 111,
   "new_demo_source_vehicles": 62,
-  "new_demo_published_vehicles": 50,
-  "new_demo_match_rate": 0.8064516129032258,
+  "new_demo_published_vehicles": 51,
+  "new_demo_match_rate": 0.8225806451612904,
   "minimum_new_demo_match_rate": 0.7,
   "unresolved": [
     {
@@ -54,10 +54,6 @@
     {
       "vehicle_id": "165863",
       "title": "2027 Ford Everest Platinum 3.0 V6 Diesel Turbo SUV 7 Seater 4WD"
-    },
-    {
-      "vehicle_id": "165734",
-      "title": "2026 Ford Ranger Tremor 3.0L V6 Turbo Diesel Double Cab 4WD"
     }
   ],
   "wolftrak_vehicles": 4
